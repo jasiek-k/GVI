@@ -1,0 +1,21 @@
+.grid {
+  width: 73.856vw;
+  margin-left: auto;
+  margin-right: auto;
+
+  &__row {
+    &:nth-child(2) {
+      margin-top: 2.083vw;
+    }
+
+    &--item {
+      &:nth-child(2) {
+        margin-left: 2.083vw;
+        margin-right: 2.083vw;
+      }
+
+      width: 23.23vw;
+      height: 23.23vw;
+    }
+  }
+}
