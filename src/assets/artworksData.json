@@ -1,9 +1,103 @@
 {
   "artworks": [
     {
-      "author": "",
-      "title": "",
-      "date": 1
+      "author": "Władysław Strzemiński",
+      "title": "Kompozycja architektoniczna 1",
+      "date": 1926,
+      "phrase": "autonomia"
+    },
+    {
+      "author": "Władysław Strzemiński",
+      "title": "Kompozycja architektoniczna 12c",
+      "date": 1929,
+      "phrase": "autonomia"
+    },
+    {
+      "author": "Władysław Strzemiński",
+      "title": "Kompozycja unistyczna 14",
+      "date": 1934,
+      "phrase": "autonomia"
+    },
+    {
+      "author": "Katarzyna Kobro",
+      "title": "Kompozycja przestrzenna 7",
+      "date": 1931,
+      "phrase": "autonomia"
+    },
+    {
+      "author": "Włodzimierz Borowski",
+      "title": "Arton B",
+      "date": 1958,
+      "phrase": "autonomia"
+    },
+    {
+      "author": "Włodzimierz Borowski",
+      "title": "Arton I",
+      "date": 1961,
+      "phrase": "autonomia"
+    },
+    {
+      "author": "Włodzimierz Borowski",
+      "title": "Arton XI",
+      "date": 1962,
+      "phrase": "autonomia"
+    },
+    {
+      "author": "Andrzej Wróblewski",
+      "title": "Słońce i inne gwiazdy",
+      "date": 1948,
+      "phrase": "autonomia"
+    },
+    {
+      "author": "Erna Rosenstein",
+      "title": "Podróż astrologa",
+      "date": 1969,
+      "phrase": "autonomia"
+    },
+    {
+      "author": "Erna Rosenstein",
+      "title": "Chwila wieczności",
+      "date": 1977,
+      "phrase": "autonomia"
+    },
+    {
+      "author": "Maria Jarema",
+      "title": "Wyrazy",
+      "date": 1956,
+      "phrase": "autonomia"
+    },
+    {
+      "author": "Gunter Uecker",
+      "title": "Białe pole. Hommage a Strzemiński",
+      "date": 1970,
+      "phrase": "autonomia"
+    },
+    {
+      "author": "Andrzej Pawłowski",
+      "title": "Forma naturalnie ukształtowana",
+      "date": 1965,
+      "phrase": "autonomia"
+    },
+    {
+      "author": "Kajetan Sosnowski",
+      "title": "z cyklu: Układy równowartościowe",
+      "date": 0,
+      "period": "1978-1986",
+      "phrase": "autonomia"
+    },
+    {
+      "author": "Zbigniew Dłubak",
+      "title": "Gestykulacje",
+      "date": 0,
+      "period": "1970-1975",
+      "phrase": "autonomia"
+    },
+    {
+      "author": "Kajetan Sosnowski",
+      "title": "z cyklu: Układy równowartościowe",
+      "date": 0,
+      "period": "1978-1986",
+      "phrase": "autonomia"
     }
   ]
 }
