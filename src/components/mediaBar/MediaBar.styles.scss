@@ -2,12 +2,40 @@
   background-color: #fff;
   color: #000;
   width: 100%;
-  
+
   &__content {
     width: 73.856vw;
     margin-left: auto;
     margin-right: auto;
     padding-top: 4.1vw;
     padding-bottom: 4.1vw;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+  }
+
+  &__medias {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: flex-end;
+    align-items: flex-end;
+  }
+
+  &__icon {
+    max-width: 2.5vw;
+    max-height: 2.5vw;
+    padding-left: 57px;
+    padding-right: 57px;
+
+    display: inline-flex;
+  }
+
+  .mediaBar__icon:last-child {
+    padding-right: 0px !important;
+  }
+
+  .mediaBar__icon:first-child {
+    padding-left: 0px !important;
   }
 }

@@ -1,7 +1,21 @@
 .footer-container {
-  width: 100vh;
+  width: 100%;
   margin-left: 0;
   margin-right: 0;
   margin-bottom: 0;
   background-color: #fff;
+
+  .footer-caption {
+    color: #000;
+    font-size: 22px;
+    font-weight: bold;
+
+    &__wrapper {
+      width: 73.856vw;
+      margin-left: auto;
+      margin-right: auto;
+      padding-top: 40px;
+      padding-bottom: 150px;
+    }
+  }
 }
