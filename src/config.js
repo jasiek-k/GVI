@@ -1,9 +1,35 @@
+import {
+  YoutubeIcon,
+  FacebookIcon,
+  InstagramIcon,
+  TwitterIcon,
+} from "./assets/Icons";
+
 export const AVAILABLE_LANGS = {
   pl: "pl",
   en: "en",
 };
 
 export const DEFAULT_LANG = "pl";
+
+export const socialMediaArray = [
+  {
+    icon: <FacebookIcon />,
+    link: "https://www.facebook.com/muzeumsztuki",
+  },
+  {
+    icon: <YoutubeIcon />,
+    link: "https://www.youtube.com/user/MuzeumSztuki",
+  },
+  {
+    icon: <TwitterIcon />,
+    link: "https://twitter.com/muzeumsztuki",
+  },
+  {
+    icon: <InstagramIcon />,
+    link: "https://instagram.com/muzeumsztuki/",
+  },
+];
 
 export const techniquesArray = [
   "olej",

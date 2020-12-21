@@ -1,103 +1,251 @@
 {
   "artworks": [
     {
-      "author": "Władysław Strzemiński",
-      "title": "Kompozycja architektoniczna 1",
-      "date": 1926,
+      "author": "Adler Jankiel",
+      "title": "Moi rodzice",
+      "date": [1921],
+      "techniques": ["olej", "deska"],
+      "size": [136, 54],
+      "phrase": "tradycja"
+    },
+    {
+      "author": "Adler Jankiel",
+      "title": "Młody robotnik",
+      "date": [1929],
+      "techniques": ["olej", "płótno"],
+      "size": [129.5, 78],
+      "phrase": "emancypacja"
+    },
+    {
+      "author": "Adler Jankiel",
+      "title": "Kompozycja nadrealistyczna",
+      "date": [1933],
+      "techniques": ["olej", "płótno"],
+      "size": [45, 63],
+      "phrase": "eksperyment"
+    },
+    {
+      "author": "Agence Rol",
+      "title": "Garaż",
+      "date": [1925],
+      "techniques": ["fotografia"],
+      "size": [18, 13],
+      "phrase": "kapitał"
+    },
+    {
+      "author": "Arczyński Stefan",
+      "title": "Festiwal warszawski",
+      "date": [1955],
+      "techniques": ["fotografia"],
+      "size": [29.8, 38],
+      "phrase": "propaganda"
+    },
+    {
+      "author": "Arczyński Stefan",
+      "title": "Odbudowa Warszawy",
+      "date": [1954],
+      "techniques": ["fotografia"],
+      "size": [29.8, 23.9],
+      "phrase": "postęp"
+    },
+    {
+      "author": "Bałka Mirosław",
+      "title": "Pamiątka I Komunii Świętej",
+      "date": [1985],
+      "techniques": [
+        "sztuczny kamień",
+        "drewno",
+        "tkanina",
+        "żywica",
+        "metal",
+        "fotografia"
+      ],
+      "size": [170, 105, 80],
+      "phrase": "tradycja"
+    },
+    {
+      "author": "Bałka Mirosław",
+      "title": "190 x 60 x 70.7 (12 x 9 x 9)",
+      "date": [1996],
+      "techniques": ["instalacja"],
+      "size": [190, 60, 70.7, 12, 9, 9],
+      "phrase": "ja"
+    },
+    {
+      "author": "Barczyński Henoch",
+      "title": "Kostiumowe święto Purim",
+      "date": [1919],
+      "techniques": ["drzeworyt", "papier"],
+      "size": [42, 30],
+      "phrase": "tradycja"
+    },
+    {
+      "author": "Berman Mieczysław",
+      "title": "Chaplin",
+      "date": [1927],
+      "techniques": ["fotokolaż", "papier"],
+      "size": [49, 40],
+      "phrase": "kapitał"
+    },
+    {
+      "author": "Berman Mieczysław",
+      "title": "Konstrukcja",
+      "date": [1927],
+      "techniques": ["fotokolaż", "papier"],
+      "size": [54.5, 39.5],
+      "phrase": "postęp"
+    },
+    {
+      "author": "Berman Mieczysław",
+      "title": "Odwiedzajcie ZSRR",
+      "date": [1928],
+      "techniques": ["fotokolaż", "papier"],
+      "size": [32.5, 49.5],
+      "phrase": "propaganda"
+    },
+    {
+      "author": "Beuys Joseph",
+      "title": "My jesteśmy rewolucją",
+      "date": [1971],
+      "techniques": ["offset", "papier", "płótno"],
+      "size": [190, 100],
+      "phrase": "rewolucja"
+    },
+    {
+      "author": "Beuys Joseph",
+      "title": "Tak można przezwyciężyć dyktaturę partii",
+      "date": [1971],
+      "techniques": ["druk barwny", "torba polietylenowa"],
+      "size": [72, 51.3],
+      "phrase": "propaganda"
+    },
+    {
+      "author": "Beuys Joseph",
+      "title": "Kapitał",
+      "date": [1980],
+      "techniques": ["akwaforta", "papier"],
+      "size": [78.5, 56],
+      "phrase": "kapitał"
+    },
+    {
+      "author": "Beuys Joseph",
+      "title": "Sztuka = Kapitał",
+      "date": [1980],
+      "techniques": ["serigrafia", "kamień", "drewno"],
+      "size": [14, 31],
+      "phrase": "kapitał"
+    },
+    {
+      "author": "Beuys Joseph",
+      "title": "W tych wyborach: Zieloni",
+      "date": [1980],
+      "techniques": ["serigrafia", "papier"],
+      "size": [88, 63.5],
+      "phrase": "propaganda"
+    },
+    {
+      "author": "Beuys Joseph",
+      "title": "Transport do Polski 1981",
+      "date": [1981],
+      "techniques": ["drewno", "papier", "ołówek"],
+      "size": [48.4, 157.4, 108.4],
+      "phrase": "rewolucja"
+    },
+    {
+      "author": "Bill Max",
+      "title": "Multipla: Podwojenie",
+      "date": [1969],
+      "techniques": ["stal"],
+      "size": [29, 29, 29],
+      "phrase": "postęp"
+    },
+    {
+      "author": "Bizański Stanisław",
+      "title": "Portret mężczyzny",
+      "date": [1870],
+      "techniques": ["fotografia"],
+      "size": [10.7, 6.4],
+      "phrase": "ja"
+    },
+    {
+      "author": "Bizański Stanisław",
+      "title": "Portret dzieci",
+      "date": [1875],
+      "techniques": ["fotografia"],
+      "size": [11, 6.8],
+      "phrase": "ja"
+    },
+    {
+      "author": "Bizański Stanisław",
+      "title": "Portret dwóch mężczyzn",
+      "date": [1875],
+      "techniques": ["fotografia"],
+      "size": [11, 7.7],
+      "phrase": "ja"
+    },
+    {
+      "author": "Bodzianowski Cezary",
+      "title": "Sfery de la lux, potocznie zwane LUNA",
+      "date": [2007],
+      "techniques": ["film", "zapis cyfrowy"],
+      "size": [264.16],
       "phrase": "autonomia"
     },
     {
-      "author": "Władysław Strzemiński",
-      "title": "Kompozycja architektoniczna 12c",
-      "date": 1929,
-      "phrase": "autonomia"
+      "author": "Bodzianowski Cezary",
+      "title": "Kaskader",
+      "date": [2007],
+      "techniques": ["film", "zapis cyfrowy"],
+      "size": [264.16],
+      "phrase": "miasto"
     },
     {
-      "author": "Władysław Strzemiński",
-      "title": "Kompozycja unistyczna 14",
-      "date": 1934,
-      "phrase": "autonomia"
+      "author": "Bonvinci Monica",
+      "title": "Nie dla was",
+      "date": [2006],
+      "techniques": ["instalacja"],
+      "size": [99, 400, 8],
+      "phrase": "kapitał"
     },
     {
-      "author": "Katarzyna Kobro",
-      "title": "Kompozycja przestrzenna 7",
-      "date": 1931,
-      "phrase": "autonomia"
-    },
-    {
-      "author": "Włodzimierz Borowski",
+      "author": "Borowski Włodzimierz",
       "title": "Arton B",
-      "date": 1958,
+      "date": [1958],
+      "techniques": ["asamblaż"],
+      "size": [58],
       "phrase": "autonomia"
     },
     {
-      "author": "Włodzimierz Borowski",
+      "author": "Borowski Włodzimierz",
       "title": "Arton I",
-      "date": 1961,
+      "date": [1961],
+      "techniques": ["polistyren"],
+      "size": [25],
       "phrase": "autonomia"
     },
     {
-      "author": "Włodzimierz Borowski",
+      "author": "Borowski Włodzimierz",
       "title": "Arton XI",
-      "date": 1962,
+      "date": [1962],
+      "techniques": ["polistyren"],
+      "size": [25],
       "phrase": "autonomia"
     },
     {
-      "author": "Andrzej Wróblewski",
-      "title": "Słońce i inne gwiazdy",
-      "date": 1948,
-      "phrase": "autonomia"
+      "author": "Boshier Derek",
+      "title": "Chwała Anglii",
+      "date": [1962],
+      "techniques": ["olej", "płótno"],
+      "size": [126, 101],
+      "phrase": "kapitał"
     },
     {
-      "author": "Erna Rosenstein",
-      "title": "Podróż astrologa",
-      "date": 1969,
-      "phrase": "autonomia"
-    },
-    {
-      "author": "Erna Rosenstein",
-      "title": "Chwila wieczności",
-      "date": 1977,
-      "phrase": "autonomia"
-    },
-    {
-      "author": "Maria Jarema",
-      "title": "Wyrazy",
-      "date": 1956,
-      "phrase": "autonomia"
-    },
-    {
-      "author": "Gunter Uecker",
-      "title": "Białe pole. Hommage a Strzemiński",
-      "date": 1970,
-      "phrase": "autonomia"
-    },
-    {
-      "author": "Andrzej Pawłowski",
-      "title": "Forma naturalnie ukształtowana",
-      "date": 1965,
-      "phrase": "autonomia"
-    },
-    {
-      "author": "Kajetan Sosnowski",
-      "title": "z cyklu: Układy równowartościowe",
-      "date": 0,
-      "period": "1978-1986",
-      "phrase": "autonomia"
-    },
-    {
-      "author": "Zbigniew Dłubak",
-      "title": "Gestykulacje",
-      "date": 0,
-      "period": "1970-1975",
-      "phrase": "autonomia"
-    },
-    {
-      "author": "Kajetan Sosnowski",
-      "title": "z cyklu: Układy równowartościowe",
-      "date": 0,
-      "period": "1978-1986",
-      "phrase": "autonomia"
+      "author": "Boshier Derek",
+      "title": "Kosmonauta (Najprzystojniejszy bohater kosmosu i Mr. Shepard)",
+      "date": [1962],
+      "techniques": ["olej", "płótno"],
+      "size": [127, 219],
+      "phrase": "propaganda"
     }
   ]
 }

@@ -10,32 +10,27 @@
     padding-top: 4.1vw;
     padding-bottom: 4.1vw;
     display: flex;
-    flex-direction: row;
-    align-items: center;
+  }
+
+  &__caption {
+    font-size: 2.0833vw;
+    font-weight: bold;
+
+    a {
+      color: #000;
+      text-decoration: none;
+    }
   }
 
   &__medias {
+    margin-left: auto;
     display: flex;
-    flex-direction: row;
-    align-items: center;
-    justify-content: flex-end;
-    align-items: flex-end;
   }
 
   &__icon {
     max-width: 2.5vw;
     max-height: 2.5vw;
-    padding-left: 57px;
-    padding-right: 57px;
-
-    display: inline-flex;
-  }
-
-  .mediaBar__icon:last-child {
-    padding-right: 0px !important;
-  }
-
-  .mediaBar__icon:first-child {
-    padding-left: 0px !important;
+    padding-left: 2.96875vw;
+    padding-right: 2.96875vw;
   }
 }
