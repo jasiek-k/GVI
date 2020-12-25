@@ -1,0 +1,67 @@
+.common-button {
+  border: none;
+  padding: 0;
+  width: 23.229vw;
+
+  &:hover {
+    cursor: pointer;
+  }
+
+  .button-content {
+    background-color: #000;
+    border-collapse: collapse;
+    width: 100%;
+
+    &.redirect {
+      height: 10.3141667vw;
+    }
+
+    .button-row {
+      width: 23.229vw !important;
+
+      .button__caption {
+        border: 0.26vw solid #fff;
+        vertical-align: bottom;
+        color: #fff;
+        font-size: 1.14533vw;
+        font-weight: bold;
+        //width: 16.8748vw;
+        text-align: left;
+        width: 17.1875vw;
+      }
+
+      .button__icon {
+        border: 0.26vw solid #fff;
+
+        vertical-align: top;
+        width: 6.3541667vw;
+        color: #fff;
+        padding-top: 1.041667vw;
+        padding-left: 0;
+        padding-right: 0;
+        text-align: right;
+
+        &-wrapper {
+          width: 1.7708vw;
+          margin-left: auto;
+          margin-right: 1.041667vw;
+
+          &.download {
+            transform: rotate(90deg);
+          }
+        }
+      }
+
+      td {
+        padding-bottom: 1.041667vw;
+        padding-top: 2.0832vw;
+        padding-left: 1.041667vw;
+        padding-right: 1.823vw;
+      }
+    }
+
+    tbody {
+      width: 100%;
+    }
+  }
+}

@@ -1,0 +1,25 @@
+.information-section {
+  width: 73.856vw;
+  margin-bottom: 10.41667vw;
+  margin-top: 10.41667vw;
+  margin-left: auto;
+  margin-right: auto;
+  display: flex;
+
+  &__col {
+    width: 40.15625vw;
+    flex: 48.5%;
+
+    &:first-of-type {
+      margin-right: 2.0833vw;
+    }
+  }
+
+  .text-paragraph {
+    margin-bottom: 1.041667vw;
+
+    &:last-child {
+      margin-bottom: 0 !important;
+    }
+  }
+}

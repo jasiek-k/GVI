@@ -1,6 +1,6 @@
 import React from "react";
 
-import { AVAILABLE_LANGS } from "../../config";
+import { AVAILABLE_LANGS } from "../../../../config";
 
 const Nav = ({ setLangCallback }) => {
   return (

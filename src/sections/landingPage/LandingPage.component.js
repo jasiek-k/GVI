@@ -1,5 +1,5 @@
 import React from "react";
-import Nav from "../nav/Nav.component";
+import Nav from "./components/nav/Nav.component";
 
 const LandingPage = ({ changeLang }) => {
   return (

@@ -6,12 +6,14 @@ import PhotosGrid from "../photosGrid/PhotosGrid.component";
 import MediaBar from "../mediaBar/MediaBar.component";
 import { DEFAULT_LANG } from "../../config";
 import useAlgorithm from "../../useAlgorithm";
+import QuoteFrame from "../quoteFrame/QuoteFrame.component";
+
+import GenerativeSection from "../../sections/generativeSection/GenerativeSection.component";
+import InformationSection from "../../sections/informationSection/InformationSection.component";
+import LandingPage from "../../sections/landingPage/LandingPage.component";
+import ResourceSection from "../../sections/resourceSection/ResourceSection.component";
 
 import "./OnePager.styles.scss";
-import LandingPage from "../landingPage/LandingPage.component";
-import QuoteFrame from "../quoteFrame/QuoteFrame.component";
-import InformationSection from "../informationSection/InformationSection.component";
-import GenerativeSection from "../generativeSection/GenerativeSection.component";
 
 const OnePager = () => {
   const [currentLang, setLang] = useState(DEFAULT_LANG);
@@ -36,8 +38,9 @@ const OnePager = () => {
         <QuoteFrame />
         <InformationSection />
         <GenerativeSection />
-        <PhotosGrid className="onePager__section" />
+        <PhotosGrid />
         <MediaBar />
+        <ResourceSection />
         <Footer />
       </div>
     </LanguageService>

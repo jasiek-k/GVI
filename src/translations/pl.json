@@ -1,8 +1,29 @@
 {
+  "informative:intro": "„Atlas nowoczesności” to wystawa pozwalająca w nowy sposób spojrzeć na Kolekcję sztuki XX i XXI wieku, ale przede wszystkim – to snuta za pomocą dzieł z niej pochodzących opowieść o nowoczesności i jej znaczeniu dla nas dzisiaj. Nieprzypadkowo nowoczesność staje się przedmiotem refleksji w Muzeum Sztuki w Łodzi. Nie ma w Polsce drugiego muzeum, którego związki z nowoczesną kulturą byłyby równie mocne.",
   "informative:firstParagraph": "Wystawa w ms² nie opowiada o dziejach nowoczesności ujętych chronologicznie ani tym bardziej o historii modernistycznej sztuki. Skupia się natomiast na najważniejszych zjawiskach, które w powszechnym odczuciu wiążą się z tym, co nowoczesne, takich jak: emancypacja, autonomia, industrializacja, kapitał, urbanizacja, eksperyment, mechanizacja czy rewolucja. Tworząc wokół każdego z nich „kolaż” zbudowany z dzieł pochodzących z różnych okresów, reprezentujących różne estetyki i różne artystyczne postawy, wystawa stawia pytania o to, jak zmieniał się charakter tych zjawisk, jak zmieniało się ich postrzeganie a przede wszystkim o to, jak dalece kształtują one dzisiejszą rzeczywistość.",
   "informative:secondParagraph": "„Atlas nowoczesności” to kolejny etap rozpoczętych siedem lat temu prac nad kolekcją Muzeum Sztuki, których celem jest badanie, reinterpretacja i aktualizowanie znaczeń znajdujących się w niej dzieł. Prace te zostały zainaugurowane realizacją w latach 2007-2008 serii trzech wystaw ukazujących muzealne zbiory z trzech różnych perspektyw badawczych: politycznej, formalistycznej i psychoanalitycznej. Od 2008 roku zbiory te są wystawiane w najnowszym oddziale Muzeum Sztuki, ms2, a ich kolejne prezentacje zrywają zarówno z chronologicznym układem dzieł, jak i ideą „wystawy stałej”. W ramach pracy nad kolekcją realizowane są kolejne projekty wystawiennicze na nowo odkrywające zawarty w niej potencjał – także w konfrontacji z innymi kolekcjami (jak np. w wystawie „Korespondencje. Sztuka nowoczesna i uniwersalizm”).",
   "informative:thirdParagraph": "Kolekcję udostępniono publiczności po raz pierwszy w lutym 1931 r. w pierwotnej siedzibie muzeum w ratuszu przy Placu Wolności 1. Zbiory grupy „a.r.” gromadzone były w latach 1929–32 i uzupełniane do 1938 roku. Inicjatorem i głównym animatorem akcji pozyskiwania darów od artystów był malarz i teoretyk sztuki Władysław Strzemiński, aktywnie wspierany przez rzeźbiarkę Katarzynę Kobro, malarza Henryka Stażewskiego oraz poetów Jana Brzękowskiego i Juliana Przybosia. Zebrana Kolekcja w swym wymiarze ideowym stanowi obraz preferencji artystycznych Strzemińskiego, choć jej kształt ostateczny jest wypadkową działań wielu osób, w tym Henryka Stażewskiego, Hansa Arpa i Michela Seuphora.",
   "informative:fourthParagraph": "Kolekcja grupy „a.r” stanowiła przegląd awangardowych nurtów i tendencji końca lat 20. minionego wieku i stała się początkiem zbiorów sztuki nowoczesnej, które są wciąż uzupełniane współczesnymi dziełami z obszaru sztuki eksperymentującej. Niezmienne otwarcie na współczesność jest kontynuacją ideowych źródeł, które doprowadziły do powstania kolekcji. W ramach nowej odsłony zaprezentowano prace awangardowych twórców z kolekcji grupy „a.r.”, m.in.: Maxa Ernsta, Władysława Strzemińskiego, Katarzyny Kobro, Kurta Schwittersa, Kazimierza Podsadeckiego, Enrico Prampoliniego, Janusza Marii Brzeskiego, Teresy Żarnower, Mieczysława Szczuki. W kontekście zagadnień tworzących nowoczesność usytuowane są prace m.in. Włodzimierza Borowskiego, Dereka Boshiera, Christiana Boltanskiego, Josepha Beuysa, Bridget Riley, Aliny Szapocznikow, Ewy Partum, Krzysztofa Wodiczki, Edwarda Krasińskiego, Alego Kazmy, Barbary Hammer, Agnieszki Kalinowskiej, Zofii Kulik, Jadwigi Maziarskiej, Erny Rosenstein, Jadwigi Sawickej, Ahlam Shibli, Mladena Stilinovića, Mony Vătămanu & Florin Tudor, Haegue Yang, Konrada Smoleńskiego, Cezarego Bodzianowskiego, Liama Gillicka, Zbigniewa Libery, Artura Żmijewskiego, Julity Wójcik, Antje Majewski czy Allana Sekuly, a także obiekty i druki ulotne pochodzące z archiwum Muzeum, m. in. scenopis rysunkowy do filmu „Jan Matejko” Andrzeja Wajdy.",
+
+  "informative:titlePlace": "miejsce",
+  "informative:contentPlace": "ms², Ogrodowa 19",
+  "informative:titleTime": "czas",
+  "informative:contentTime": "Od 24 stycznia 2014",
+  "informative:titleCurator": "zespół kuratorski",
+  "informative:contentCurator": "Jarosław Suchan, Aleksandra Jach, Paulina Kurc-Maj, Maria Morzuch, Anna Saciuk-Gąsowska, Joanna Sokołowska, Katarzyna Słoboda, Magdalena Ziółkowska",
+  "informative:titleArrangement": "aranzacja",
+  "informative:contentArrangement": "BudCud",
+  "informative:titleCoordinator": "koordynatorka wystawy",
+  "informative:contentCoordinator": "Martyna Dec",
+  "informative:titleGraphics": "opracowanie graficzne",
+  "informative:contentGraphics": "Hakobo",
+
+  "resources:discusionTitle": "Atlas nowoczesności. Dyskusja z udziałem Marii Poprzęckiej, Karoliny Sikorskiej i Jarosława Suchana",
+  "resources:movieTitle": "Atlas nowoczesności. Film o wystawie",
+  "resources:buyTicketTitle": "Kup bilet na wystawę",
+  "resources:folderDownloadTitle": " Atlas nowoczesności\n- folder wystawy",
+
   "mediaBar:caption": "Odwiedź stronę ms",
+
   "footer:caption": "Jan Klamka x Muzeum Sztuki w Łodzi © 2020"
 }

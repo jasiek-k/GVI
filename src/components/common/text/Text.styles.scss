@@ -1,8 +1,18 @@
 .common-text {
-  font-size: 1.04166666667vw;
-  line-height: 1.35416666667vw;
   color: #fff;
-  font-weight: 500;
   margin: 0;
   width: 100%;
+
+  &.intro {
+    line-height: 1.667vw;
+    font-size: 1.4583vw;
+    font-weight: bold;
+    margin-bottom: 2.0833vw !important;
+  }
+
+  &.paragraph {
+    line-height: 1.3541667vw;
+    font-size: 1.041667vw;
+    font-weight: 500;
+  }
 }

@@ -1,0 +1,31 @@
+.table {
+  border: 5px solid #fff;
+  width: 100%;
+  border-collapse: collapse;
+
+  &__row {
+    border: 5px solid #fff;
+    height: 4.427083vw;
+    vertical-align: bottom;
+
+    &-title {
+      font-size: 1.11vw;
+      text-transform: uppercase;
+      font-weight: bold;
+      width: 11.3636vw;
+    }
+
+    &-content {
+      font-size: 0.9375vw;
+    }
+
+    td {
+      border: 5px solid #fff;
+      border-collapse: separate;
+      padding-bottom: 1.041667vw;
+      padding-top: 2.0832vw;
+      padding-left: 1.041667vw;
+      padding-right: 1.823vw;
+    }
+  }
+}
