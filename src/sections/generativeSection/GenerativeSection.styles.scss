@@ -1,14 +1,44 @@
-.generative-container {
+.generative-section {
   width: 100%;
-  margin-left: 0;
-  margin-right: 0;
-  margin-bottom: 0;
+  margin: 0;
   background-color: #fff;
 
-  .generative-content {
+  &__container {
     width: 73.856vw;
     margin-left: auto;
     margin-right: auto;
+    padding-top: 6.25vw;
+    padding-bottom: 6.25vw;
     color: #000;
+
+    &--header {
+      border: 5px solid #000;
+      width: 100%;
+
+      &-wrapper {
+        display: flex;
+        padding: 40px;
+      }
+
+      .generative-logo {
+        width: 14.791667vw;
+        height: 14.791667vw;
+        border: 1px solid #000;
+        -webkit-box-shadow: 0px 8px 10px 5px rgba(0, 0, 0, 0.35);
+        box-shadow: 0px 8px 10px 5px rgba(0, 0, 0, 0.35);
+      }
+
+      .section-title {
+        margin-left: auto;
+        width: 28.65vw;
+        text-align: right;
+        align-self: flex-end;
+        margin-bottom: 0;
+        font-size: 2.604vw;
+      }
+    }
+
+    &--content {
+    }
   }
 }

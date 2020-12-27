@@ -1,8 +1,8 @@
 import React from "react";
 import { IntlProvider } from "react-intl";
 
-import messagesPl from "./translations/pl.json";
-import messagesEn from "./translations/en.json";
+import messagesPl from "../translations/pl.json";
+import messagesEn from "../translations/en.json";
 
 const messages = {
   en: messagesEn,

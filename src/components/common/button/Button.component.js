@@ -7,7 +7,6 @@ import "./Button.styles.scss";
 
 const Button = ({ type, className, title }) => (
   <button className={`common-button ${className || ""}`}>
-    {console.log(type)}
     <table className={`button-content ${type}`}>
       <tbody>
         <tr className="button-row">

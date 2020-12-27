@@ -1,7 +1,7 @@
 import React from "react";
 
 import Button from "../../components/common/button/Button.component";
-import { resourceContent } from "../../assets/data";
+import { resourceContent } from "../../data/data";
 
 import "./ResourceSection.styles.scss";
 

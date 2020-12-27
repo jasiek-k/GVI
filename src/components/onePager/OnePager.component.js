@@ -1,13 +1,12 @@
 import React, { useState, useEffect, useCallback } from "react";
 
-import LanguageService from "../../Language.service";
+import LanguageService from "../../services/Language.service";
+import useAlgorithm from "../../services/useAlgorithm";
+import { DEFAULT_LANG } from "../../config";
 import Footer from "../footer/Footer.component";
 import PhotosGrid from "../photosGrid/PhotosGrid.component";
 import MediaBar from "../mediaBar/MediaBar.component";
-import { DEFAULT_LANG } from "../../config";
-import useAlgorithm from "../../useAlgorithm";
 import QuoteFrame from "../quoteFrame/QuoteFrame.component";
-
 import GenerativeSection from "../../sections/generativeSection/GenerativeSection.component";
 import InformationSection from "../../sections/informationSection/InformationSection.component";
 import LandingPage from "../../sections/landingPage/LandingPage.component";
@@ -21,10 +20,10 @@ const OnePager = () => {
 
   useEffect(() => {
     const lang = localStorage.getItem("atlasLang");
-    if (lang !== "") {
+    if (lang !== "" || lang !== currentLang) {
       setLang(lang);
     }
-  }, []);
+  }, [currentLang]);
 
   const changeLang = useCallback((item) => {
     localStorage.setItem("atlasLang", item);

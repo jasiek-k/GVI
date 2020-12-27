@@ -70,21 +70,21 @@ export const ArrowIcon = () => (
       transform="translate(12.324 2.5)"
       fill="none"
       stroke="#fff"
-      stroke-width="5"
+      strokeWidth="5"
     />
     <path
       d="M0,23V0"
       transform="translate(32.824)"
       fill="none"
       stroke="#fff"
-      stroke-width="5"
+      strokeWidth="5"
     />
     <path
       d="M0,44V0"
       transform="translate(32.88 2.944) rotate(45)"
       fill="none"
       stroke="#fff"
-      stroke-width="5"
+      strokeWidth="5"
     />
   </svg>
 );
