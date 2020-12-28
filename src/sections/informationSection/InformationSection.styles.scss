@@ -18,8 +18,8 @@
   .text-paragraph {
     margin-bottom: 1.041667vw;
 
-    &:last-child {
-      margin-bottom: 0 !important;
+    &:last-of-type {
+      margin-bottom: 1.8vw !important;
     }
   }
 }

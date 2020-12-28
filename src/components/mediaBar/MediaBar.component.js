@@ -5,8 +5,8 @@ import { socialMediaArray } from "../../data/data";
 
 import "./MediaBar.styles.scss";
 
-const MediaBar = ({ className }) => (
-  <div className={`mediaBar ${className}`}>
+const MediaBar = React.forwardRef((props, ref) => (
+  <div ref={ref} className="mediaBar">
     <div className="mediaBar__content">
       <span className="mediaBar__caption">
         <a href="https://msl.org.pl/" rel="noreferrer" target="_blank">
@@ -24,6 +24,6 @@ const MediaBar = ({ className }) => (
       </div>
     </div>
   </div>
-);
+));
 
 export default memo(MediaBar);

@@ -1,13 +1,45 @@
 .modal-container {
   width: 100vw;
   height: 100vh;
-  background-color: #000;
+  background-color: rgba(0, 0, 0, 0.8);
   position: fixed;
   left: 0;
   top: 0;
   z-index: 100;
-}
 
-.closeButton {
-  color: red;
+  .modal-content {
+    display: flex;
+    height: 100%;
+
+    flex-direction: column;
+    justify-content: center;
+    align-content: center;
+    align-items: center;
+
+    .modal-photo {
+      width: 70vmin;
+      height: auto;
+    }
+
+    .modal-description {
+      width: 70vmin;
+      padding-top: 1.041667vw;
+    }
+  }
+
+  .close-button {
+    width: 2.01vw;
+    height: 2.01vw;
+    background-color: transparent;
+    border: none;
+    position: fixed;
+    margin: 0;
+    padding: 0;
+    top: 2.0833vw;
+    right: 2.0833vw;
+
+    &:hover {
+      cursor: pointer;
+    }
+  }
 }

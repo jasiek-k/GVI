@@ -12,7 +12,7 @@ import photo6 from "../../assets/images/grid6.jpg";
 import "./PhotosGrid.styles.scss";
 
 const firstRow = [
-  { id: 0, photo: photo1, description: "1" },
+  { id: 0, photo: photo1, description: "" },
   { id: 1, photo: photo2, description: "2" },
   { id: 2, photo: photo3, description: "3" },
 ];

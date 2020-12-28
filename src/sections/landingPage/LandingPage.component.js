@@ -1,11 +1,14 @@
 import React from "react";
+
 import Nav from "./components/nav/Nav.component";
 
-const LandingPage = ({ changeLang }) => {
+import "./LandingPage.styles.scss";
+
+const LandingPage = ({ changeLang, handleScroll }) => {
   return (
-    <div>
-      <Nav setLangCallback={changeLang} />
-      <main>ATLAS NOWOCZESNOŚCI</main>
+    <div className="landing-section">
+      <main className="title">ATLAS NOWOCZESNOŚCI</main>
+      <Nav handleScroll={handleScroll} setLangCallback={changeLang} />
     </div>
   );
 };

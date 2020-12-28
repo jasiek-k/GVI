@@ -1,23 +1,36 @@
-.common-button {
-  border: none;
-  padding: 0;
-  width: 23.229vw;
+button {
+  background-color: none;
+}
 
-  &:hover {
-    cursor: pointer;
-  }
+.common-button {
+  border-color: none;
+  border: 0;
+  background-color: none;
+  padding: 0;
+  margin: 0;
+  width: 23.2vw;
 
   .button-content {
+    margin: 0;
+    padding: 0;
     background-color: #000;
     border-collapse: collapse;
-    width: 100%;
+    width: 23.229vw;
+
+    &:hover td {
+      cursor: pointer;
+      background-color: #fff !important;
+      color: #000 !important;
+      border-color: #000 !important;
+      stroke: #000 !important;
+    }
 
     &.redirect {
       height: 10.3141667vw;
     }
 
     .button-row {
-      width: 23.229vw !important;
+      width: 100% !important;
 
       .button__caption {
         border: 0.26vw solid #fff;
@@ -25,21 +38,20 @@
         color: #fff;
         font-size: 1.14533vw;
         font-weight: bold;
-        //width: 16.8748vw;
         text-align: left;
         width: 17.1875vw;
       }
 
       .button__icon {
         border: 0.26vw solid #fff;
-
         vertical-align: top;
-        width: 6.3541667vw;
+        width: 6.0415vw;
         color: #fff;
         padding-top: 1.041667vw;
         padding-left: 0;
         padding-right: 0;
         text-align: right;
+        stroke: #fff;
 
         &-wrapper {
           width: 1.7708vw;
@@ -61,7 +73,13 @@
     }
 
     tbody {
-      width: 100%;
+      width: 23.229vw;
     }
+  }
+
+  table {
+    background: none;
+    margin: 0;
+    padding: 0;
   }
 }

@@ -69,19 +69,45 @@ export const ArrowIcon = () => (
       d="M0,0H23"
       transform="translate(12.324 2.5)"
       fill="none"
-      stroke="#fff"
+      //stroke="#fff"
       strokeWidth="5"
     />
     <path
       d="M0,23V0"
       transform="translate(32.824)"
       fill="none"
-      stroke="#fff"
+      //stroke="#fff"
       strokeWidth="5"
     />
     <path
       d="M0,44V0"
       transform="translate(32.88 2.944) rotate(45)"
+      fill="none"
+      //stroke="#fff"
+      strokeWidth="5"
+    />
+  </svg>
+);
+
+export const CloseIcon = () => (
+  <svg
+    xmlns="http://www.w3.org/2000/svg"
+    width="100%"
+    height="100%"
+    viewBox="0 0 48.536 48.536"
+  >
+    <line
+      y1="45"
+      x2="45"
+      transform="translate(1.768 1.768)"
+      fill="none"
+      stroke="#fff"
+      strokeWidth="5"
+    />
+    <line
+      x1="45"
+      y1="45"
+      transform="translate(1.768 1.768)"
       fill="none"
       stroke="#fff"
       strokeWidth="5"

@@ -18,6 +18,12 @@
 
       width: 23.23vw;
       height: 23.23vw;
+
+      &:hover {
+        cursor: pointer;
+        webkit-filter: opacity(25%);
+        filter: opacity(25%);
+      }
     }
   }
 }
