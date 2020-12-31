@@ -21,7 +21,7 @@ const OnePager = () => {
   const resourceRef = useRef();
   const sectionsRefs = [infoRef, generativeRef, photoRef, resourceRef];
   useAlgorithm();
-  useScrollTop();
+  // useScrollTop();
 
   const changeLang = useCallback((item) => {
     localStorage.setItem("atlasLang", item);

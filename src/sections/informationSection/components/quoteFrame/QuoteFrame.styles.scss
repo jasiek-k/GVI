@@ -1,0 +1,23 @@
+.quote-frame {
+  width: 100%;
+
+  &__photo {
+    width: 23.23vw;
+    z-index: 50;
+    position: relative;
+  }
+
+  &__text {
+    z-index: 0;
+    position: relative;
+    top: -50px;
+    //width: 88.385vw;
+    border: 5px solid #fff;
+
+    &-span {
+      width: 50%;
+      margin-right: 0;
+      margin-left: auto;
+    }
+  }
+}

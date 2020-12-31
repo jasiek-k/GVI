@@ -6,8 +6,8 @@ import MediaBar from "./components/mediaBar/MediaBar.component";
 
 import "./ResourceSection.styles.scss";
 
-const ResourceSection = () => (
-  <div className="resource-section">
+const ResourceSection = React.forwardRef((props, ref) => (
+  <div ref={ref} className="resource-section">
     <MediaBar />
     <div className="resource-section__buttons">
       {resourceContent.map((item, index) => (
@@ -21,6 +21,6 @@ const ResourceSection = () => (
       ))}
     </div>
   </div>
-);
+));
 
 export default memo(ResourceSection);
