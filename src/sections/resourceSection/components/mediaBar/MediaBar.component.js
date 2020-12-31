@@ -1,7 +1,7 @@
 import React, { memo } from "react";
 import { FormattedMessage } from "react-intl";
 
-import { socialMediaArray } from "../../data/data";
+import { socialMediaArray } from "../../../../data/data";
 
 import "./MediaBar.styles.scss";
 

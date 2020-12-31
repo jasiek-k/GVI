@@ -1,9 +1,9 @@
 import React from "react";
 import "./GenerativeSection.styles.scss";
 
-const GenerativeSection = () => {
+const GenerativeSection = React.forwardRef(( props, ref ) => {
   return (
-    <div className="generative-section">
+    <div ref={ref} className="generative-section">
       <div className="generative-section__container">
         <div className="generative-section__container--header">
           <div className="generative-section__container--header-wrapper">
@@ -17,6 +17,6 @@ const GenerativeSection = () => {
       </div>
     </div>
   );
-};
+});
 
 export default GenerativeSection;

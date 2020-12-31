@@ -22,7 +22,7 @@ const secondRow = [
   { id: 5, photo: photo6, description: "6" },
 ];
 
-const PhotosGrid = ({ className, ...props }) => {
+const PhotosGrid = React.forwardRef(( props, ref ) => {
   const [modalStatus, setModalStatus] = useState(false);
   const [modalDescription, setDescription] = useState("");
   const [modalPhoto, setPhoto] = useState(null);
@@ -46,7 +46,7 @@ const PhotosGrid = ({ className, ...props }) => {
   }, []);
 
   return (
-    <div className={`grid ${className}`} {...props}>
+    <div ref={ref} className="grid" {...props}>
       <div className="grid__row">
         {firstRow.map((item) => (
           <img
@@ -80,6 +80,6 @@ const PhotosGrid = ({ className, ...props }) => {
       )}
     </div>
   );
-};
+});
 
 export default PhotosGrid;

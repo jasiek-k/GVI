@@ -1,13 +1,15 @@
-import React from "react";
+import React, { memo } from "react";
 
 import Button from "../../components/common/button/Button.component";
 import { resourceContent } from "../../data/data";
+import MediaBar from "./components/mediaBar/MediaBar.component";
 
 import "./ResourceSection.styles.scss";
 
-const ResourceSection = () => {
-  return (
-    <div className="resource-section">
+const ResourceSection = () => (
+  <div className="resource-section">
+    <MediaBar />
+    <div className="resource-section__buttons">
       {resourceContent.map((item, index) => (
         <a href={item.redirect} key={index} rel="noreferrer" target="_blank">
           <Button
@@ -18,7 +20,7 @@ const ResourceSection = () => {
         </a>
       ))}
     </div>
-  );
-};
+  </div>
+);
 
-export default ResourceSection;
+export default memo(ResourceSection);

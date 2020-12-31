@@ -4,16 +4,22 @@
   margin-top: 10.41667vw;
   margin-left: auto;
   margin-right: auto;
-  display: flex;
 
-  &__col {
-    width: 40.15625vw;
-    flex: 48.5%;
+  &__columns {
+    display: flex;
+    margin-top: 5.2053vw;
 
-    &:first-of-type {
-      margin-right: 2.0833vw;
+    &--item {
+      width: 40.15625vw;
+      flex: 48.5%;
+  
+      &:first-of-type {
+        margin-right: 2.0833vw;
+      }
     }
   }
+
+ 
 
   .text-paragraph {
     margin-bottom: 1.041667vw;
