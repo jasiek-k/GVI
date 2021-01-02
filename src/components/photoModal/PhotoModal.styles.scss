@@ -10,18 +10,18 @@
   .modal-content {
     display: flex;
     height: 100%;
-
     flex-direction: column;
     justify-content: center;
     align-content: center;
     align-items: center;
 
     .modal-photo {
-      width: 70vmin;
-      height: auto;
+      max-width: 80vmin;
+      max-height: 80vmin;
     }
 
     .modal-description {
+      text-align: center;
       width: 70vmin;
       padding-top: 1.041667vw;
     }

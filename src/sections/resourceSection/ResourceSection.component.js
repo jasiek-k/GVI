@@ -6,6 +6,7 @@ import MediaBar from "./components/mediaBar/MediaBar.component";
 
 import "./ResourceSection.styles.scss";
 
+// TO DO buttons heights 
 const ResourceSection = React.forwardRef((props, ref) => (
   <div ref={ref} className="resource-section">
     <MediaBar />

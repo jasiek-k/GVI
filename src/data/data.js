@@ -4,6 +4,20 @@ import {
   InstagramIcon,
   TwitterIcon,
 } from "../assets/Icons";
+import {
+  grid1,
+  grid2,
+  grid3,
+  grid4,
+  grid5,
+  grid6,
+  photo1,
+  photo2,
+  photo3,
+  photo4,
+  photo5,
+  photo6
+} from '../assets/images';
 
 export const socialMediaArray = [
   {
@@ -23,6 +37,15 @@ export const socialMediaArray = [
     link: "https://instagram.com/muzeumsztuki/",
   },
 ];
+
+export const galleryContentArray = [
+  { id: 0, cropped: grid1, photo: photo1, description: "1/6" },
+  { id: 1, cropped: grid2, photo: photo2, description: "2/6" },
+  { id: 2, cropped: grid3, photo: photo3, description: "3/6" },
+  { id: 3, cropped: grid4, photo: photo4, description: "4/6" },
+  { id: 4, cropped: grid5, photo: photo5, description: "5/6" },
+  { id: 5, cropped: grid6, photo: photo6, description: "6/6" },
+];;
 
 export const techniquesArray = [
   "olej",
