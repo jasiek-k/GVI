@@ -5,63 +5,44 @@ import { galleryContentArray } from "../../data/data";
 
 import "./PhotosGrid.styles.scss";
 
+const LEFT_ARROW_CODE = 37;
+const RIGHT_ARROW_CODE = 39;
+
 const PhotosGrid = React.forwardRef((props, ref) => {
-  const [modalStatus, setModalStatus] = useState(false);
-  const [modalDescription, setDescription] = useState("");
-  const [modalPhoto, setPhoto] = useState(null);
-  const [photoId, setPhotoId] = useState(null);
+  const [photoId, setPhoto] = useState(null);
+
+  const switchPhoto = currentId => {
+    if (currentId < 0) currentId = galleryContentArray.length - 1;
+    else if (currentId > (galleryContentArray.length - 1)) currentId = 0;
+    console.log(currentId)
+    setPhoto(galleryContentArray[currentId].id);
+  };
 
   const arrowsHandler = (key) => {
     switch (key.keyCode) {
-      case 37:
-        switchPhoto(-1);
+      case LEFT_ARROW_CODE:
+        switchPhoto(photoId - 1);
         break;
-      case 39:
-        switchPhoto(1);
+      case RIGHT_ARROW_CODE:
+        switchPhoto(photoId + 1);
         break;
       default:
         console.log();
     }
-    //console.log('test');
   };
-  //arrow left 37 
-  // arrow right 39
-  const switchPhoto = (change) => {
-    let newId = photoId + change % galleryContentArray.length;
-    if (newId < 0) newId = galleryContentArray.length + change;
-
-    const [photo] = galleryContentArray.filter((item) => item.id === (newId));
-    setDescription(photo.description);
-    setPhoto(photo.photo);
-    setPhotoId(photo.id);
-  }
 
   useEffect(() => {
-    window.addEventListener("keydown", press => arrowsHandler(press));
+    window.addEventListener("keydown", arrowsHandler);
 
-    return window.removeEventListener("keydown", arrowsHandler);
-  }, []);
+    return window.removeEventListener("keydown", press => arrowsHandler(press))
+  }, [arrowsHandler]);
 
-  const displayModal = useCallback(id => {
-    const [photo] = galleryContentArray.filter((item) => item.id === id);
+  const displayModal = id => setPhoto(galleryContentArray[id].id);
 
-    toggleModal(true, photo.description, photo.photo, id);
-  }, []);
-
-  const closeModal = useCallback(() => {
-    toggleModal(false, "", null, null);
-  }, []);
-
-  const toggleModal = (status, desc, photo, id) => {
-    setModalStatus(status);
-    setDescription(desc);
-    setPhoto(photo);
-    setPhotoId(id)
-  }
+  const closeModal = () => setPhoto(null);
 
   return (
-    <div ref={ref} className="grid"
-      {...props}>
+    <div ref={ref} className="grid">
       <div className="grid__content">
         {galleryContentArray.map((item) => (
           <img
@@ -74,13 +55,17 @@ const PhotosGrid = React.forwardRef((props, ref) => {
           />
         ))}
       </div>
-      {modalStatus && (
-        <PhotoModal
-          description={modalDescription}
-          modalPhoto={modalPhoto}
-          closeModal={closeModal}
-        />
-      )}
+      {
+        photoId !== null && (
+          <>
+            <PhotoModal
+              currentPhoto={photoId}
+              modalPhotos={galleryContentArray}
+              closeModal={closeModal}
+              switchPhoto={switchPhoto}
+            />
+          </>
+        )}
     </div>
   );
 });

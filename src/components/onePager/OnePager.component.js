@@ -20,7 +20,7 @@ const OnePager = () => {
   const photoRef = useRef();
   const resourceRef = useRef();
   const sectionsRefs = [infoRef, generativeRef, photoRef, resourceRef];
-  useAlgorithm();
+  // useAlgorithm();
   // useScrollTop();
 
   const changeLang = useCallback((item) => {

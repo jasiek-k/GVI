@@ -4,14 +4,21 @@ import { CloseIcon } from "../../assets/Icons";
 
 import "./PhotoModal.styles.scss";
 
-const PhotoModal = ({ description, modalPhoto, closeModal }) => {
+const PhotoModal = ({ currentPhoto, switchPhoto, modalPhotos, closeModal }) => {
+  if (!currentPhoto && !typeof currentPhoto === "number") return null;
+
+  const { photo, description } = modalPhotos[currentPhoto]
+
   return (
     <div className="modal-container">
       <button className="close-button" onClick={closeModal}>
         <CloseIcon />
       </button>
       <div className="modal-content">
-        <img className="modal-photo" src={modalPhoto} alt="modal photography" />
+        <button onClick={() => switchPhoto(currentPhoto - 1)}>left</button>
+        <button onClick={() => switchPhoto(currentPhoto + 1)}>right</button>
+
+        <img className="modal-photo" src={photo} alt="modal photography" />
         {description && (
           <span className="modal-description">{description}</span>
         )}
