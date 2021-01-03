@@ -1,23 +1,30 @@
 .information-section {
-  width: 73.856vw;
-  margin-bottom: 10.41667vw;
-  margin-top: 10.41667vw;
-  margin-left: auto;
-  margin-right: auto;
+  padding-bottom: 10.41667vw;
+  padding-top: 10.41667vw;
+  width: 100%;
+  margin-left: 0;
+  margin-right: 0;
 
-  &__columns {
-    display: flex;
-    margin-top: 5.2053vw;
-
-    &--item {
-      width: 40.15625vw;
-      flex: 48.5%;
+  &__wrapper {
+    width: 73.856vw;
+    margin-left: auto;
+    margin-right: auto;
   
-      &:first-of-type {
-        margin-right: 2.0833vw;
+    .information-section__columns {
+      display: flex;
+      margin-top: 5.2053vw;
+  
+      &--item {
+        width: 40.15625vw;
+        flex: 48.5%;
+    
+        &:first-of-type {
+          margin-right: 2.0833vw;
+        }
       }
     }
   }
+  
 
  
 

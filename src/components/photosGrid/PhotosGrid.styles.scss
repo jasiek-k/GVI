@@ -1,11 +1,14 @@
-.grid {
-  width: 73.856vw;
-  margin-left: auto;
-  margin-right: auto;
+.grid-section {
+  width: 100%;
+  margin-left: 0;
+  margin-right: 0;
   padding-bottom: 10.41667vw;
   padding-top: 10.41667vw;
 
   &__content {
+    width: 73.856vw;
+    margin-left: auto;
+    margin-right: auto;
     display: flex;
     flex-flow: row wrap;
     justify-content: space-between;

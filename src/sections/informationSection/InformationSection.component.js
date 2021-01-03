@@ -13,33 +13,11 @@ const InformationSection = React.forwardRef((props, ref) => {
 
   return (
     <div ref={ref} className="information-section">
-      <QuoteFrame />
-      <div className="information-section__columns">
-        <div className="information-section__columns--item">
-          {readMore ? (
-            <>
-              <Text className="text-paragraph" variant="intro">
-                <FormattedMessage id="informative:intro" />
-              </Text>
-              <Text className="text-paragraph">
-                <FormattedMessage id="informative:firstParagraph" />
-              </Text>
-              <Text className="text-paragraph">
-                <FormattedMessage id="informative:secondParagraph" />
-              </Text>
-              <Text className="text-paragraph">
-                <FormattedMessage id="informative:thirdParagraph" />
-              </Text>
-              <Text className="text-paragraph">
-                <FormattedMessage id="informative:fourthParagraph" />
-              </Text>
-              <Button
-                type="common"
-                onClick={() => setReadMore(false)}
-                title="informative:readLess"
-              />
-            </>
-          ) : (
+      <div className="information-section__wrapper">
+        <QuoteFrame />
+        <div className="information-section__columns">
+          <div className="information-section__columns--item">
+            {readMore ? (
               <>
                 <Text className="text-paragraph" variant="intro">
                   <FormattedMessage id="informative:intro" />
@@ -47,19 +25,43 @@ const InformationSection = React.forwardRef((props, ref) => {
                 <Text className="text-paragraph">
                   <FormattedMessage id="informative:firstParagraph" />
                 </Text>
+                <Text className="text-paragraph">
+                  <FormattedMessage id="informative:secondParagraph" />
+                </Text>
+                <Text className="text-paragraph">
+                  <FormattedMessage id="informative:thirdParagraph" />
+                </Text>
+                <Text className="text-paragraph">
+                  <FormattedMessage id="informative:fourthParagraph" />
+                </Text>
                 <Button
                   type="common"
-                  onClick={() => setReadMore(true)}
-                  title="informative:readMore"
+                  onClick={() => setReadMore(false)}
+                  title="informative:readLess"
                 />
               </>
-            )}
-        </div>
-        <div className="information-section__columns--item">
-          <Table />
+            ) : (
+                <>
+                  <Text className="text-paragraph" variant="intro">
+                    <FormattedMessage id="informative:intro" />
+                  </Text>
+                  <Text className="text-paragraph">
+                    <FormattedMessage id="informative:firstParagraph" />
+                  </Text>
+                  <Button
+                    type="common"
+                    onClick={() => setReadMore(true)}
+                    title="informative:readMore"
+                  />
+                </>
+              )}
+          </div>
+          <div className="information-section__columns--item">
+            <Table />
+          </div>
         </div>
       </div>
-    </div>
+    </div >
   );
 });
 

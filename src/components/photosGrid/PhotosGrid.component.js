@@ -31,22 +31,22 @@ const PhotosGrid = React.forwardRef((props, ref) => {
     }
   };
 
-  useEffect(() => {
-    window.addEventListener("keydown", arrowsHandler);
+  //useEffect(() => {
+  //window.addEventListener("keydown", arrowsHandler);
 
-    return window.removeEventListener("keydown", press => arrowsHandler(press))
-  }, [arrowsHandler]);
+  //return window.removeEventListener("keydown", press => arrowsHandler(press))
+  //}, [arrowsHandler]);
 
   const displayModal = id => setPhoto(galleryContentArray[id].id);
 
   const closeModal = () => setPhoto(null);
 
   return (
-    <div ref={ref} className="grid">
-      <div className="grid__content">
+    <div ref={ref} className="grid-section">
+      <div className="grid-section__content">
         {galleryContentArray.map((item) => (
           <img
-            className={`grid__content--item ${item.id > 2 ? 'margin' : ''}`}
+            className={`grid-section__content--item ${item.id > 2 ? 'margin' : ''}`}
             src={item.cropped}
             alt=""
             id={item.id}
