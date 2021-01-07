@@ -15,12 +15,13 @@ import "./OnePager.styles.scss";
 
 const OnePager = () => {
   const [currentLang, setLang] = useState(DEFAULT_LANG);
+
   const infoRef = useRef();
   const generativeRef = useRef();
   const photoRef = useRef();
   const resourceRef = useRef();
-  const sectionsRefs = [infoRef, generativeRef, photoRef, resourceRef];
-  // useAlgorithm();
+
+  useAlgorithm();
   // useScrollTop();
 
   const changeLang = useCallback((item) => {
@@ -41,7 +42,11 @@ const OnePager = () => {
   return (
     <LanguageService currentLang={currentLang}>
       <div className="one-pager">
-        <LandingPage sectionsRefs={sectionsRefs} changeLang={changeLang} currentLang={currentLang} />
+        <LandingPage
+          sectionsRefs={[infoRef, generativeRef, photoRef, resourceRef]}
+          changeLang={changeLang}
+          currentLang={currentLang}
+        />
         <InformationSection ref={infoRef} />
         <GenerativeSection ref={generativeRef} />
         <PhotosGrid ref={photoRef} />

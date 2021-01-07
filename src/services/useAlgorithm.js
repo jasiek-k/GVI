@@ -6,9 +6,11 @@ import {
   fillRoadsArray,
   calculateObliqueRoads,
   calculateLineStart,
+  sortAlphabetically,
 } from "./helpers";
 
 import artworksData from "../data/artworksData.json";
+import { modernityAreas } from "../data/data";
 
 const useAlgorithm = () => {
   // losujemy jedną prace
@@ -18,6 +20,12 @@ const useAlgorithm = () => {
     ];
   const { author, date, size, techniques } = currentArtwork;
   // const { author, date, phrase, size, techniques, title } = currentArtwork;
+  //const author = "Adler Jankiel";
+  //const date = 1929;
+  //const size = [129.5, 78];
+  console.log(currentArtwork);
+
+  console.log(sortAlphabetically(modernityAreas));
 
   // zmienić dla nazwisk tablicowych
   const artist = { name: author.split(" ")[1], surname: author.split(" ")[0] };
