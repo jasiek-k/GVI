@@ -1,11 +1,33 @@
 import { techniquesArray } from "../data/data";
 // import { techniquesArray, modernityAreas } from "./assets/data";
+import artworksData from "../data/artworksData.json";
 
 const MAX_VERT_ROADS = 17;
 const MIN_VERT_ROADS = 7;
 const MAX_HORI_ROADS = 4;
 const MIN_HORI_ROADS = 1;
 const OBLIQUE_ROADS = 4;
+
+export const getRandomArtwork = () => {
+  const { artworks } = artworksData;
+
+  return artworks[getRandomInteger(0, artworksData.artworks.length - 1)];
+};
+
+export const prepareNames = (name) => {
+  if (typeof name === "string") {
+    return { name: name.split(" ")[1], surname: name.split(" ")[0] };
+  } else {
+    let sum = { name: "", surname: "" };
+
+    for (let i = 0; i < name.length; i++) {
+      sum.name += name[i].split(" ")[1];
+      sum.surname += name[i].split(" ")[0];
+    }
+
+    return sum;
+  }
+};
 
 export const findDuplicates = (arr) =>
   arr.filter((item, index) => arr.indexOf(item) !== index);
@@ -35,7 +57,7 @@ export const shuffleArray = (array) => {
 export const sortAlphabetically = (array) =>
   array.sort((a, b) => a.localeCompare(b));
 
-export const calculateCharName = (name) => {
+export const processCharName = (name) => {
   let sum = 0;
 
   for (let i = 0; i < name.length; i++) {
@@ -45,25 +67,25 @@ export const calculateCharName = (name) => {
   return sum;
 };
 
-export const calculateName = (value, roadType) => {
+export const processName = (value, roadType) => {
   let min = 0;
   let max = 0;
 
-  if (roadType === "vertical") {
+  if (roadType === "vert") {
     min = MIN_VERT_ROADS;
     max = MAX_VERT_ROADS;
-  } else if (roadType === "horizontal") {
+  } else if (roadType === "hori") {
     min = MIN_HORI_ROADS;
     max = MAX_HORI_ROADS;
   }
 
-  const drawnRoads = calculateCharName(value) % max;
+  const drawnRoads = processCharName(value) % max;
 
   if (drawnRoads < min) return min;
   else return drawnRoads;
 };
 
-export const calculateTechniques = (techniques) => {
+export const processTechniques = (techniques) => {
   let array = [];
 
   for (let i = 0; i < techniques.length; i++) {
@@ -86,12 +108,12 @@ export const matchIndexes = (waysArray, indexesLength) => {
   }
 };
 
-export const calculateLineLength = (techniqueArray, maxLength) => {
+export const processLineLength = (techniqueArray, maxLength) => {
   // maxLength = 20 dla pionowych i 70 dla poziomych
   if (techniqueArray.length === 1) {
     return Math.floor(Math.random() * maxLength) + 1;
   } else {
-    const techniquesIndexes = calculateTechniques(techniqueArray);
+    const techniquesIndexes = processTechniques(techniqueArray);
     const techniqueSum = techniquesIndexes.reduce((a, b) => a + b, 0);
     const maxValue = Math.max.apply(Math, techniquesIndexes);
     const minValue = Math.min.apply(Math, techniquesIndexes);
@@ -103,7 +125,7 @@ export const calculateLineLength = (techniqueArray, maxLength) => {
   }
 };
 
-export const calculateObliqueRoads = (dimensions) => {
+export const processObliqueRoads = (dimensions) => {
   const dimensionsSum = Math.round(dimensions.reduce((a, b) => a + b, 0));
   const roadsNumber = dimensionsSum % OBLIQUE_ROADS;
 
@@ -121,19 +143,29 @@ export const fillRoadsArray = (length) => {
   return array;
 };
 
-export const calculateLineStart = (dateArray) => {
-  let singleDate = 0;
+export const processLineStart = (dateArray, maxLength) => {
+  let digitSum = 0;
+  let digitsArray = [];
+  let processedArray = dateArray;
 
   if (dateArray.length > 1) {
-    const dateSum = dateArray.reduce((a, b) => a + b, 0);
-    singleDate = Math.round(dateSum / dateArray.length);
-    console.log(singleDate);
-  } else singleDate = dateArray[0];
+    processedArray = [
+      Math.round(dateArray.reduce((a, b) => a + b, 0) / dateArray.length),
+    ];
+  }
 
-  console.log(singleDate);
-  const test = `${singleDate}`.split("");
-  // jesli tylko 1 cyfra > 0
-  console.log(test);
+  digitsArray = processedArray[0].toString().split("").map(Number);
+  digitSum = digitsArray.reduce((a, b) => a + b, 0);
+
+  const maxValue = Math.max.apply(Math, digitsArray);
+  const minValue = Math.min.apply(Math, digitsArray);
+
+  return getRandomInteger(
+    Math.round((minValue / digitSum) * maxLength),
+    Math.round((maxValue / digitSum) * maxLength)
+  );
 };
 
-export const singleOutSquare = () => {};
+export const singleOutSquare = () => {
+  // TO DO FOR NOW
+};

@@ -15,6 +15,31 @@
     align-content: center;
     align-items: center;
 
+    &__arrow {
+      &-left,
+      &-right {
+        background-color: transparent;
+        border: none;
+        width: 2.34375vw;
+        position: fixed;
+        padding: 0;
+      }
+
+      &-left:hover,
+      &-right:hover {
+        cursor: pointer;
+      }
+
+      &-right {
+        right: 2.0833vw;
+      }
+
+      &-left {
+        left: 2.0833vw;
+        transform: rotate(180deg);
+      }
+    }
+
     .modal-photo {
       max-width: 80vmin;
       max-height: 80vmin;

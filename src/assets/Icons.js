@@ -114,3 +114,52 @@ export const CloseIcon = () => (
     />
   </svg>
 );
+
+export const ArrowRight = () => (
+  <svg
+    xmlns="http://www.w3.org/2000/svg"
+    width="100%"
+    height="100%"
+    viewBox="0 0 47.81 32.527"
+  >
+    <g
+      id="Group_58"
+      data-name="Group 58"
+      transform="translate(-1827.873 -115.588)"
+    >
+      <g
+        id="Group_56"
+        data-name="Group 56"
+        transform="translate(5019.126 -3971.843) rotate(45)"
+      >
+        <path
+          id="Path_19"
+          data-name="Path 19"
+          d="M0,0H23"
+          transform="translate(656 5127)"
+          fill="none"
+          stroke="#fff"
+          stroke-width="5"
+        />
+        <path
+          id="Path_18"
+          data-name="Path 18"
+          d="M0,23V0"
+          transform="translate(676.5 5124.5)"
+          fill="none"
+          stroke="#fff"
+          stroke-width="5"
+        />
+        <path
+          id="Path_17"
+          data-name="Path 17"
+          d="M0,44V0"
+          transform="translate(676.556 5127.444) rotate(45)"
+          fill="none"
+          stroke="#fff"
+          stroke-width="5"
+        />
+      </g>
+    </g>
+  </svg>
+);

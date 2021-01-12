@@ -1,11 +1,13 @@
 .resource-section {
-  padding-bottom: 10.41667vw;
+  //padding-bottom: 10.41667vw;
+  padding-bottom: 6.25vw;
+
   width: 100%;
   margin-left: 0;
   margin-right: 0;
-  
+
   &__buttons {
-    padding-top: 10.41667vw;
+    padding-top: 6.25vw;
     width: 73.856vw;
     margin-left: auto;
     margin-right: auto;
@@ -14,7 +16,7 @@
     justify-content: space-between;
   }
 
-  &__button:last-child {
-    margin-top: 2.08333vw;
+  &__buttons:last-child {
+    //margin-top: 2.08333vw;
   }
 }

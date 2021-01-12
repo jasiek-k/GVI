@@ -1,13 +1,13 @@
 import React from "react";
 
-import { CloseIcon } from "../../assets/Icons";
+import { CloseIcon, ArrowRight } from "../../assets/Icons";
 
 import "./PhotoModal.styles.scss";
 
 const PhotoModal = ({ currentPhoto, switchPhoto, modalPhotos, closeModal }) => {
   if (!currentPhoto && !typeof currentPhoto === "number") return null;
 
-  const { photo, description } = modalPhotos[currentPhoto]
+  const { photo, description } = modalPhotos[currentPhoto];
 
   return (
     <div className="modal-container">
@@ -15,8 +15,18 @@ const PhotoModal = ({ currentPhoto, switchPhoto, modalPhotos, closeModal }) => {
         <CloseIcon />
       </button>
       <div className="modal-content">
-        <button onClick={() => switchPhoto(currentPhoto - 1)}>left</button>
-        <button onClick={() => switchPhoto(currentPhoto + 1)}>right</button>
+        <button
+          className="modal-content__arrow-left"
+          onClick={() => switchPhoto(currentPhoto - 1)}
+        >
+          <ArrowRight />
+        </button>
+        <button
+          className="modal-content__arrow-right"
+          onClick={() => switchPhoto(currentPhoto + 1)}
+        >
+          <ArrowRight />
+        </button>
 
         <img className="modal-photo" src={photo} alt="modal photography" />
         {description && (
