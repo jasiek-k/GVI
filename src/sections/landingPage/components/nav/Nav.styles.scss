@@ -1,3 +1,5 @@
+@import "../../../../utils/variables";
+
 .navbar {
   text-align: right;
 
@@ -24,5 +26,63 @@
     text-transform: uppercase;
     margin: 0;
     padding: 0;
+  }
+
+  @media (max-width: $tablet-max) {
+    position: fixed;
+    top: -100vh;
+    background-color: pink;
+    z-index: 100;
+
+    &.visible {
+      top: 0;
+    }
+  }
+
+  @media (max-width: $tablet-max) {
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+    &__scroll {
+      display: flex;
+      align-items: center;
+      //width: 100vw;
+    }
+
+    &__lang {
+      display: flex;
+      flex-direction: row;
+      align-items: center;
+      justify-content: center;
+      //width: 100vw;
+    }
+  }
+
+  @media (max-width: $mobile-max) {
+    &__scroll {
+      &-item {
+        font-size: 4.8vw;
+        line-height: 2;
+      }
+    }
+
+    &__lang {
+    }
+  }
+}
+
+.toggle-button {
+  display: none;
+  position: absolute;
+
+  @media (max-width: $tablet-max) {
+    display: block;
+    z-index: 110;
+    top: 0;
+    right: 0;
   }
 }

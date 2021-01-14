@@ -139,7 +139,7 @@ export const ArrowRight = () => (
           transform="translate(656 5127)"
           fill="none"
           stroke="#fff"
-          stroke-width="5"
+          strokeWidth="5"
         />
         <path
           id="Path_18"
@@ -148,7 +148,7 @@ export const ArrowRight = () => (
           transform="translate(676.5 5124.5)"
           fill="none"
           stroke="#fff"
-          stroke-width="5"
+          strokeWidth="5"
         />
         <path
           id="Path_17"
@@ -157,7 +157,7 @@ export const ArrowRight = () => (
           transform="translate(676.556 5127.444) rotate(45)"
           fill="none"
           stroke="#fff"
-          stroke-width="5"
+          strokeWidth="5"
         />
       </g>
     </g>

@@ -1,9 +1,5 @@
-import OnePager from './components/onePager/OnePager.component';
+import OnePager from "./components/onePager/OnePager.component";
 
-const App = () => {
-  return (
-    <OnePager />
-  );
-}
+const App = () => <OnePager />;
 
 export default App;

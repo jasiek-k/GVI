@@ -8,16 +8,23 @@
   }
 
   &__text {
+    width: 62.2395833333vw;
+    right: 0;
+    margin-left: auto;
     z-index: 0;
     position: relative;
-    top: -50px;
-    //width: 88.385vw;
+    top: -11.6145833333vw;
     border: 5px solid #fff;
+    margin-bottom: -11.6145833333vw;
 
     &-span {
-      width: 50%;
-      margin-right: 0;
-      margin-left: auto;
+      width: 41.40625vw;
+      margin: 5.2083vw 2.0833vw 2.0833vw auto;
+      font-style: italic;
+      text-justify: none !important;
+      text-align: left !important;
+      // font-size: 1.82291666667vw !important; // 35px
+      font-size: 1.5625vw !important;
     }
   }
 }
