@@ -1,17 +1,22 @@
 import React from "react";
 
-import { CloseIcon, ArrowRight } from "../../assets/Icons";
+import { CloseIcon, ArrowRight } from "../../../../assets/Icons";
 
 import "./PhotoModal.styles.scss";
 
-const PhotoModal = ({ currentPhoto, switchPhoto, modalPhotos, closeModal }) => {
+const PhotoModal = ({
+  currentPhoto,
+  switchPhoto,
+  modalPhotos,
+  toggleModal,
+}) => {
   if (!currentPhoto && !typeof currentPhoto === "number") return null;
 
   const { photo, description } = modalPhotos[currentPhoto];
 
   return (
     <div className="modal-container">
-      <button className="close-button" onClick={closeModal}>
+      <button className="close-button" onClick={() => toggleModal(null)}>
         <CloseIcon />
       </button>
       <div className="modal-content">
