@@ -7,9 +7,6 @@
     display: flex;
     flex-direction: column;
     align-items: flex-end;
-
-    &-item {
-    }
   }
 
   &__lang {
@@ -18,10 +15,16 @@
     }
   }
 
+  @media (min-width: $tablet-max) {
+    &__scroll-item,
+    &__lang-item {
+      color: #fff;
+    }
+  }
+
   button {
     border: none;
     background-color: transparent;
-    color: #fff;
     font-family: inherit;
     text-transform: uppercase;
     margin: 0;
@@ -31,11 +34,17 @@
   @media (max-width: $tablet-max) {
     position: fixed;
     top: -100vh;
-    background-color: pink;
+    background-color: #fff;
     z-index: 100;
+    transition: top 0.25s ease-in-out;
 
     &.visible {
       top: 0;
+      color: #000 !important;
+
+      &__scroll-item {
+        color: #000 !important;
+      }
     }
   }
 
@@ -78,11 +87,17 @@
 .toggle-button {
   display: none;
   position: absolute;
+  background-color: transparent;
+  margin: 0;
+  padding: 0;
+  border: none;
 
   @media (max-width: $tablet-max) {
     display: block;
     z-index: 110;
     top: 0;
     right: 0;
+
+    width: 14.667vw;
   }
 }

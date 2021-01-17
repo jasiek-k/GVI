@@ -1,6 +1,7 @@
 import React from "react";
+
 import "./Text.styles.scss";
-// TO DO: styling for quote
+
 const Text = ({ children, className, variant, ...props }) => (
   <p
     className={`common-text 

@@ -1,4 +1,4 @@
-export const YoutubeIcon = () => (
+const YoutubeIcon = () => (
   <svg
     viewBox="-21 -117 682.66672 682"
     xmlns="http://www.w3.org/2000/svg"
@@ -9,7 +9,7 @@ export const YoutubeIcon = () => (
   </svg>
 );
 
-export const FacebookIcon = () => (
+const FacebookIcon = () => (
   <svg
     version="1.1"
     xmlns="http://www.w3.org/2000/svg"
@@ -23,7 +23,7 @@ export const FacebookIcon = () => (
   </svg>
 );
 
-export const InstagramIcon = () => (
+const InstagramIcon = () => (
   <svg
     version="1.1"
     xmlns="http://www.w3.org/2000/svg"
@@ -47,7 +47,7 @@ export const InstagramIcon = () => (
   </svg>
 );
 
-export const TwitterIcon = () => (
+const TwitterIcon = () => (
   <svg
     viewBox="-21 -81 681.33464 681"
     width="100%"
@@ -58,7 +58,7 @@ export const TwitterIcon = () => (
   </svg>
 );
 
-export const ArrowIcon = () => (
+const ArrowIcon = () => (
   <svg
     xmlns="http://www.w3.org/2000/svg"
     width="100%"
@@ -69,27 +69,24 @@ export const ArrowIcon = () => (
       d="M0,0H23"
       transform="translate(12.324 2.5)"
       fill="none"
-      //stroke="#fff"
       strokeWidth="5"
     />
     <path
       d="M0,23V0"
       transform="translate(32.824)"
       fill="none"
-      //stroke="#fff"
       strokeWidth="5"
     />
     <path
       d="M0,44V0"
       transform="translate(32.88 2.944) rotate(45)"
       fill="none"
-      //stroke="#fff"
       strokeWidth="5"
     />
   </svg>
 );
 
-export const CloseIcon = () => (
+const CloseIcon = () => (
   <svg
     xmlns="http://www.w3.org/2000/svg"
     width="100%"
@@ -115,7 +112,7 @@ export const CloseIcon = () => (
   </svg>
 );
 
-export const ArrowRight = () => (
+const ArrowRight = () => (
   <svg
     xmlns="http://www.w3.org/2000/svg"
     width="100%"
@@ -163,3 +160,53 @@ export const ArrowRight = () => (
     </g>
   </svg>
 );
+
+const HamburgerIcon = () => (
+  <svg
+    xmlns="http://www.w3.org/2000/svg"
+    width="100%"
+    height="100%"
+    viewBox="0 0 55 45"
+  >
+    <g id="Group_59" data-name="Group 59" transform="translate(-3.5 28)">
+      <line
+        id="Line_25"
+        data-name="Line 25"
+        x2="55"
+        transform="translate(3.5 -25.5)"
+        fill="none"
+        stroke="#fff"
+        strokeWidth="5"
+      />
+      <line
+        id="Line_24"
+        data-name="Line 24"
+        x2="55"
+        transform="translate(3.5 -5.5)"
+        fill="none"
+        stroke="#fff"
+        strokeWidth="5"
+      />
+      <line
+        id="Line_26"
+        data-name="Line 26"
+        x2="55"
+        transform="translate(3.5 14.5)"
+        fill="none"
+        stroke="#fff"
+        strokeWidth="5"
+      />
+    </g>
+  </svg>
+);
+
+export {
+  ArrowRight,
+  InstagramIcon,
+  HamburgerIcon,
+  YoutubeIcon,
+  CloseIcon,
+  ArrowIcon,
+  FacebookIcon,
+  TwitterIcon,
+};

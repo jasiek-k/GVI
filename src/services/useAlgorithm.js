@@ -1,80 +1,59 @@
 /* eslint-disable no-unused-vars */
 import {
-  processLineLength,
+  getLineLength,
   matchIndexes,
   fillRoadsArray,
-  processObliqueRoads,
-  processLineStart,
-  sortAlphabetically,
+  getObliqueRoads,
+  getLineStart,
   processName,
   prepareNames,
   getRandomArtwork,
   singleOutSquare,
+  MAX_VERT_ROADS,
+  MAX_HORI_ROADS,
+  MAX_OBLI_ROADS,
 } from "./helpers";
 
-import { modernityAreas } from "../data/data";
-import artworksData from "../data/artworksData.json";
-
-const MAX_HORI_LENGTH = 70;
-const MAX_VERT_LENGTH = 20;
+const HORI_LENGTHS = { max: 70, min: 0 };
+const VERT_LENGTHS = { max: 20, min: 0 };
 
 // TO DO:
-// dokonczyc przeliczanie
 // mechanizm losowania dopóki długość dróg nie bedzie wystarczająca
-// sprawdzic zgodność z załozeniami algorytmu (np jesli jest 100% to nie losujemy pkt początkowego)
 const useAlgorithm = () => {
-  // losujemy jedną prace
-  let test = 0;
-  let bezp = 100;
-  do {
-    const drawnArtwork = getRandomArtwork();
-    const { author, size, date, phrase, techniques } = drawnArtwork;
-    // const { author, date, phrase, size, techniques, title } = currentArtwork;
+  const drawnArtwork = getRandomArtwork();
+  const { author, date, phrase, size, techniques } = drawnArtwork;
 
-    //console.log(sortAlphabetically(modernityAreas));
+  const artist = prepareNames(author);
 
-    const artist = prepareNames(author);
+  const horizontalRoads = fillRoadsArray(processName(artist.name, "hori"));
+  const verticalRoads = fillRoadsArray(processName(artist.surname, "vert"));
+  const obliqueRoads = fillRoadsArray(getObliqueRoads(size));
 
-    // wyliczamy liczbę dróg
-    const horizontalRoads = fillRoadsArray(processName(artist.name, "hori"));
-    const verticalRoads = fillRoadsArray(processName(artist.surname, "vert"));
-    const obliqueRoads = fillRoadsArray(processObliqueRoads(size));
+  horizontalRoads.map(
+    (item) => (item.length = getLineLength(techniques, HORI_LENGTHS))
+  );
+  verticalRoads.map(
+    (item) => (item.length = getLineLength(techniques, VERT_LENGTHS))
+  );
 
-    // wyznaczamy długości dróg
-    horizontalRoads.map(
-      (item) => (item.length = processLineLength(techniques, MAX_HORI_LENGTH))
-    );
-    verticalRoads.map(
-      (item) => (item.length = processLineLength(techniques, MAX_VERT_LENGTH))
-    );
+  matchIndexes(horizontalRoads, MAX_HORI_ROADS);
+  matchIndexes(verticalRoads, MAX_VERT_ROADS);
+  matchIndexes(obliqueRoads, MAX_OBLI_ROADS);
 
-    matchIndexes(horizontalRoads, 4);
-    matchIndexes(verticalRoads, 17);
-    matchIndexes(obliqueRoads, 4);
+  horizontalRoads.map(
+    (item) => (item.start = getLineStart(date, HORI_LENGTHS.max, item.length))
+  );
+  verticalRoads.map(
+    (item) => (item.start = getLineStart(date, VERT_LENGTHS.max, item.length))
+  );
 
-    horizontalRoads.map(
-      (item) => (item.start = processLineStart(date, MAX_HORI_LENGTH))
-    );
-    verticalRoads.map(
-      (item) => (item.start = processLineStart(date, MAX_VERT_LENGTH))
-    );
+  const square = singleOutSquare(phrase, {
+    horizontalRoads,
+    verticalRoads,
+    obliqueRoads,
+  });
 
-    //console.log(horizontalRoads);
-    //console.log(verticalRoads);
-    // console.log(obliqueRoads);
-
-    //artworksData.artworks.map((item) =>
-    //  singleOutSquare(item.phrase, horizontalRoads)
-    //);
-
-    test = singleOutSquare(phrase, {
-      horizontalRoads,
-      verticalRoads,
-      obliqueRoads,
-    });
-    console.log(test);
-    bezp++;
-  } while (test < 3 || bezp < 100);
+  console.log(square);
 };
 
 export default useAlgorithm;

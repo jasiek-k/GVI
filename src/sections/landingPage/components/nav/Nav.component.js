@@ -2,8 +2,11 @@ import React, { useCallback, useState, memo } from "react";
 import { FormattedMessage } from "react-intl";
 
 import { AVAILABLE_LANGS } from "../../../../config";
+import { CloseIcon, HamburgerIcon } from "../../../../assets/Icons";
 
 import "./Nav.styles.scss";
+
+const MENU_TOGGLE_TIMEOUT = 250;
 
 const Nav = ({ setLangCallback, currentLang, refs }) => {
   const [menuState, setMenuState] = useState(false);
@@ -17,8 +20,12 @@ const Nav = ({ setLangCallback, currentLang, refs }) => {
 
   const handleScroll = useCallback(
     (ref) => {
+      let timeOut = window.innerWidth < 1024 ? MENU_TOGGLE_TIMEOUT : 0;
+
       setMenuState(!menuState);
-      ref.current.scrollIntoView({ behavior: "smooth" });
+      setTimeout(() => {
+        ref.current.scrollIntoView({ behavior: "smooth" });
+      }, timeOut);
     },
     [menuState]
   );
@@ -29,11 +36,10 @@ const Nav = ({ setLangCallback, currentLang, refs }) => {
         className="toggle-button"
         onClick={() => setMenuState(!menuState)}
       >
-        {menuState ? "CLOSE" : "OPEN"}
+        {menuState ? <CloseIcon /> : <HamburgerIcon />}
       </button>
-
-      <div className={`navbar ${menuState ? "visible" : undefined}`}>
-        <div className={menuState ? "navbar__wrapper" : undefined}>
+      <div className={`navbar ${menuState ? "visible" : ""}`}>
+        <div className={menuState ? "navbar__wrapper" : ""}>
           <div className="navbar__scroll">
             {navbarContent.map((item, index) => (
               <button
@@ -50,7 +56,7 @@ const Nav = ({ setLangCallback, currentLang, refs }) => {
               return (
                 <button
                   className={`navbar__lang-item ${
-                    item.toLowerCase() === currentLang ? "current" : undefined
+                    item.toLowerCase() === currentLang ? "current" : ""
                   }`}
                   onClick={() => setLangCallback(item)}
                   key={index}
