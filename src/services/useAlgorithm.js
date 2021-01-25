@@ -53,7 +53,7 @@ const useAlgorithm = () => {
     obliqueRoads,
   });
 
-  console.log(square);
+  return square;
 };
 
 export default useAlgorithm;

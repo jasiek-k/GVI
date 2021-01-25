@@ -252,6 +252,7 @@ const singleOutSquare = (phrase, roads) => {
   const horizontalFinal = checkRange(horizontalToDraw, colId);
 
   return {
+    areaIndex,
     vertical: verticalFinal,
     horizontal: horizontalFinal,
     oblique: obliqueToDraw,

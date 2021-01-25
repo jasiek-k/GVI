@@ -11,19 +11,17 @@ import GenerativeSection from "../../sections/generativeSection/GenerativeSectio
 import InformationSection from "../../sections/informationSection/InformationSection.component";
 import LandingPage from "../../sections/landingPage/LandingPage.component";
 import ResourceSection from "../../sections/resourceSection/ResourceSection.component";
+import PhotoSection from "../../sections/photoSection/PhotoSection.component";
 
 import "./OnePager.styles.scss";
-import PhotoSection from "../../sections/photoSection/PhotoSection.component";
 
 const OnePager = () => {
   const [currentLang, setLang] = useState(DEFAULT_LANG);
-
   const infoRef = useRef();
   const generativeRef = useRef();
   const photoRef = useRef();
   const resourceRef = useRef();
-
-  useAlgorithm();
+  const roadsData = useAlgorithm();
   // useScrollTop();
 
   const changeLang = useCallback((item) => {
@@ -48,9 +46,10 @@ const OnePager = () => {
           sectionsRefs={[infoRef, generativeRef, photoRef, resourceRef]}
           changeLang={changeLang}
           currentLang={currentLang}
+          roadsData={roadsData}
         />
         <InformationSection ref={infoRef} />
-        <GenerativeSection ref={generativeRef} />
+        <GenerativeSection roadsData={roadsData} ref={generativeRef} />
         <PhotoSection ref={photoRef} />
         <ResourceSection ref={resourceRef} />
         <Footer />

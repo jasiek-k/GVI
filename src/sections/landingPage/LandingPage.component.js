@@ -4,9 +4,7 @@ import Nav from "./components/nav/Nav.component";
 
 import "./LandingPage.styles.scss";
 
-const LandingPage = ({ changeLang, currentLang, sectionsRefs }) => {
-  //console.log(sectionsRefs);
-
+const LandingPage = ({ changeLang, currentLang, sectionsRefs, roadsData }) => {
   return (
     <div className="landing-section">
       <main className="title">ATLAS NOWOCZESNOŚCI</main>
