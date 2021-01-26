@@ -1,9 +1,7 @@
 /* eslint-disable no-unused-vars */
 /* eslint-disable array-callback-return */
-import React, { useEffect, useState } from "react";
+import React, { useEffect, useState, useRef } from "react";
 import Sketch from "react-p5";
-
-const DEFAULT_WINDOW_WIDTH = 1920;
 
 const verticalOffset = [
   { offset: 1, id: [2, 7, 12] },
@@ -22,7 +20,7 @@ const horizontalOffset = [
 
 // TO DO
 const getDivider = (windowSize) => {
-  if (windowSize >= 1024) return 14.8177083333;
+  if (windowSize >= 1024) return 14.8277083333;
   else if (windowSize < 1024 && windowSize >= 600) return 10;
   else return 5;
 };
@@ -38,9 +36,9 @@ const getLineOffset = (lineId, offsetArray) => {
 // Kolory i ich odwracanie
 // WYnieść rzeczy do helpersów
 const GenerativeLogo = ({ roadsData, reverseColors = false }) => {
-  const [windowWidth, setWindowWidth] = useState(DEFAULT_WINDOW_WIDTH);
+  const [windowWidth, setWindowWidth] = useState(window.innerWidth);
   const { areaIndex, vertical, horizontal, oblique } = roadsData;
-  const canvasDim = (windowWidth / 100) * getDivider(windowWidth);
+  let canvasDim = (windowWidth / 100) * getDivider(windowWidth);
   const unit = canvasDim / 10;
   const stroke = canvasDim / 20;
   const backgroundColor = !!reverseColors ? "#000" : "#fff";
@@ -56,7 +54,7 @@ const GenerativeLogo = ({ roadsData, reverseColors = false }) => {
     return () => {
       window.removeEventListener("resize", handleResize);
     };
-  }, []);
+  }, [canvasDim]);
 
   const setup = (p5, canvasParentRef) =>
     p5.createCanvas(canvasDim, canvasDim).parent(canvasParentRef);
@@ -103,7 +101,13 @@ const GenerativeLogo = ({ roadsData, reverseColors = false }) => {
     */
   };
 
-  return <Sketch setup={setup} draw={draw} />;
+  return (
+    <Sketch
+      setup={setup}
+      draw={draw}
+      windowResized={(p5) => p5.resizeCanvas(canvasDim, canvasDim)}
+    />
+  );
 };
 
 export default GenerativeLogo;

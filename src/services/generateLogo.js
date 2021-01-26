@@ -19,7 +19,7 @@ const VERT_LENGTHS = { max: 20, min: 0 };
 
 // TO DO:
 // mechanizm losowania dopóki długość dróg nie bedzie wystarczająca
-const useAlgorithm = () => {
+const generateLogo = () => {
   const drawnArtwork = getRandomArtwork();
   const { author, date, phrase, size, techniques } = drawnArtwork;
 
@@ -56,4 +56,4 @@ const useAlgorithm = () => {
   return square;
 };
 
-export default useAlgorithm;
+export default generateLogo;
