@@ -24,10 +24,7 @@ const OnePager = () => {
   const resourceRef = useRef();
   const roadsData = generateLogo();
 
-  const test = generativeMechanism();
-  console.log('TEST', test);
-
-  // useScrollTop();
+  // const generated = generativeMechanism();
 
   const changeLang = useCallback((item) => {
     localStorage.setItem("atlasLang", item);

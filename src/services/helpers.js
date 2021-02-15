@@ -194,6 +194,12 @@ const getLineStart = (dateArray, maxLength, currentLength) => {
   );
 };
 
+const getObliqueStart = (phrase) => {
+  const areaIndex = sortAlphabetically(modernityAreas).indexOf(phrase);
+
+  return -1 * (areaIndex % 7);
+};
+
 const convertIntoRoad = (array, road) => {
   const min = getMin(array);
   const max = getMax(array);
@@ -248,18 +254,23 @@ const singleOutSquare = (phrase, roads) => {
     }
   });
 
-  const verticalFinal = checkRange(verticalToDraw, rowId);
-  const horizontalFinal = checkRange(horizontalToDraw, colId);
-
   return {
     areaIndex,
-    vertical: verticalFinal,
-    horizontal: horizontalFinal,
+    vertical: checkRange(verticalToDraw, rowId),
+    horizontal: checkRange(horizontalToDraw, colId),
     oblique: obliqueToDraw,
   };
 };
 
+const getLineOffset = (lineId, offsetArray) => {
+  for (let i = 0; i < offsetArray.length; i++) {
+    if (offsetArray[i].id.includes(lineId)) return offsetArray[i].offset;
+  }
+};
+
 export {
+  getLineOffset,
+  getObliqueStart,
   getRandomArtwork,
   singleOutSquare,
   getObliqueRoads,

@@ -1,4 +1,4 @@
-import generateLogo from './generateLogo.js';
+import generateLogo from "./generateLogo.js";
 
 const generativeMechanism = (desiredCount = 5, minCount = 2) => {
   let fuse = 10;
@@ -11,16 +11,15 @@ const generativeMechanism = (desiredCount = 5, minCount = 2) => {
 
     if (counter >= desiredCount) return logo;
 
-    if (fuse === 0) { 
-      fuse = 100; 
+    if (fuse === 0) {
+      fuse = 100;
       desiredCount--;
     }
 
     fuse--;
-    console.log('fuse ', fuse, ' counter ', counter);
   }
 
   return logo;
-}
+};
 
 export default generativeMechanism;

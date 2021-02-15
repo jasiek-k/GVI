@@ -16,10 +16,25 @@ import {
   photo3,
   photo4,
   photo5,
-  photo6
-} from '../assets/images';
+  photo6,
+} from "../assets/images";
 
-export const socialMediaArray = [
+const verticalOffset = [
+  { offset: 1, id: [2, 7, 12] },
+  { offset: 3, id: [0, 5, 10, 15] },
+  { offset: 5, id: [3, 8, 13] },
+  { offset: 7, id: [1, 6, 11, 16] },
+  { offset: 9, id: [4, 9, 14] },
+];
+
+const horizontalOffset = [
+  { offset: 2, id: [2] },
+  { offset: 4, id: [0] },
+  { offset: 6, id: [3] },
+  { offset: 8, id: [1] },
+];
+
+const socialMediaArray = [
   {
     icon: <FacebookIcon />,
     link: "https://www.facebook.com/muzeumsztuki",
@@ -38,16 +53,16 @@ export const socialMediaArray = [
   },
 ];
 
-export const galleryContentArray = [
+const galleryContentArray = [
   { id: 0, cropped: grid1, photo: photo1, description: "1/6" },
   { id: 1, cropped: grid2, photo: photo2, description: "2/6" },
   { id: 2, cropped: grid3, photo: photo3, description: "3/6" },
   { id: 3, cropped: grid4, photo: photo4, description: "4/6" },
   { id: 4, cropped: grid5, photo: photo5, description: "5/6" },
   { id: 5, cropped: grid6, photo: photo6, description: "6/6" },
-];;
+];
 
-export const techniquesArray = [
+const techniquesArray = [
   "olej",
   "deska",
   "płótno",
@@ -147,7 +162,7 @@ export const techniquesArray = [
   "lakier",
 ];
 
-export const modernityAreas = [
+const modernityAreas = [
   "muzeum",
   "autonomia",
   "kapitał",
@@ -164,7 +179,7 @@ export const modernityAreas = [
   "tradycja",
 ];
 
-export const tableData = [
+const tableData = [
   {
     title: "informative:titlePlace",
     content: "informative:contentPlace",
@@ -191,7 +206,7 @@ export const tableData = [
   },
 ];
 
-export const resourceContent = [
+const resourceContent = [
   {
     type: "redirect",
     title: "resources:discusionTitle",
@@ -213,3 +228,14 @@ export const resourceContent = [
     redirect: "https://zasoby.msl.org.pl/mobjects/view/1520",
   },
 ];
+
+export {
+  verticalOffset,
+  horizontalOffset,
+  resourceContent,
+  tableData,
+  modernityAreas,
+  techniquesArray,
+  galleryContentArray,
+  socialMediaArray,
+};

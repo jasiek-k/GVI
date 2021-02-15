@@ -11,7 +11,7 @@ const GenerativeSection = React.forwardRef(({ roadsData }, ref) => {
         <div className="generative-section__container--header">
           <div className="generative-section__container--header-wrapper">
             <div className="generative-logo">
-              <GenerativeLogo roadsData={roadsData} reverseColors={true} />
+              <GenerativeLogo roadsData={roadsData} reverseColors={false} />
             </div>
             <h1 className="section-title">
               ATLAS NOWOCZESNOŚCI A&nbsp;GENERATYWNOŚĆ

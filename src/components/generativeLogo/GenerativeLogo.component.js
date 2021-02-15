@@ -1,22 +1,10 @@
 /* eslint-disable no-unused-vars */
 /* eslint-disable array-callback-return */
-import React, { useEffect, useState, useRef } from "react";
+import React, { useEffect, useState } from "react";
 import Sketch from "react-p5";
 
-const verticalOffset = [
-  { offset: 1, id: [2, 7, 12] },
-  { offset: 3, id: [0, 5, 10, 15] },
-  { offset: 5, id: [3, 8, 13] },
-  { offset: 7, id: [1, 6, 11, 16] },
-  { offset: 9, id: [4, 9, 14] },
-];
-
-const horizontalOffset = [
-  { offset: 2, id: [2] },
-  { offset: 4, id: [0] },
-  { offset: 6, id: [3] },
-  { offset: 8, id: [1] },
-];
+import { getLineOffset } from "../../services/helpers";
+import { verticalOffset, horizontalOffset } from "../../data/data";
 
 // TO DO
 const getDivider = (windowSize) => {
@@ -25,18 +13,9 @@ const getDivider = (windowSize) => {
   else return 5;
 };
 
-const getLineOffset = (lineId, offsetArray) => {
-  for (let i = 0; i < offsetArray.length; i++) {
-    if (offsetArray[i].id.includes(lineId)) return offsetArray[i].offset;
-  }
-};
-
-// TO DO
-// Róznicowanie grubości linii (linia i kierunek)
-// Kolory i ich odwracanie
-// WYnieść rzeczy do helpersów
 const GenerativeLogo = ({ roadsData, reverseColors = false }) => {
   const [windowWidth, setWindowWidth] = useState(window.innerWidth);
+
   const { areaIndex, vertical, horizontal, oblique } = roadsData;
   let canvasDim = (windowWidth / 100) * getDivider(windowWidth);
   const unit = canvasDim / 10;
@@ -44,17 +23,13 @@ const GenerativeLogo = ({ roadsData, reverseColors = false }) => {
   const backgroundColor = !!reverseColors ? "#000" : "#fff";
   const linesColor = !!reverseColors ? "#fff" : "#000";
 
-  console.log(roadsData);
-
   useEffect(() => {
     const handleResize = () => setWindowWidth(window.innerWidth);
-
     window.addEventListener("resize", handleResize);
-
     return () => {
       window.removeEventListener("resize", handleResize);
     };
-  }, [canvasDim]);
+  }, []);
 
   const setup = (p5, canvasParentRef) =>
     p5.createCanvas(canvasDim, canvasDim).parent(canvasParentRef);
@@ -88,17 +63,22 @@ const GenerativeLogo = ({ roadsData, reverseColors = false }) => {
       p5.line(startPoint, horiPosition, endPoint, horiPosition);
     });
 
-    /*
     oblique.map((item) => {
-      const { length, order, start } = item;
-      const horiPosition = getLineOffset(order, horizontalOffset) * unit;
-      const startPoint = (start % 10) * unit;
-      const endPoint = length * unit + startPoint;
+      const { order, start } = item;
+      let startPoint = start * unit * 10;
+      let endPoint = (start + 7) * unit * 10;
+      let startY = 0;
+      let endY = 10 * unit;
 
-      p5.strokeWeight(2 * stroke);
-      p5.line(startPoint, horiPosition, endPoint, horiPosition);
+      if (order % 2 === 0) {
+        startY = endY;
+        endY = 0;
+      }
+
+      p5.stroke(p5.color(linesColor));
+      p5.strokeWeight(stroke * 2);
+      p5.line(startPoint, startY, endPoint, endY);
     });
-    */
   };
 
   return (

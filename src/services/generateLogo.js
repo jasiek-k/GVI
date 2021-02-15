@@ -8,6 +8,7 @@ import {
   processName,
   prepareNames,
   getRandomArtwork,
+  getObliqueStart,
   singleOutSquare,
   MAX_VERT_ROADS,
   MAX_HORI_ROADS,
@@ -17,12 +18,9 @@ import {
 const HORI_LENGTHS = { max: 70, min: 0 };
 const VERT_LENGTHS = { max: 20, min: 0 };
 
-// TO DO:
-// mechanizm losowania dopóki długość dróg nie bedzie wystarczająca
 const generateLogo = () => {
   const drawnArtwork = getRandomArtwork();
   const { author, date, phrase, size, techniques } = drawnArtwork;
-
   const artist = prepareNames(author);
 
   const horizontalRoads = fillRoadsArray(processName(artist.name, "hori"));
@@ -46,14 +44,13 @@ const generateLogo = () => {
   verticalRoads.map(
     (item) => (item.start = getLineStart(date, VERT_LENGTHS.max, item.length))
   );
+  obliqueRoads.map((item) => (item.start = getObliqueStart(phrase)));
 
-  const square = singleOutSquare(phrase, {
+  return singleOutSquare(phrase, {
     horizontalRoads,
     verticalRoads,
     obliqueRoads,
   });
-
-  return square;
 };
 
 export default generateLogo;
