@@ -5,6 +5,27 @@
   padding-bottom: 6.25vw;
   padding-top: 6.25vw;
 
+  &__header {
+    margin-right: 0;
+    margin-left: auto;
+    background-color: #fff;
+    color: #000;
+    width: 86.928vw;
+    height: auto;
+    padding-bottom: 1.0416667vw;
+    padding-top: 2.6041667vw;
+    text-transform: uppercase;
+
+    &--caption {
+      padding-left: 1.0416667vw;
+      text-align: left;
+      font-weight: bold;
+      font-size: 2.0833vw;
+      margin-top: 0;
+      margin-bottom: 0;
+    }
+  }
+
   &__content {
     width: 73.856vw;
     margin-left: auto;

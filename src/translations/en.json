@@ -3,6 +3,7 @@
   "navbar:generativity": "Generativity",
   "navbar:photos": "Photos",
   "navbar:resources": "Resources",
+
   "informative:quoteFrame": "Pojawiający się w tytule atlas najwłaściwiej określa konstrukcję wystawy: jest ona swoistym zbiorem map, z których każda opisuje topografię innego terytorium nowoczesności.",
   "informative:intro": "„Atlas nowoczesności” to wystawa pozwalająca w nowy sposób spojrzeć na Kolekcję sztuki XX i XXI wieku, ale przede wszystkim – to snuta za pomocą dzieł z niej pochodzących opowieść o nowoczesności i jej znaczeniu dla nas dzisiaj. Nieprzypadkowo nowoczesność staje się przedmiotem refleksji w Muzeum Sztuki w Łodzi. Nie ma w Polsce drugiego muzeum, którego związki z nowoczesną kulturą byłyby równie mocne.",
   "informative:firstParagraph": "Wystawa w ms² nie opowiada o dziejach nowoczesności ujętych chronologicznie ani tym bardziej o historii modernistycznej sztuki. Skupia się natomiast na najważniejszych zjawiskach, które w powszechnym odczuciu wiążą się z tym, co nowoczesne, takich jak: emancypacja, autonomia, industrializacja, kapitał, urbanizacja, eksperyment, mechanizacja czy rewolucja. Tworząc wokół każdego z nich „kolaż” zbudowany z dzieł pochodzących z różnych okresów, reprezentujących różne estetyki i różne artystyczne postawy, wystawa stawia pytania o to, jak zmieniał się charakter tych zjawisk, jak zmieniało się ich postrzeganie a przede wszystkim o to, jak dalece kształtują one dzisiejszą rzeczywistość.",
@@ -27,6 +28,12 @@
   "resources:movieTitle": "Atlas nowoczesności. Film o wystawie",
   "resources:buyTicketTitle": "Kup bilet na wystawę",
   "resources:folderDownloadTitle": " Atlas nowoczesności\n- folder wystawy",
+
+  "resourceType:video": "Video",
+  "resourceType:docs": "Document",
+  "resourceType:ref": "Reference",
+
   "mediaBar:caption": "Visit ms website",
+
   "footer:caption": "Jan Klamka x Museum of Art in Łodź © 2020"
 }

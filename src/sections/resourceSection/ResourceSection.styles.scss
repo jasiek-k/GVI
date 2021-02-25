@@ -4,14 +4,42 @@
   margin-left: 0;
   margin-right: 0;
 
-  &__buttons {
-    padding-top: 6.25vw;
+  &__header {
+    margin-top: 6.7708333vw;
+    margin-right: auto;
+    margin-left: 0;
+    background-color: #fff;
+    color: #000;
+    width: 86.928vw;
+    height: auto;
+    padding-bottom: 1.0416667vw;
+    padding-top: 2.6041667vw;
+    text-transform: uppercase;
+
+    &--caption {
+      padding-right: 1.0416667vw;
+      text-align: right;
+      font-weight: bold;
+      font-size: 2.0833vw;
+      margin-left: auto;
+      margin-right: 0;
+      margin-top: 0;
+      margin-bottom: 0;
+    }
+  }
+
+  &__items {
+    // padding-top: 6.25vw;
     width: 73.856vw;
+    //height:
     margin-left: auto;
     margin-right: auto;
     display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
+    //flex-wrap: wrap;
+    //justify-content: space-between;
+
+    overflow: auto;
+    //white-space: nowrap;
 
     &--item:last-of-type {
       padding-top: 2.08333vw;

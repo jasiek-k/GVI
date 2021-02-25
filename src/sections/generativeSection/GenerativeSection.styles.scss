@@ -2,6 +2,30 @@
   width: 100%;
   margin: 0;
   background-color: #fff;
+  padding-top: 4.1667vw;
+
+  &__header {
+    margin-right: auto;
+    margin-left: 0;
+    background-color: #000;
+    color: #fff;
+    width: 86.928vw;
+    height: auto;
+    padding-bottom: 1.0416667vw;
+    padding-top: 2.6041667vw;
+    text-transform: uppercase;
+
+    &--caption {
+      padding-right: 1.0416667vw;
+      text-align: right;
+      font-weight: bold;
+      font-size: 2.0833vw;
+      margin-left: auto;
+      margin-right: 0;
+      margin-top: 0;
+      margin-bottom: 0;
+    }
+  }
 
   &__container {
     width: 73.856vw;

@@ -1,4 +1,5 @@
 import React from "react";
+
 import PhotosGrid from "./components/photosGrid/PhotosGrid.component";
 
 const PhotoSection = React.forwardRef((props, ref) => {

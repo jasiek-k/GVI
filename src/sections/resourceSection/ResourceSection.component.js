@@ -1,25 +1,23 @@
 import React, { memo } from "react";
+import { FormattedMessage } from "react-intl";
 
-import Button from "../../components/common/button/Button.component";
-import { resourceContent } from "../../data/data";
+import ResourceItem from "../../components/common/resourceItem/ResourceItem.component";
 import MediaBar from "./components/mediaBar/MediaBar.component";
+import { resourceContent } from "../../data/data";
 
 import "./ResourceSection.styles.scss";
 
 const ResourceSection = React.forwardRef((props, ref) => (
   <div ref={ref} className="resource-section">
     <MediaBar />
-    <div className="resource-section__buttons">
+    <div className="resource-section__header">
+      <p className="resource-section__header--caption">
+        <FormattedMessage id="navbar:resources" />
+      </p>
+    </div>
+    <div className="resource-section__items">
       {resourceContent.map((item, index) => (
-        <a
-          href={item.redirect}
-          className="resource-section__buttons--item"
-          key={index}
-          rel="noreferrer"
-          target="_blank"
-        >
-          <Button type={item.type} title={item.title} />
-        </a>
+        <ResourceItem key={index} data={item} />
       ))}
     </div>
   </div>

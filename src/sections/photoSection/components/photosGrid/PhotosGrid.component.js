@@ -1,13 +1,11 @@
 /* eslint-disable no-unused-vars */
 import React, { useState, useCallback } from "react";
+import { FormattedMessage } from "react-intl";
 
 import PhotoModal from "../photoModal/PhotoModal.component";
 import { galleryContentArray } from "../../../../data/data";
 
 import "./PhotosGrid.styles.scss";
-
-const LEFT_ARROW_CODE = 37;
-const RIGHT_ARROW_CODE = 39;
 
 const PhotosGrid = () => {
   const [photoId, setPhoto] = useState(null);
@@ -19,23 +17,15 @@ const PhotosGrid = () => {
     setPhoto(galleryContentArray[currentId].id);
   };
 
-  const arrowsHandler = (key) => {
-    switch (key.keyCode) {
-      case LEFT_ARROW_CODE:
-        switchPhoto(photoId - 1);
-        break;
-      case RIGHT_ARROW_CODE:
-        switchPhoto(photoId + 1);
-        break;
-      default:
-      //console.log();
-    }
-  };
-
   const toggleModal = useCallback((item) => setPhoto(item), []);
 
   return (
     <div className="grid-section">
+      <div className="grid-section__header">
+        <p className="grid-section__header--caption">
+          <FormattedMessage id="navbar:photos" />
+        </p>
+      </div>
       <div className="grid-section__content">
         {galleryContentArray.map((item) => (
           <img

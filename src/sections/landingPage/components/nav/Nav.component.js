@@ -39,7 +39,7 @@ const Nav = ({ setLangCallback, currentLang, refs }) => {
         {menuState ? <CloseIcon /> : <HamburgerIcon />}
       </button>
       <div className={`navbar ${menuState ? "visible" : ""}`}>
-        <div className={menuState ? "navbar__wrapper" : ""}>
+        <div className={menuState ? "navbar__wrapper" : undefined}>
           <div className="navbar__scroll">
             {navbarContent.map((item, index) => (
               <button
@@ -54,15 +54,20 @@ const Nav = ({ setLangCallback, currentLang, refs }) => {
           <div className="navbar__lang">
             {Object.keys(AVAILABLE_LANGS).map((item, index) => {
               return (
-                <button
-                  className={`navbar__lang-item ${
-                    item.toLowerCase() === currentLang ? "current" : ""
-                  }`}
-                  onClick={() => setLangCallback(item)}
-                  key={index}
-                >
-                  {item}
-                </button>
+                <>
+                  <button
+                    className={`navbar__lang-item ${
+                      item.toLowerCase() === currentLang ? "current" : ""
+                    }`}
+                    onClick={() => setLangCallback(item)}
+                    key={index}
+                  >
+                    {item}
+                  </button>
+                  {index === 0 && (
+                    <span className="navbar__lang-item--divider">/</span>
+                  )}
+                </>
               );
             })}
           </div>

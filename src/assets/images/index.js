@@ -1,16 +1,21 @@
-import grid1 from "../../assets/images/grid1.jpg";
-import grid2 from "../../assets/images/grid2.jpg";
-import grid3 from "../../assets/images/grid3.jpg";
-import grid4 from "../../assets/images/grid4.jpg";
-import grid5 from "../../assets/images/grid5.jpg";
-import grid6 from "../../assets/images/grid6.jpg";
+import grid1 from "./grid1.jpg";
+import grid2 from "./grid2.jpg";
+import grid3 from "./grid3.jpg";
+import grid4 from "./grid4.jpg";
+import grid5 from "./grid5.jpg";
+import grid6 from "./grid6.jpg";
 
-import photo1 from "../../assets/images/photo1.jpg";
-import photo2 from "../../assets/images/photo2.jpg";
-import photo3 from "../../assets/images/photo3.jpg";
-import photo4 from "../../assets/images/photo4.jpg";
-import photo5 from "../../assets/images/photo5.jpg";
-import photo6 from "../../assets/images/photo6.jpg";
+import photo1 from "./photo1.jpg";
+import photo2 from "./photo2.jpg";
+import photo3 from "./photo3.jpg";
+import photo4 from "./photo4.jpg";
+import photo5 from "./photo5.jpg";
+import photo6 from "./photo6.jpg";
+
+import resource1 from "./resource_discussion.jpg";
+import resource2 from "./resource_folder.jpg";
+import resource3 from "./resource_movie.jpg";
+import resource4 from "./resource_ticket.jpg";
 
 export {
   grid1,
@@ -24,5 +29,9 @@ export {
   photo3,
   photo4,
   photo5,
-  photo6
+  photo6,
+  resource1,
+  resource2,
+  resource3,
+  resource4,
 };

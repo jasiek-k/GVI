@@ -17,6 +17,10 @@ import {
   photo4,
   photo5,
   photo6,
+  resource1,
+  resource2,
+  resource3,
+  resource4,
 } from "../assets/images";
 
 const verticalOffset = [
@@ -208,24 +212,28 @@ const tableData = [
 
 const resourceContent = [
   {
-    type: "redirect",
+    photo: resource1,
     title: "resources:discusionTitle",
-    redirect: "https://zasoby.msl.org.pl/mobjects/view/1520",
+    link: "https://zasoby.msl.org.pl/mobjects/view/1520",
+    caption: "resourceType:video",
   },
   {
-    type: "redirect",
+    photo: resource2,
     title: "resources:movieTitle",
-    redirect: "https://zasoby.msl.org.pl/mobjects/view/1520",
+    link: "https://zasoby.msl.org.pl/mobjects/view/1520",
+    caption: "resourceType:docs",
   },
   {
-    type: "redirect",
+    photo: resource3,
     title: "resources:buyTicketTitle",
-    redirect: "https://zasoby.msl.org.pl/mobjects/view/1520",
+    link: "https://zasoby.msl.org.pl/mobjects/view/1520",
+    caption: "resourceType:video",
   },
   {
-    type: "download",
+    photo: resource4,
     title: "resources:folderDownloadTitle",
-    redirect: "https://zasoby.msl.org.pl/mobjects/view/1520",
+    link: "https://zasoby.msl.org.pl/mobjects/view/1520",
+    caption: "resourceType:ref",
   },
 ];
 

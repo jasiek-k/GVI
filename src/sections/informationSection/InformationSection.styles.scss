@@ -5,6 +5,25 @@
   margin-left: 0;
   margin-right: 0;
 
+  &__header {
+    margin-right: 0;
+    margin-left: auto;
+    background-color: #fff;
+    color: #000;
+    width: 86.928vw;
+    height: auto;
+    padding-bottom: 1.0416667vw;
+    padding-top: 2.6041667vw;
+    text-transform: uppercase;
+
+    &--caption {
+      padding-left: 1.0416667vw;
+      text-align: left;
+      font-weight: bold;
+      font-size: 2.0833vw;
+    }
+  }
+
   &__wrapper {
     width: 73.856vw;
     margin-left: auto;
@@ -12,7 +31,7 @@
 
     .information-section__columns {
       display: flex;
-      margin-top: 10.4106vw;
+      margin-top: 2.0833vw;
 
       &--item {
         width: 40.15625vw;

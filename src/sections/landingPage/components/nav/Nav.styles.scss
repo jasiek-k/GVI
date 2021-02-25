@@ -2,14 +2,15 @@
 
 .navbar {
   text-align: right;
+  display: inline-block;
 
   &__scroll {
-    display: flex;
-    flex-direction: column;
-    align-items: flex-end;
+    display: inline-block;
   }
 
   &__lang {
+    display: inline-block;
+
     .current {
       font-weight: bold;
     }
@@ -52,7 +53,7 @@
     width: 100vw;
     height: 100vh;
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
     align-items: center;
     justify-content: center;
 
