@@ -43,7 +43,7 @@ const Nav = ({ setLangCallback, currentLang, refs }) => {
           <div className="navbar__scroll">
             {navbarContent.map((item, index) => (
               <button
-                className="navbar__scroll-item"
+                className="navbar__scroll--item"
                 key={index}
                 onClick={() => handleScroll(item.ref)}
               >
@@ -56,7 +56,7 @@ const Nav = ({ setLangCallback, currentLang, refs }) => {
               return (
                 <>
                   <button
-                    className={`navbar__lang-item ${
+                    className={`navbar__lang--item ${
                       item.toLowerCase() === currentLang ? "current" : ""
                     }`}
                     onClick={() => setLangCallback(item)}
@@ -65,7 +65,7 @@ const Nav = ({ setLangCallback, currentLang, refs }) => {
                     {item}
                   </button>
                   {index === 0 && (
-                    <span className="navbar__lang-item--divider">/</span>
+                    <span className="navbar__lang--item--divider">/</span>
                   )}
                 </>
               );

@@ -5,12 +5,6 @@ import {
   TwitterIcon,
 } from "../assets/Icons";
 import {
-  grid1,
-  grid2,
-  grid3,
-  grid4,
-  grid5,
-  grid6,
   photo1,
   photo2,
   photo3,
@@ -58,12 +52,83 @@ const socialMediaArray = [
 ];
 
 const galleryContentArray = [
-  { id: 0, cropped: grid1, photo: photo1, description: "1/6" },
-  { id: 1, cropped: grid2, photo: photo2, description: "2/6" },
-  { id: 2, cropped: grid3, photo: photo3, description: "3/6" },
-  { id: 3, cropped: grid4, photo: photo4, description: "4/6" },
-  { id: 4, cropped: grid5, photo: photo5, description: "5/6" },
-  { id: 5, cropped: grid6, photo: photo6, description: "6/6" },
+  { id: 0, cropped: photo1, photo: photo1, description: "1/6" },
+  { id: 1, cropped: photo2, photo: photo2, description: "2/6" },
+  { id: 2, cropped: photo3, photo: photo3, description: "3/6" },
+  { id: 3, cropped: photo4, photo: photo4, description: "4/6" },
+  { id: 4, cropped: photo5, photo: photo5, description: "5/6" },
+  { id: 5, cropped: photo6, photo: photo6, description: "6/6" },
+];
+
+const tableData = [
+  {
+    title: "informative:titlePlace",
+    content: "informative:contentPlace",
+  },
+  {
+    title: "informative:titleTime",
+    content: "informative:contentTime",
+  },
+  {
+    title: "informative:titleCurator",
+    content: "informative:contentCurator",
+  },
+  {
+    title: "informative:titleArrangement",
+    content: "informative:contentArrangement",
+  },
+  {
+    title: "informative:titleCoordinator",
+    content: "informative:contentCoordinator",
+  },
+  {
+    title: "informative:titleGraphics",
+    content: "informative:contentGraphics",
+  },
+];
+
+const resourceContent = [
+  {
+    photo: resource1,
+    title: "resources:discusionTitle",
+    link: "https://zasoby.msl.org.pl/mobjects/view/1520",
+    caption: "resourceType:video",
+  },
+  {
+    photo: resource2,
+    title: "resources:folderDownloadTitle",
+    link: "https://msl.org.pl/media/system/aktualnosci/ATLAS-NOWOCZESNOSCI-24-STRON-POL-2-.pdf",
+    caption: "resourceType:docs",
+  },
+  {
+    photo: resource3,
+    title: "resources:movieTitle",
+    link: "https://zasoby.msl.org.pl/mobjects/view/2218",
+    caption: "resourceType:video",
+  },
+  {
+    photo: resource4,
+    title: "resources:buyTicketTitle",
+    link: "https://bilety.msl.org.pl/expositions/view/3?bid=0&date=2018-02-03",
+    caption: "resourceType:ref",
+  },
+];
+
+const modernityAreas = [
+  "muzeum",
+  "autonomia",
+  "kapitał",
+  "maszyna",
+  "miasto",
+  "postęp",
+  "eksperyment",
+  "propaganda",
+  "emancypacja",
+  "rewolucja",
+  "katastrofa",
+  "ja",
+  "norma",
+  "tradycja",
 ];
 
 const techniquesArray = [
@@ -164,77 +229,6 @@ const techniquesArray = [
   "terakota",
   "gwoździe",
   "lakier",
-];
-
-const modernityAreas = [
-  "muzeum",
-  "autonomia",
-  "kapitał",
-  "maszyna",
-  "miasto",
-  "postęp",
-  "eksperyment",
-  "propaganda",
-  "emancypacja",
-  "rewolucja",
-  "katastrofa",
-  "ja",
-  "norma",
-  "tradycja",
-];
-
-const tableData = [
-  {
-    title: "informative:titlePlace",
-    content: "informative:contentPlace",
-  },
-  {
-    title: "informative:titleTime",
-    content: "informative:contentTime",
-  },
-  {
-    title: "informative:titleCurator",
-    content: "informative:contentCurator",
-  },
-  {
-    title: "informative:titleArrangement",
-    content: "informative:contentArrangement",
-  },
-  {
-    title: "informative:titleCoordinator",
-    content: "informative:contentCoordinator",
-  },
-  {
-    title: "informative:titleGraphics",
-    content: "informative:contentGraphics",
-  },
-];
-
-const resourceContent = [
-  {
-    photo: resource1,
-    title: "resources:discusionTitle",
-    link: "https://zasoby.msl.org.pl/mobjects/view/1520",
-    caption: "resourceType:video",
-  },
-  {
-    photo: resource2,
-    title: "resources:movieTitle",
-    link: "https://zasoby.msl.org.pl/mobjects/view/1520",
-    caption: "resourceType:docs",
-  },
-  {
-    photo: resource3,
-    title: "resources:buyTicketTitle",
-    link: "https://zasoby.msl.org.pl/mobjects/view/1520",
-    caption: "resourceType:video",
-  },
-  {
-    photo: resource4,
-    title: "resources:folderDownloadTitle",
-    link: "https://zasoby.msl.org.pl/mobjects/view/1520",
-    caption: "resourceType:ref",
-  },
 ];
 
 export {

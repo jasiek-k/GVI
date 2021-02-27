@@ -55,4 +55,35 @@
       margin-bottom: 1.8vw !important;
     }
   }
+
+  @media (max-width: 425px) {
+    &__header {
+      width: 94.66667vw;
+      padding-bottom: 2.6667vw;
+      padding-top: 5.3333vw;
+
+      &--caption {
+        font-size: 5.3333vw;
+        padding-left: 2.6667vw;
+      }
+    }
+
+    &__wrapper {
+      width: 100%;
+      box-sizing: border-box;
+      padding-left: 5.3333vw;
+      padding-right: 5.3333vw;
+
+      .information-section__columns {
+        display: flex;
+        flex-direction: column-reverse;
+        margin-top: 10.6667vw;
+
+        &--item {
+          width: 100%;
+          margin-bottom: 10.6667vw;
+        }
+      }
+    }
+  }
 }

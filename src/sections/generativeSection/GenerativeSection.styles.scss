@@ -3,6 +3,7 @@
   margin: 0;
   background-color: #fff;
   padding-top: 4.1667vw;
+  padding-bottom: 6.25vw;
 
   &__header {
     margin-right: auto;
@@ -31,38 +32,62 @@
     width: 73.856vw;
     margin-left: auto;
     margin-right: auto;
-    padding-top: 6.25vw;
-    padding-bottom: 6.25vw;
+    padding-top: 2.08333vw;
     color: #000;
+    display: flex;
+    flex-direction: row;
+    justify-items: flex-end;
 
-    &--header {
+    &__box {
+      width: 23.229617vw;
       border: 5px solid #000;
-      width: 100%;
+      padding: 2.0833vw;
+      box-sizing: border-box;
 
-      &-wrapper {
-        display: flex;
-        padding: 40px;
+      &--logo {
+        width: 19.0625vw;
+        height: 19.0625vw;
       }
 
-      .generative-logo {
-        width: 14.791667vw;
-        height: 14.791667vw;
-        border: 1px solid #000;
-        -webkit-box-shadow: 0px 8px 10px 5px rgba(0, 0, 0, 0.35);
-        box-shadow: 0px 8px 10px 5px rgba(0, 0, 0, 0.35);
-      }
+      &--info {
+        &--item {
+          &__title {
+            display: inline-block;
+            margin-right: 10px;
+            width: 110px;
+            font-weight: bold;
+            font-size: 14px;
+          }
 
-      .section-title {
-        margin-left: auto;
-        width: 28.65vw;
-        text-align: right;
-        align-self: flex-end;
-        margin-bottom: 0;
-        font-size: 2.604vw;
+          &__text {
+            display: inline-block;
+            font-size: 18px;
+          }
+        }
       }
     }
 
-    &--content {
+    &__content {
+      width: 49vw;
+      background-color: red;
+      height: 300px;
+      margin-left: 2.08333vw;
+    }
+  }
+
+  @media (max-width: 425px) {
+    padding-top: 10.66667vw;
+    padding-bottom: 10.66667vw;
+
+    &__header {
+      width: 94.66667vw;
+      padding-bottom: 2.6667vw;
+      padding-top: 5.3333vw;
+
+      &--caption {
+        font-size: 5.3333vw;
+        padding-right: 2.6667vw;
+      }
     }
   }
 }

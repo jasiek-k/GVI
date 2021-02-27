@@ -6,6 +6,10 @@
 
   &__scroll {
     display: inline-block;
+
+    &--item:hover {
+      cursor: pointer;
+    }
   }
 
   &__lang {
@@ -14,11 +18,36 @@
     .current {
       font-weight: bold;
     }
+
+    &--item:hover {
+      cursor: pointer;
+    }
   }
 
   @media (min-width: $tablet-max) {
-    &__scroll-item,
-    &__lang-item {
+    &__scroll {
+      padding-right: 80px;
+
+      &--item {
+        margin-right: 20px !important;
+        margin-left: 20px !important;
+      }
+    }
+
+    &__lang {
+      &--item:last-child {
+        margin-left: 5px !important;
+      }
+
+      &--item:first-child {
+        margin-right: 5px !important;
+      }
+    }
+
+    &__scroll--item,
+    &__lang--item,
+    &__lang--item--divider {
+      font-size: 20px;
       color: #fff;
     }
   }
@@ -43,7 +72,7 @@
       top: 0;
       color: #000 !important;
 
-      &__scroll-item {
+      &__scroll--item {
         color: #000 !important;
       }
     }
@@ -74,7 +103,7 @@
 
   @media (max-width: $mobile-max) {
     &__scroll {
-      &-item {
+      &--item {
         font-size: 4.8vw;
         line-height: 2;
       }

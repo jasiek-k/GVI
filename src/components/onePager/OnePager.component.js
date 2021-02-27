@@ -22,7 +22,7 @@ const OnePager = () => {
   const generativeRef = useRef();
   const photoRef = useRef();
   const resourceRef = useRef();
-  const roadsData = generateLogo();
+  const logoInfo = generateLogo();
 
   // const generated = generativeMechanism();
 
@@ -48,10 +48,10 @@ const OnePager = () => {
           sectionsRefs={[infoRef, generativeRef, photoRef, resourceRef]}
           changeLang={changeLang}
           currentLang={currentLang}
-          roadsData={roadsData}
+          data={logoInfo}
         />
         <InformationSection ref={infoRef} />
-        <GenerativeSection roadsData={roadsData} ref={generativeRef} />
+        <GenerativeSection data={logoInfo} ref={generativeRef} />
         <PhotoSection ref={photoRef} />
         <ResourceSection ref={resourceRef} />
         <Footer />

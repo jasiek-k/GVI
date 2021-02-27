@@ -46,11 +46,14 @@ const generateLogo = () => {
   );
   obliqueRoads.map((item) => (item.start = getObliqueStart(phrase)));
 
-  return singleOutSquare(phrase, {
-    horizontalRoads,
-    verticalRoads,
-    obliqueRoads,
-  });
+  return { 
+    roadsData: singleOutSquare(phrase, {
+      horizontalRoads,
+      verticalRoads,
+      obliqueRoads,
+    }),
+    artwork: drawnArtwork
+  };
 };
 
 export default generateLogo;

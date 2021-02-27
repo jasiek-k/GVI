@@ -200,7 +200,28 @@ const HamburgerIcon = () => (
   </svg>
 );
 
+const MSLogo = () => (
+  <svg xmlns="http://www.w3.org/2000/svg" width="100%" height="100%" viewBox="0 0 60.125 31.001">
+  <g id="Group_75" data-name="Group 75" transform="translate(-1.77 -1.518)">
+    <path id="Path_4" data-name="Path 4" d="M48.058,10.565h0l-.58-.539V6.489l.806-.805H54.55l.717.714V8.012h6.358V5.06L58.134,1.518H44.7L40.9,5.369V12l3.039,3.045H54.729l.582.586v3.527l-.808.814H47.787l-.717-.725V17.59H40.72v3l3.532,3.54H58.087L61.9,20.319V13.608l-3.044-3.044H48.058Zm-23.771-9-3,3-3-3H10.543l-3.4,3.36-.356-3.36H1.771V24.131H8.347v-15l2.642-2.644h3.494l1.389,1.39V24.131h6.582V8.951l2.459-2.463h3.675l1.389,1.39V24.131h6.576V5.683L32.434,1.563H24.288Z" transform="translate(0 0)" fill="#fff"/>
+    <path id="Path_5" data-name="Path 5" d="M1.77,42.2H3.731l1.331,4.632L6.4,42.2H8.369v5.78H7.139V43.15L5.723,47.976H4.265l-1.4-4.826v4.826H1.77Z" transform="translate(0 -15.458)" fill="#fff"/>
+    <path id="Path_6" data-name="Path 6" d="M14.089,48.155V44.71h1.23v3.042l.261.259h.73l.5-.5v-2.8h1.232v4.222h-.939l-.067-.637-.638.637H14.862Z" transform="translate(-4.681 -16.413)" fill="#fff"/>
+    <path id="Path_7" data-name="Path 7" d="M21.674,48.236,23.71,45.6H21.721V44.71h3.47V45.4l-2.027,2.64h2.079v.9H21.674Z" transform="translate(-7.564 -16.413)" fill="#fff"/>
+    <path id="Path_8" data-name="Path 8" d="M31.25,46.388h0V45.7l-.226-.225H29.85l-.225.225v.684H31.25Zm-2.822,1.761V45.475l.774-.78h2.461l.777.78V47.09H29.627V47.9l.244.234h1.205L31.219,48v-.351h1.223v.619l-.661.661H29.2Z" transform="translate(-10.13 -16.407)" fill="#fff"/>
+    <path id="Path_9" data-name="Path 9" d="M36.318,48.155V44.71H37.55v3.042l.26.259h.73l.5-.5v-2.8h1.233v4.222h-.936l-.069-.637-.635.637H37.09Z" transform="translate(-13.128 -16.413)" fill="#fff"/>
+    <path id="Path_10" data-name="Path 10" d="M44.319,44.71h.939l.065.628.639-.628H47.41l.562.56.56-.56h1.523l.771.771v3.45H49.6v-3.04l-.262-.262H48.65l-.461.461v2.84H46.958v-3.04L46.7,45.63h-.652l-.492.5v2.806H44.319Z" transform="translate(-16.169 -16.413)" fill="#fff"/>
+    <path id="Path_11" data-name="Path 11" d="M59.627,47.2V46.26h1.29v.525l.245.244H62.6l.242-.249V45.766l-.184-.192H60.349l-.7-.689V43l.812-.8h2.873l.781.779v.93H62.829v-.518l-.244-.242H61.195l-.252.242v.978l.182.187h2.324l.686.7v1.925l-.8.8H60.416Z" transform="translate(-21.986 -15.458)" fill="#fff"/>
+    <path id="Path_12" data-name="Path 12" d="M67.951,48.236,69.986,45.6H68V44.71h3.467V45.4l-2.024,2.64H71.52v.9H67.951Z" transform="translate(-25.149 -16.413)" fill="#fff"/>
+    <path id="Path_13" data-name="Path 13" d="M74.981,47.467V44.892h-.61v-.87h.61V42.9h1.234v1.123h1.3v.87h-1.3V47.08l.241.242h1.058v.921H75.759Z" transform="translate(-27.588 -15.725)" fill="#fff"/>
+    <path id="Path_14" data-name="Path 14" d="M80.736,48.155V44.71h1.23v3.042l.262.259h.727l.5-.5v-2.8h1.23v4.222h-.936l-.07-.637-.634.637H81.506Z" transform="translate(-30.007 -16.413)" fill="#fff"/>
+    <path id="Path_15" data-name="Path 15" d="M90.7,46.143l-.744.949v.884H88.722V42.2h1.232v3.57l1.492-2.011h1.371l-1.244,1.585,1.372,2.637H91.579Z" transform="translate(-33.042 -15.458)" fill="#fff"/>
+    <path id="Path_16" data-name="Path 16" d="M96.677,48h0V43.779h1.234V48Zm0-5.738h1.234V43.28H96.677Z" transform="translate(-36.065 -15.484)" fill="#fff"/>
+  </g>
+</svg>
+);
+
 export {
+  MSLogo,
   ArrowRight,
   InstagramIcon,
   HamburgerIcon,

@@ -41,6 +41,7 @@
     &--item {
       width: 23.23vw;
       height: 23.23vw;
+      object-fit: cover;
 
       &.margin {
         margin-top: 2.083vw;
@@ -50,6 +51,40 @@
         cursor: pointer;
         webkit-filter: opacity(25%);
         filter: opacity(25%);
+      }
+    }
+  }
+
+  @media (max-width: 425px) {
+    padding-bottom: 21.333333vw;
+    padding-top: 0;
+
+    &__header {
+      width: 94.66667vw;
+      padding-bottom: 2.6667vw;
+      padding-top: 5.3333vw;
+      margin-top: 21.333333vw;
+
+      &--caption {
+        font-size: 5.3333vw;
+        padding-left: 2.6667vw;
+      }
+    }
+
+    &__content {
+      width: 100%;
+      box-sizing: border-box;
+      padding-left: 5.3333vw;
+      padding-right: 5.3333vw;
+
+      &:nth-child(2) {
+        margin-top: 8vw;
+      }
+
+      &--item {
+        width: 43.2vw;
+        height: 43.2vw;
+        margin-top: 2.6667vw;
       }
     }
   }

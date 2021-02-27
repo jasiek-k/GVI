@@ -1,11 +1,11 @@
 import React, { memo } from "react";
 import { FormattedMessage } from "react-intl";
 
-import { socialMediaArray } from "../../../../data/data";
+import MediaIcons from '../mediaIcons/MediaIcons.component';
 
 import "./MediaBar.styles.scss";
 
-const MediaBar = React.forwardRef((props, ref) => (
+const MediaBar = React.forwardRef((_props, ref) => (
   <div ref={ref} className="mediaBar">
     <div className="mediaBar__content">
       <span className="mediaBar__caption">
@@ -13,15 +13,7 @@ const MediaBar = React.forwardRef((props, ref) => (
           <FormattedMessage id="mediaBar:caption" />
         </a>
       </span>
-      <div className="mediaBar__medias">
-        {socialMediaArray.map((item, index) => (
-          <div key={index} className="mediaBar__icon">
-            <a href={item.link} rel="noreferrer" target="_blank">
-              {item.icon}
-            </a>
-          </div>
-        ))}
-      </div>
+      <MediaIcons className="mediaBar"/>
     </div>
   </div>
 ));

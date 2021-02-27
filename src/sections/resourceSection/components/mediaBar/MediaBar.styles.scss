@@ -18,7 +18,7 @@
 
     a {
       color: #000;
-      text-decoration: none;
+      text-decoration: underline;
     }
   }
 
@@ -32,5 +32,21 @@
     max-height: 2.5vw;
     padding-left: 2.96875vw;
     padding-right: 2.96875vw;
+  }
+
+  @media (max-width: 425px) {
+    &__content {
+      padding: 6.667vw 5.3333vw 6.667vw 5.3333vw;
+      width: 100%;
+      box-sizing: border-box;
+    }
+
+    &__caption {
+      font-size: 25px;
+    }
+
+    &__medias {
+      display: none;
+    }
   }
 }
