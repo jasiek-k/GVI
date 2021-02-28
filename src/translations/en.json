@@ -1,4 +1,7 @@
 {
+  "landing:title": "Atlas of modernity",
+  "landing:subtitle": "The 20th and 21st Century Art Collection", 
+  
   "navbar:about": "About exhibition",
   "navbar:generativity": "Generativity",
   "navbar:photos": "Photos",
@@ -24,6 +27,21 @@
   "informative:contentGraphics": "Hakobo",
   "informative:readMore": "Read more",
   "informative:readLess": "Read less",
+
+  "generative:introText": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
+  "generative:quote": "Pojawiający się w tytule „atlas” najwłaściwiej określa konstrukcję wystawy: jest ona swoistym zbiorem „map”, z których każda opisuje topografię innego terytorium nowoczesności.",
+  "generative:text": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident.Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,  quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum.Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam.",
+  "generative:algorithmCaption": "Wygenerowany znak",
+  "generative:generateLogo": "Wygeneruj znak graficzny",
+  
+  "artwork:author": "Author",
+  "artwork:title": "Title",
+  "artwork:date": "Year of creation",
+  "artwork:size": "Size",
+  "artwork:materials": "Materials",
+  "artwork:phrase": "Area of modernity",
+
+  
   "resources:discusionTitle": "Atlas nowoczesności. Dyskusja z udziałem Marii Poprzęckiej, Karoliny Sikorskiej i Jarosława Suchana",
   "resources:movieTitle": "Atlas nowoczesności. Film o wystawie",
   "resources:buyTicketTitle": "Kup bilet na wystawę",

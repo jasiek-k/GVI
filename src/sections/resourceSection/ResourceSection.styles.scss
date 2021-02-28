@@ -38,6 +38,16 @@
     &--item:last-of-type {
       padding-top: 2.08333vw;
     }
+
+    &::-webkit-scrollbar {
+      width: 1em;
+      border: 1px solid #fff;
+    }
+    
+    &::-webkit-scrollbar-thumb {
+      background-color: #fff;
+      //outline: 1px solid slategrey;
+    }
   }
 
   @media (max-width: 425px) {
@@ -53,6 +63,14 @@
         font-size: 5.3333vw;
         padding-right: 2.6667vw;
       }
+    }
+
+    &__items {
+      // width: 100%;
+      // box-sizing: border-box;
+      width: 89.3337vw;
+      // padding-left: 5.333vw;
+      // padding-right: 5.333vw;
     }
   }
 }

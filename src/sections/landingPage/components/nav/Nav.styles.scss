@@ -47,7 +47,7 @@
     &__scroll--item,
     &__lang--item,
     &__lang--item--divider {
-      font-size: 20px;
+      font-size: 0.9375vw;
       color: #fff;
     }
   }
@@ -79,6 +79,7 @@
   }
 
   @media (max-width: $tablet-max) {
+    left: 0;
     width: 100vw;
     height: 100vh;
     display: flex;
@@ -89,6 +90,7 @@
     &__scroll {
       display: flex;
       align-items: center;
+      flex-direction: column;
       //width: 100vw;
     }
 
@@ -104,12 +106,26 @@
   @media (max-width: $mobile-max) {
     &__scroll {
       &--item {
-        font-size: 4.8vw;
+        font-size: 8vw;
         line-height: 2;
       }
     }
 
     &__lang {
+      font-size: 8vw;
+
+      &--item {
+        font-size: 8vw;
+        line-height: 2;
+      }
+
+      &--item:last-child {
+        margin-left: 5px !important;
+      }
+
+      &--item:first-child {
+        margin-right: 5px !important;
+      }
     }
   }
 }
@@ -122,12 +138,21 @@
   padding: 0;
   border: none;
 
+  &.dropped svg {
+    stroke: #000;
+  }
+
+  &.dropped {
+    position: fixed;
+  }
+
   @media (max-width: $tablet-max) {
     display: block;
     z-index: 110;
-    top: 0;
-    right: 0;
+    
+    // top: 0;
+    // right: 0;
 
-    width: 14.667vw;
+    width: 10.66667vw;
   }
 }

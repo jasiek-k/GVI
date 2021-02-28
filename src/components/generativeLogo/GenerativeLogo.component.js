@@ -3,21 +3,20 @@
 import React, { useEffect, useState } from "react";
 import Sketch from "react-p5";
 
-import { getLineOffset } from "../../services/helpers";
+import { getLineOffset, getDivider } from "../../services/helpers";
 import { verticalOffset, horizontalOffset } from "../../data/data";
+import { defaultLogoConfig } from '../../config';
 
-// TO DO
-const getDivider = (windowSize) => {
-  if (windowSize >= 1024) return 14.8277083333;
-  else if (windowSize < 1024 && windowSize >= 600) return 10;
-  else return 5;
-};
-
-const GenerativeLogo = ({ roadsData, reverseColors = false }) => {
+const GenerativeLogo = ({ roadsData, config, reverseColors = false }) => {
   const [windowWidth, setWindowWidth] = useState(window.innerWidth);
 
   const { areaIndex, vertical, horizontal, oblique } = roadsData;
-  let canvasDim = (windowWidth / 100) * getDivider(windowWidth);
+  const currentConfig = config || defaultLogoConfig;
+  console.log(currentConfig)
+  let test = getDivider(windowWidth, currentConfig);
+  console.log(test)
+  let canvasDim = (windowWidth / 100) * test;
+  console.log(canvasDim)
   const unit = canvasDim / 10;
   const stroke = canvasDim / 20;
   const backgroundColor = !!reverseColors ? "#000" : "#fff";

@@ -4,9 +4,9 @@ import { FormattedMessage } from "react-intl";
 import "./Button.styles.scss";
 
 
-const Button = ({ className, title, onClick, ...props }) => (
+const Button = ({ className, title, onClick, reverseColors, ...props }) => (
   <button
-    className={`common-button ${className || ""}`}
+    className={`common-button ${reverseColors ? 'reversed' : 'basic'} ${className || ""}`}
     onClick={onClick}
     {...props}
   >

@@ -3,7 +3,8 @@ import React, { useState, useEffect, useCallback, useRef } from "react";
 
 import LanguageService from "../../services/Language.service";
 import generateLogo from "../../services/generateLogo";
-import useScrollTop from "../../services/useScrollTop";
+// import useScrollTop from "../../services/useScrollTop";
+// import generativeMechanism from "../../services/generativeMechanism";
 import { DEFAULT_LANG } from "../../config";
 
 import Footer from "../../sections/footer/Footer.component";
@@ -14,17 +15,19 @@ import ResourceSection from "../../sections/resourceSection/ResourceSection.comp
 import PhotoSection from "../../sections/photoSection/PhotoSection.component";
 
 import "./OnePager.styles.scss";
-import generativeMechanism from "../../services/generativeMechanism";
 
 const OnePager = () => {
   const [currentLang, setLang] = useState(DEFAULT_LANG);
+  const [logoInfo, setLogoInfo] = useState(generateLogo());
   const infoRef = useRef();
   const generativeRef = useRef();
   const photoRef = useRef();
   const resourceRef = useRef();
-  const logoInfo = generateLogo();
-
   // const generated = generativeMechanism();
+  
+  const getNewLogo = useCallback(() => {
+    setLogoInfo(generateLogo());
+  }, []);
 
   const changeLang = useCallback((item) => {
     localStorage.setItem("atlasLang", item);
@@ -51,7 +54,7 @@ const OnePager = () => {
           data={logoInfo}
         />
         <InformationSection ref={infoRef} />
-        <GenerativeSection data={logoInfo} ref={generativeRef} />
+        <GenerativeSection data={logoInfo} getLogo={getNewLogo} ref={generativeRef} />
         <PhotoSection ref={photoRef} />
         <ResourceSection ref={resourceRef} />
         <Footer />

@@ -98,7 +98,6 @@ const CloseIcon = () => (
       x2="45"
       transform="translate(1.768 1.768)"
       fill="none"
-      stroke="#fff"
       strokeWidth="5"
     />
     <line
@@ -106,7 +105,6 @@ const CloseIcon = () => (
       y1="45"
       transform="translate(1.768 1.768)"
       fill="none"
-      stroke="#fff"
       strokeWidth="5"
     />
   </svg>

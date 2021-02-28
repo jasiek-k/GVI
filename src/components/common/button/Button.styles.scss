@@ -1,89 +1,45 @@
-button {
-  background-color: none;
-}
-
 .common-button {
-  border-color: none;
-  border: 0;
-  background-color: none;
-  padding: 0;
+  text-align: left;
   margin: 0;
   width: 23.2vw;
-  height: 100%;
+  padding-left: 1.04166667vw;
+  padding-bottom: 1.04166667vw; 
+  padding-top: 2.08333vw;
   font-family: inherit;
+  font-weight: bold;
+  font-size: 1.04166667vw;
 
-  .button-content {
-    margin: 0;
-    padding: 0;
-    background-color: #000;
-    border-collapse: collapse;
-    width: 23.229vw;
-    height: 100%;
-
-    &:hover td {
-      cursor: pointer;
-      background-color: #fff !important;
-      color: #000 !important;
-      border-color: #000 !important;
-      stroke: #000 !important;
-    }
-
-    &.redirect {
-      // height: 10.3141667vw;
-      height: 100%;
-    }
-
-    .button-row {
-      width: 100% !important;
-
-      .button__caption {
-        border: 0.26vw solid #fff;
-        vertical-align: bottom;
-        color: #fff;
-        font-size: 1.14533vw;
-        font-weight: bold;
-        text-align: left;
-        width: 17.1875vw;
-      }
-
-      .button__icon {
-        border: 0.26vw solid #fff;
-        vertical-align: top;
-        width: 6.0415vw;
-        color: #fff;
-        padding-top: 1.041667vw;
-        padding-left: 0;
-        padding-right: 0;
-        text-align: right;
-        stroke: #fff;
-
-        &-wrapper {
-          width: 1.7708vw;
-          margin-left: auto;
-          margin-right: 1.041667vw;
-
-          &.download {
-            transform: rotate(90deg);
-          }
-        }
-      }
-
-      td {
-        padding-bottom: 1.041667vw;
-        padding-top: 2.0832vw;
-        padding-left: 1.041667vw;
-        padding-right: 1.823vw;
-      }
-    }
-
-    tbody {
-      width: 23.229vw;
-    }
+  @media (max-width: 425px) {
+    width: 100%;
+    font-size: 4.26667vw;
+    padding-top: 8vw;
+    padding-left: 5.3333vw;
+    padding-bottom: 5.3333vw;
   }
+}
 
-  table {
-    background: none;
-    margin: 0;
-    padding: 0;
+.reversed {
+  border: 5px solid #000;
+  background-color: #fff;
+  color: #000;
+
+  &:hover {
+    cursor: pointer;
+    background-color: #000;
+    color: #fff;
+    border-color: #fff;
+  }
+}
+
+.basic {
+  border: 5px solid #fff;
+  background-color: #000;
+  color: #fff;
+
+  &:hover {
+    cursor: pointer;
+    background-color: #fff;
+    color: #000;
+    border-color: #000;
   }
 }

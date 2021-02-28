@@ -12,7 +12,7 @@ const ResourceItem = ({ data: { photo, link, title, caption } }) => {
       className="resource-item__link"
     >
       <div className="resource-item">
-        <img src={photo} className="resource-item__photo" />
+        <img src={photo} className="resource-item__photo" alt=""/>
         <p className="resource-item__title">
           <FormattedMessage id={title} />
         </p>

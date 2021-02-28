@@ -7,7 +7,7 @@
 
   .footer-caption {
     color: #000;
-    font-size: 1.14583333333vw;
+    font-size: 1.0416667vw;
     font-weight: bold;
 
     &__wrapper {
@@ -16,6 +16,23 @@
       margin-right: auto;
       padding-top: 2.08333333333vw;
       padding-bottom: 6.25vw;
+    }
+  }
+
+  @media (max-width: 425px) {
+    width: 100%;
+    box-sizing: border-box;
+    padding-left: 5.333vw;
+    padding-right: 5.333vw;
+    
+    .footer-caption {
+      font-size: 3.733vw;
+
+      &__wrapper {
+        width: 100%;
+        padding-top: 5.333vw;
+
+      }
     }
   }
 }

@@ -20,7 +20,7 @@ const VERT_LENGTHS = { max: 20, min: 0 };
 
 const generateLogo = () => {
   const drawnArtwork = getRandomArtwork();
-  const { author, date, phrase, size, techniques } = drawnArtwork;
+  const { author, date, phrase, size, materials } = drawnArtwork;
   const artist = prepareNames(author);
 
   const horizontalRoads = fillRoadsArray(processName(artist.name, "hori"));
@@ -28,10 +28,10 @@ const generateLogo = () => {
   const obliqueRoads = fillRoadsArray(getObliqueRoads(size));
 
   horizontalRoads.map(
-    (item) => (item.length = getLineLength(techniques, HORI_LENGTHS))
+    (item) => (item.length = getLineLength(materials, HORI_LENGTHS))
   );
   verticalRoads.map(
-    (item) => (item.length = getLineLength(techniques, VERT_LENGTHS))
+    (item) => (item.length = getLineLength(materials, VERT_LENGTHS))
   );
 
   matchIndexes(horizontalRoads, MAX_HORI_ROADS);
