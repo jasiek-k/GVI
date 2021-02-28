@@ -19,4 +19,10 @@
     font-size: 14px;
     font-weight: 500;
   }
+
+  @media (max-width: 425px) {
+    &.intro {
+      margin-bottom: 5.333vw !important; 
+    }
+  }
 }

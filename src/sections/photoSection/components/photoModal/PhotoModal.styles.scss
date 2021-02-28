@@ -67,4 +67,46 @@
       cursor: pointer;
     }
   }
+
+  @media (max-width: 425px) {
+    .close-button {
+      width: 10.6667vw;
+      height: 10.6667vw;
+      stroke: #fff;
+      top: 5.333vw;
+      right: 5.333vw;
+    }
+
+    .modal-content {
+      &__arrow {
+        &-left,
+        &-right {
+          width: 10.6667vw;
+          bottom: 10vh;
+        }
+  
+        &-right {
+          right: 5.333vw;
+        }
+  
+        &-left {
+          left: 5.333vw;
+          transform: rotate(180deg);
+        }
+      }
+
+      .modal-description {
+        position: fixed;
+        bottom: 10vh;
+        height: 8.00025vw;
+        font-size: 18px;
+        padding-top: 0;
+      }
+
+      .modal-photo {
+        max-width: 90vmin;
+        max-height: 90vmin;
+      }
+    }
+  }
 }

@@ -13,6 +13,7 @@ import InformationSection from "../../sections/informationSection/InformationSec
 import LandingPage from "../../sections/landingPage/LandingPage.component";
 import ResourceSection from "../../sections/resourceSection/ResourceSection.component";
 import PhotoSection from "../../sections/photoSection/PhotoSection.component";
+import CustomHead from '../common/customHead/CustomHead.component';
 
 import "./OnePager.styles.scss";
 
@@ -47,6 +48,7 @@ const OnePager = () => {
   return (
     <LanguageService currentLang={currentLang}>
       <div className="one-pager">
+        <CustomHead />
         <LandingPage
           sectionsRefs={[infoRef, generativeRef, photoRef, resourceRef]}
           changeLang={changeLang}

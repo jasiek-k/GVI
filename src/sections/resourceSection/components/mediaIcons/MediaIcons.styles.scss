@@ -11,14 +11,19 @@
   }
 
   @media (max-width: 425px) {
-    &__content {
-      padding: 6.667vw 5.3333vw 6.667vw 5.3333vw;
-      width: 100%;
-      box-sizing: border-box;
-    }
-
-    &__caption {
-      font-size: 25px;
+    width: 100%;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: 16vw;
+      
+    &__icon {
+      max-width: 8vw;
+      max-height: 8vw;
+      padding-left: 5.5vw;
+      padding-right: 5.5vw;
     }
 
     &__medias {

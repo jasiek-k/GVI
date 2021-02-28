@@ -88,5 +88,13 @@
         }
       }
     }
+
+    .text-paragraph {
+      margin-bottom: 2.667vw;
+  
+      &:last-of-type {
+        margin-bottom: 5.333vw !important;
+      }
+    }
   }
 }

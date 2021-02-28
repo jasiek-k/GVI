@@ -20,11 +20,11 @@ const GenerativeSection = React.forwardRef(({ getLogo, data: { roadsData, artwor
     
     return ( 
     <div ref={ref} className="generative-section">
-        <div className = "generative-section__header">
-        <p className = "generative-section__header--caption">
+        <div className="generative-section__header">
+        <p className="generative-section__header--caption">
         <FormattedMessage id="navbar:generativity" />
         </p> </div> <div className = "generative-section__container" >
-        <div className = "generative-section__container__box" >
+        <div className="generative-section__container__box" >
           <div className = "generative-section__container__box--logo" >
               <GenerativeLogo roadsData={roadsData} config={logoConfig} reverseColors={true}/> 
           </div> 
@@ -34,18 +34,20 @@ const GenerativeSection = React.forwardRef(({ getLogo, data: { roadsData, artwor
               <FormattedMessage id="generative:algorithmCaption" />
           </span>
         </div>
-        <div className = "generative-section__container__content" >
-          <Text className = "generative-section__container__content--intro" variant="intro">
+        <div className="generative-section__container__content" >
+          <div className="generative-section__container__content--text" >
+            <Text className = "generative-section__container__content--text--intro" variant="intro">
               <FormattedMessage id="generative:introText" />
-          </Text>
-          <Text className = "generative-section__container__content--quote">
+            </Text>
+            <Text className = "generative-section__container__content--text--quote">
               <FormattedMessage id="generative:quote" />
-          </Text> 
-          <Text className = "generative-section__container__content--text">
+            </Text> 
+            <Text className = "generative-section__container__content--text--paragraph">
               <FormattedMessage id="generative:text" />
-          </Text>
-          <Button onClick={getLogo} reverseColors title="generative:generateLogo" />
+            </Text>
           </div>
+          <Button onClick={getLogo} reverseColors title="generative:generateLogo" />
+        </div>
         </div>
       </div>
     );

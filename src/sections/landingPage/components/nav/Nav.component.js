@@ -1,6 +1,7 @@
 import React, { useCallback, useState, memo } from "react";
 import { FormattedMessage } from "react-intl";
 
+import MediaIcons from '../../../resourceSection/components/mediaIcons/MediaIcons.component';
 import { AVAILABLE_LANGS, MENU_TOGGLE_TIMEOUT } from "../../../../config";
 import { CloseIcon, HamburgerIcon } from "../../../../assets/Icons";
 
@@ -69,6 +70,9 @@ const Nav = ({ setLangCallback, currentLang, refs }) => {
             {Object.keys(AVAILABLE_LANGS).map((item, index) => {
               return <LangButton key={index} index={index} item={item}/>;
             })}
+          </div>
+          <div>
+            <MediaIcons className="navbar__social-media" />
           </div>
         </div>
       </div>

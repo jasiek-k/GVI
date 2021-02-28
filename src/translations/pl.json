@@ -42,6 +42,21 @@
   "artwork:materials": "Materiały",
   "artwork:phrase": "Obszar nowoczesności",
 
+  "modernity:muzeum": "Muzeum",
+  "modernity:autonomia": "Autonomia",
+  "modernity:kapitał": "Kapitał",
+  "modernity:maszyna": "Maszyna",
+  "modernity:miasto": "Miasto",
+  "modernity:postęp": "Postęp",
+  "modernity:eksperyment": "Eksperyment",
+  "modernity:propaganda": "Propaganda",
+  "modernity:emancypacja": "Emancypacja",
+  "modernity:rewolucja": "Rewolucja",
+  "modernity:katastrofa": "Katastrofa",
+  "modernity:ja": "Ja",
+  "modernity:norma": "Norma",
+  "modernity:tradycja": "Tradycja",
+
 
   "resources:discusionTitle": "Atlas nowoczesności. Dyskusja z udziałem Marii Poprzęckiej, Karoliny Sikorskiej i Jarosława Suchana",
   "resources:movieTitle": "Atlas nowoczesności. Film o wystawie",
@@ -54,5 +69,7 @@
 
   "mediaBar:caption": "Odwiedź stronę ms",
 
-  "footer:caption": "Jan Klamka x Muzeum Sztuki w Łodzi © 2020"
+  "footer:caption": "Jan Klamka x Muzeum Sztuki w Łodzi © 2020",
+
+  "head:title": "ATLAS NOWOCZESNOŚCI"
 }
