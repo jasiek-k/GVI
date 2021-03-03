@@ -1,4 +1,3 @@
-/* eslint-disable no-unused-vars */
 /* eslint-disable array-callback-return */
 import React, { useEffect, useState } from "react";
 import Sketch from "react-p5";
@@ -9,14 +8,9 @@ import { defaultLogoConfig } from '../../config';
 
 const GenerativeLogo = ({ roadsData, config, reverseColors = false }) => {
   const [windowWidth, setWindowWidth] = useState(window.innerWidth);
-
   const { areaIndex, vertical, horizontal, oblique } = roadsData;
   const currentConfig = config || defaultLogoConfig;
-  console.log(currentConfig)
-  let test = getDivider(windowWidth, currentConfig);
-  console.log(test)
-  let canvasDim = (windowWidth / 100) * test;
-  console.log(canvasDim)
+  let canvasDim = (windowWidth / 100) * getDivider(windowWidth, currentConfig);
   const unit = canvasDim / 10;
   const stroke = canvasDim / 20;
   const backgroundColor = !!reverseColors ? "#000" : "#fff";
@@ -82,6 +76,7 @@ const GenerativeLogo = ({ roadsData, config, reverseColors = false }) => {
 
   return (
     <Sketch
+      style={{ width: '100%', height: '100%' }}
       setup={setup}
       draw={draw}
       windowResized={(p5) => p5.resizeCanvas(canvasDim, canvasDim)}

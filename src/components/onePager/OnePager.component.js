@@ -25,7 +25,7 @@ const OnePager = () => {
   const photoRef = useRef();
   const resourceRef = useRef();
   // const generated = generativeMechanism();
-  
+
   const getNewLogo = useCallback(() => {
     setLogoInfo(generateLogo());
   }, []);

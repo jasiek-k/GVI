@@ -16,6 +16,33 @@
       margin-right: auto;
       padding-top: 2.08333333333vw;
       padding-bottom: 6.25vw;
+
+      &__content {
+        display: flex;
+        flex-direction: row;
+        margin-top: 0.52083vw;
+        
+        &--item {
+          color: #000;
+          font-size: 0.9375vw;
+          text-decoration: none;
+        }
+
+        &--right {
+          margin-left: auto;
+          margin-right: 0;
+          flex-direction: column;
+          display: flex;
+          text-align: right;
+          
+          &__item {
+            color: #000;
+            font-size: 0.9375vw;
+            margin-bottom: 2px;
+            text-decoration: none;
+          }
+        }
+      }
     }
   }
 
@@ -31,7 +58,22 @@
       &__wrapper {
         width: 100%;
         padding-top: 5.333vw;
+        padding-bottom: 9.066vw;
 
+        &__content {
+          margin-top: 2.667vw;
+          
+          &--item {
+            font-size: 3.2vw;
+          }
+
+          &--right {
+            &__item {
+              font-size: 3.2vw;
+              margin-bottom: 4px;
+            }
+          }
+        }
       }
     }
   }

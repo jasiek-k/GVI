@@ -1,6 +1,6 @@
 import artworksData from "../data/artworksData.json";
-import { techniquesArray, modernityAreas } from "../data/data";
-import { defaultScreenWidths } from '../config';
+import { techniquesArray, modernityAreas, materialsTranslationsArray } from "../data/data";
+import { defaultScreenWidths, DEFAULT_LANG, AVAILABLE_LANGS } from '../config';
 
 const MAX_VERT_ROADS = 17;
 const MIN_VERT_ROADS = 9;
@@ -277,7 +277,31 @@ const getDivider = (windowSize, config) => {
   else return mobile * 100 / defaultScreenWidths.mobile;
 };
 
+const checkCurrentLang = () => {
+  const lang = localStorage.getItem("atlasLang");
+
+  if (!lang) return DEFAULT_LANG;
+  else return lang;
+}
+
+const handleMaterialTranslation = (data) => {
+  if (checkCurrentLang() !== AVAILABLE_LANGS['pl']) {
+    const translated = [];
+
+    data.forEach(item => {
+      const result = materialsTranslationsArray.find(material => item === material.item);
+      if (result) translated.push(result.lang)
+    })
+
+    return translated.join(', ');
+  }
+
+  return data.join(', ');
+}
+
 export {
+  handleMaterialTranslation,
+  checkCurrentLang,
   getDivider,
   getLineOffset,
   getObliqueStart,

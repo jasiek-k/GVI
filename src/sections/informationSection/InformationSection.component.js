@@ -24,6 +24,9 @@ const InformationSection = React.forwardRef((props, ref) => {
               <FormattedMessage id="informative:intro" />
             </Text>
             <Text className="text-paragraph">
+              <FormattedMessage id="informative:zeroParagraph" />
+            </Text>
+            <Text className="text-paragraph">
               <FormattedMessage id="informative:firstParagraph" />
             </Text>
             {readMore ? (
@@ -46,14 +49,14 @@ const InformationSection = React.forwardRef((props, ref) => {
                 </div>
               </>
             ) : (
-              <div className="button-wrapper">
-                <Button
-                  type="common"
-                  onClick={() => setReadMore(true)}
-                  title="informative:readMore"
-                />
-              </div>
-            )}
+                <div className="button-wrapper">
+                  <Button
+                    type="common"
+                    onClick={() => setReadMore(true)}
+                    title="informative:readMore"
+                  />
+                </div>
+              )}
           </div>
           <div className="information-section__columns--item">
             <Table />

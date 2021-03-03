@@ -32,6 +32,8 @@ const horizontalOffset = [
   { offset: 8, id: [1] },
 ];
 
+const msUrl = "https://msl.org.pl/";
+
 const socialMediaArray = [
   {
     icon: <FacebookIcon />,
@@ -47,6 +49,25 @@ const socialMediaArray = [
   },
   {
     icon: <InstagramIcon />,
+    link: "https://instagram.com/muzeumsztuki/",
+  },
+];
+
+const linksArray = [
+  {
+    label: 'Facebook',
+    link: "https://www.facebook.com/muzeumsztuki",
+  },
+  {
+    label: 'YouTube',
+    link: "https://www.youtube.com/user/MuzeumSztuki",
+  },
+  {
+    label: 'Twitter',
+    link: "https://twitter.com/muzeumsztuki",
+  },
+  {
+    label: 'Instagram',
     link: "https://instagram.com/muzeumsztuki/",
   },
 ];
@@ -231,7 +252,400 @@ const techniquesArray = [
   "lakier",
 ];
 
+const materialsTranslationsArray = [
+  {
+    item: "olej",
+    lang: "oil",
+  },
+  {
+    item: "deska",
+    lang: "board",
+  },
+  {
+    item: "płótno",
+    lang: "canvas",
+  },
+  {
+    item: "fotografia",
+    lang: "photography",
+  },
+  {
+    item: "gips",
+    lang: "gypsum",
+  },
+  {
+    item: "sztuczny kamień",
+    lang: "artificial stone",
+  },
+  {
+    item: "drewno",
+    lang: "wood",
+  },
+  {
+    item: "tkanina",
+    lang: "fabric",
+  },
+  {
+    item: "żywica",
+    lang: "resin",
+  },
+  {
+    item: "instalacja",
+    lang: "installation",
+  },
+  {
+    item: "drzeworyt",
+    lang: "woodcut",
+  },
+  {
+    item: "papier",
+    lang: "paper",
+  },
+  {
+    item: "offset",
+    lang: "offset",
+  },
+  {
+    item: "druk barwny",
+    lang: "color printing",
+  },
+  {
+    item: "torba polietylenowa",
+    lang: "polyethylene bag",
+  },
+  {
+    item: "akwaforta",
+    lang: "etching",
+  },
+  {
+    item: "karton",
+    lang: "cardboard",
+  },
+  {
+    item: "kamień",
+    lang: "stone",
+  },
+  {
+    item: "ołówek",
+    lang: "pencil",
+  },
+  {
+    item: "stal",
+    lang: "steel",
+  },
+  {
+    item: "film",
+    lang: "movie",
+  },
+  {
+    item: "zapis cyfrowy",
+    lang: "digital record",
+  },
+  {
+    item: "asamblaż",
+    lang: "assemblage",
+  },
+  {
+    item: "polistyren",
+    lang: "polystyrene",
+  },
+  {
+    item: "metal",
+    lang: "metal",
+  },
+  {
+    item: "plexi",
+    lang: "plexiglass",
+  },
+  {
+    item: "silnik",
+    lang: "engine",
+  },
+  {
+    item: "zapis analogowy",
+    lang: "analog recording",
+  },
+  {
+    item: "papier fotograficzny",
+    lang: "photographic paper",
+  },
+  {
+    item: "fotomontaż",
+    lang: "photomontage",
+  },
+  {
+    item: "fotokolaż",
+    lang: "photo collage",
+  },
+  {
+    item: "kolaż",
+    lang: "collage",
+  },
+  {
+    item: "album fotograficzny",
+    lang: "photo album",
+  },
+  {
+    item: "kserokopia",
+    lang: "photocopy",
+  },
+  {
+    item: "materiały różne",
+    lang: "various materials",
+  },
+  {
+    item: "akwarela",
+    lang: "watercolor",
+  },
+  {
+    item: "tworzywo sztuczne",
+    lang: "plastic",
+  },
+  {
+    item: "dywan",
+    lang: "carpet",
+  },
+  {
+    item: "farba",
+    lang: "paint",
+  },
+  {
+    item: "ceramika",
+    lang: "ceramics",
+  },
+  {
+    item: "juta",
+    lang: "jute",
+  },
+  {
+    item: "akryl",
+    lang: "acrylic",
+  },
+  {
+    item: "aluminium anodowane",
+    lang: "anodized aluminum",
+  },
+  {
+    item: "aluminium",
+    lang: "aluminum",
+  },
+  {
+    item: "płyta plastikowa",
+    lang: "plastic plate",
+  },
+  {
+    item: "ramy aluminowe",
+    lang: "aluminum frames",
+  },
+  {
+    item: "szyba",
+    lang: "glass",
+  },
+  {
+    item: "lustro",
+    lang: "mirror",
+  },
+  {
+    item: "litografia",
+    lang: "lithography",
+  },
+  {
+    item: "heliografia",
+    lang: "heliography",
+  },
+  {
+    item: "tektura",
+    lang: "cardboard",
+  },
+  {
+    item: "serigrafia",
+    lang: "serigraphy",
+  },
+  {
+    item: "gwasz",
+    lang: "gouache",
+  },
+  {
+    item: "monotypia",
+    lang: "monotype",
+  },
+  {
+    item: "flamaster",
+    lang: "felt-tip pen",
+  },
+  {
+    item: "bibułka",
+    lang: "tissue",
+  },
+  {
+    item: "brąz",
+    lang: "brown",
+  },
+  {
+    item: "plastik",
+    lang: "plastic",
+  },
+  {
+    item: "akwatinta",
+    lang: "aquatint",
+  },
+  {
+    item: "tempera",
+    lang: "distemper",
+  },
+  {
+    item: "tkanina",
+    lang: "fabric",
+  },
+  {
+    item: "emulsja",
+    lang: "emulsion",
+  },
+  {
+    item: "dętka",
+    lang: "tube",
+  },
+  {
+    item: "opona",
+    lang: "tire",
+  },
+  {
+    item: "linoryt",
+    lang: "linocut",
+  },
+  {
+    item: "żarówka",
+    lang: "bulb",
+  },
+  {
+    item: "nitro",
+    lang: "nitro",
+  },
+  {
+    item: "typolitografia",
+    lang: "typolithography",
+  },
+  {
+    item: "pastel",
+    lang: "crayon",
+  },
+  {
+    item: "szkło",
+    lang: "glass",
+  },
+  {
+    item: "pianka",
+    lang: "foam",
+  },
+  {
+    item: "klej",
+    lang: "glue",
+  },
+  {
+    item: "tusz",
+    lang: "ink",
+  },
+  {
+    item: "kalka",
+    lang: "tracing paper",
+  },
+  {
+    item: "śruby",
+    lang: "bolts",
+  },
+  {
+    item: "terakota",
+    lang: "terracotta",
+  },
+  {
+    item: "gwoździe",
+    lang: "nails",
+  },
+  {
+    item: "lakier",
+    lang: "lacquer",
+  },
+  {
+    item: "granit",
+    lang: "granite",
+  },
+  {
+    item: "sklejka",
+    lang: "plywood",
+  },
+  {
+    item: "duraluminium",
+    lang: "duralumin",
+  },
+  {
+    item: "dzianina ze sznurka lnianego",
+    lang: "knitted fabric with linen cord",
+  },
+  {
+    item: "stelaż z drutu",
+    lang: "wire frame",
+  },
+  {
+    item: "płyta pilśniowa",
+    lang: "beaverboard",
+  },
+  {
+    item: "taśma metalowa",
+    lang: "metal tape",
+  },
+  {
+    item: "scotch blue",
+    lang: "scotch blue",
+  },
+  {
+    item: "pismo maszynowe",
+    lang: "typewriter",
+  },
+  {
+    item: "instalacja elektryczna",
+    lang: "electrical installation",
+  },
+  {
+    item: "aluminium malowane",
+    lang: "painted aluminum",
+  },
+  {
+    item: "włóczka akrylowa",
+    lang: "acrylic yarn",
+  },
+  {
+    item: "technika mieszana",
+    lang: "mixed technique",
+  },
+  {
+    item: "płyta drewniana",
+    lang: "wooden plate",
+  },
+  {
+    item: "drewno polichromowane",
+    lang: "polychrome wood",
+  },
+  {
+    item: "gips patynowany",
+    lang: "patinated plaster",
+  },
+  {
+    item: "poliester kolorowy",
+    lang: "colored polyester",
+  },
+  {
+    item: "drewno fornirowane",
+    lang: "veneered wood",
+  },
+  {
+    item: "technika własna",
+    lang: "own technique",
+  },
+];
+
 export {
+  msUrl,
+  linksArray,
   verticalOffset,
   horizontalOffset,
   resourceContent,
@@ -240,4 +654,5 @@ export {
   techniquesArray,
   galleryContentArray,
   socialMediaArray,
+  materialsTranslationsArray
 };
