@@ -35,5 +35,13 @@
     }
   }
 
-  @media (min-width: 601px) and (max-width: 1023px) {}
+  @media (min-width: 601px) and (max-width: 1023px) {
+    padding-top: 2.604vw;
+
+    &--item {
+      &__text {
+        width: 13vw;
+      }
+    }
+  }
 }

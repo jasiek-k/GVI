@@ -37,18 +37,18 @@
       width: 100%;
       display: flex;
       overflow: auto;
+
+      &::-webkit-scrollbar {
+        width: 1em;
+      }
+      
+      &::-webkit-scrollbar-thumb {
+        background-color: #fff;
+      }
     }
 
     &--item:last-of-type {
       padding-top: 2.08333vw;
-    }
-
-    &::-webkit-scrollbar {
-      width: 1em;
-    }
-    
-    &::-webkit-scrollbar-thumb {
-      background-color: #fff;
     }
   }
 

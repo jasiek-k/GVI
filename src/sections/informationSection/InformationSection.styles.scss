@@ -114,23 +114,31 @@
     }
 
     &__wrapper {
-        width: 100%;
-        box-sizing: border-box;
-        padding-left: 5.2083vw;
-        padding-right: 5.2083vw;
+      width: 100%;
+      box-sizing: border-box;
+      padding-left: 5.2083vw;
+      padding-right: 5.2083vw;
 
-        .information-section__columns {
-          margin-top: 2.604167vw;
+      .information-section__columns {
+        margin-top: 2.604167vw;
 
-          &--item {
-            width: 40.15625vw;
-            flex: 48.5%;
+        &--item {
+          width: 40.15625vw;
+          flex: 48.5%;
     
-            &:first-of-type {
-              margin-right: 2.604167vw;
-            }
+          &:first-of-type {
+            margin-right: 2.604167vw;
           }
         }
+      }
+    }
+
+    .text-paragraph {
+      margin-bottom: 1.302vw;
+  
+      &:last-of-type {
+        margin-bottom: 1.953125vw !important;
+      }
     }
   }
 }

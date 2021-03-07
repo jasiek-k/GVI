@@ -1,9 +1,8 @@
-/* eslint-disable no-unused-vars */
 import React, { useState, useEffect, useCallback, useRef } from "react";
 
 import LanguageService from "../../services/Language.service";
 import generateLogo from "../../services/generateLogo";
-// import useScrollTop from "../../services/useScrollTop";
+import useScrollTop from "../../services/useScrollTop";
 // import generativeMechanism from "../../services/generativeMechanism";
 import { DEFAULT_LANG } from "../../config";
 
@@ -24,6 +23,7 @@ const OnePager = () => {
   const generativeRef = useRef();
   const photoRef = useRef();
   const resourceRef = useRef();
+  useScrollTop();
   // const generated = generativeMechanism();
 
   const getNewLogo = useCallback(() => {

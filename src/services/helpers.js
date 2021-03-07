@@ -1,34 +1,17 @@
 import artworksData from "../data/artworksData.json";
 import { techniquesArray, modernityAreas, materialsTranslationsArray } from "../data/data";
-import { defaultScreenWidths, DEFAULT_LANG, AVAILABLE_LANGS, BREAKPOINTS } from '../config';
-
-const MAX_VERT_ROADS = 17;
-const MIN_VERT_ROADS = 9;
-const MAX_HORI_ROADS = 4;
-const MIN_HORI_ROADS = 2;
-const MAX_OBLI_ROADS = 4;
-const ROADS_GRID = {
-  vertical: [
-    [0, 1],
-    [2, 3, 4],
-    [5, 6],
-    [7, 8, 9],
-    [10, 11],
-    [12, 13, 14],
-    [15, 16],
-    [0, 1],
-    [2, 3, 4],
-    [5, 6],
-    [7, 8, 9],
-    [10, 11],
-    [12, 13, 14],
-    [15, 16],
-  ],
-  horizontal: [
-    [0, 1],
-    [2, 3],
-  ],
-};
+import {
+  defaultScreenWidths,
+  DEFAULT_LANG,
+  AVAILABLE_LANGS,
+  BREAKPOINTS,
+  MAX_VERT_ROADS,
+  MIN_VERT_ROADS,
+  MAX_HORI_ROADS,
+  MIN_HORI_ROADS,
+  MAX_OBLI_ROADS,
+  ROADS_GRID
+} from '../config';
 
 const getMin = (array) => Math.min.apply(Math, array);
 
