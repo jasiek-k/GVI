@@ -7,10 +7,10 @@ const CustomHead = () => {
 
   return (
     <Helmet>
-        <title>
-          {`${formatMessage({ id: "head:title" })}`}
-        </title>
-      </Helmet>
+      <title>
+        {`${formatMessage({ id: "head:title" })}`}
+      </title>
+    </Helmet>
   )
 }
 

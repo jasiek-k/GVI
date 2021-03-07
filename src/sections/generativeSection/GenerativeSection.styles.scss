@@ -39,7 +39,6 @@
     justify-items: flex-end;
 
     &__box {
-      // width: 23.229617vw;
       width: 19.0625vw;
       border: 5px solid #000;
       padding: 2.0833vw;
@@ -48,11 +47,8 @@
       &.hidden .generative-section__container__box--logo {
         div {
           transition: opacity 0.5s ease-in-out;
-
           opacity: 0;
         }
-         
-  
       }
 
       &--logo {
@@ -60,12 +56,10 @@
         height: 19.0625vw;
         background-color: #000;
         margin-right: 0;
-
         
         div {
           transition: opacity 0.5s ease-in-out;
           opacity: 1;
-
         }
       }
 
@@ -75,7 +69,6 @@
         background-color: #000;
         margin-top: 40px;
         margin-bottom: 10px;
-
       }
 
       &--caption {
@@ -92,7 +85,6 @@
         height: 460px;
         overflow-y: auto;
         margin-bottom: 2.0833vw;  
-
 
         &::-webkit-scrollbar-thumb {
           background-color: #000;
@@ -125,7 +117,7 @@
     }
   }
 
-  @media (max-width: 425px) {
+  @media (max-width: 600px) {
     padding-top: 10.66667vw;
     padding-bottom: 10.66667vw;
 
@@ -150,16 +142,14 @@
       padding: 5.3333vw;
       margin-bottom: 5.3333vw;
 
-
       &--logo {
         width: 76vw;
         height: 76vw;
         background-color: #000;
         margin-right: 0;
         transition: visibility 0.5s ease-in-out;
-
       }
-     }
+    }
 
      &__content {
       height: auto;
@@ -168,11 +158,51 @@
       display: flex;
       flex-direction: column-reverse;
 
-      &--text {
-        margin-top: 10.667vw;
+        &--text {
+          margin-top: 10.667vw;
+        }
+      }
+    }
+  }
+
+  @media (min-width: 601px) and (max-width: 1023px) {
+    padding-top: 10.4166vw;
+    padding-bottom: 10.4166vw;
+
+    &__header {
+      width: 94.66667vw;
+      padding-bottom: 2.6667vw;
+      padding-top: 5.3333vw;
+
+      &--caption {
+        font-size: 5.3333vw;
+        padding-right: 2.6667vw;
       }
     }
 
+    &__container {
+      width: 100%;
+      padding-left: 5.2083vw;
+      padding-right: 5.2083vw;
+      padding-top: 2.60416vw;
+      box-sizing: border-box;
+      margin-top: 0;
+
+      &__box {
+        padding: 2.60416vw;
+        width: 29.036vw;
+
+        &--logo {
+          width: 29.036vw;
+          height: 29.036vw;
+        }
+      }
+
+      
+     &__content {
+      margin-left: 2.60416vw;
+      width: 57.94324vw;
+     }
     }
   }
 }

@@ -9,12 +9,20 @@
   font-weight: bold;
   font-size: 1.04166667vw;
 
-  @media (max-width: 425px) {
+  @media (max-width: 600px) {
     width: 100%;
     font-size: 4.26667vw;
     padding-top: 8vw;
     padding-left: 5.3333vw;
     padding-bottom: 5.3333vw;
+  }
+
+  @media (min-width: 601px) and (max-width: 1023px) {
+    width: 43.489vw;
+    font-size: 2.34375vw;
+    padding-top: 5.2083vw;
+    padding-left: 2.604vw;
+    padding-bottom: 2.604vw;
   }
 }
 

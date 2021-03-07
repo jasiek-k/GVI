@@ -10,15 +10,12 @@
 
     &-title {
       font-size: 0.833vw;
-      // font-size: 0.9375vw;
-      // font-size: 18px;
       text-transform: uppercase;
       font-weight: bold;
       width: 11.3636vw;
     }
 
     &-content {
-      // font-size: 0.7291667vw;
       font-size: 14px;
     }
 
@@ -32,18 +29,15 @@
     }
   }
 
-  @media (max-width: 425px) {
+  @media (max-width: 600px) {
     &__row {
       &-title {
         font-size: 4.26667vw;
-        // font-size: 0.9375vw;
-        // font-size: 18px;
         width: 11.3636vw;
       }
   
       &-content {
         font-size: 3.7333vw;
-        // font-size: 14px;
       }
   
       td {
@@ -51,6 +45,25 @@
         padding-top: 8vw;
         padding-left: 2.667vw;
         padding-right: 1.823vw;
+      }
+    }
+  }
+
+  @media (min-width: 601px) and (max-width: 1023px) {
+    &__row {
+      &-title {
+        font-size: 2.083vw;
+      }
+  
+      &-content {
+        font-size: 1.822vw;
+      }
+  
+      td {
+        padding-bottom: 2.604vw;
+        padding-top: 5.2083vw;
+        padding-left: 2.604vw;
+        padding-right: 1.302vw;
       }
     }
   }

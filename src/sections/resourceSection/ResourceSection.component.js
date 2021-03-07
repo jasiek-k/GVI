@@ -7,7 +7,7 @@ import { resourceContent } from "../../data/data";
 
 import "./ResourceSection.styles.scss";
 
-const ResourceSection = React.forwardRef((props, ref) => (
+const ResourceSection = React.forwardRef((_props, ref) => (
   <div ref={ref} className="resource-section">
     <MediaBar />
     <div className="resource-section__header">
@@ -16,9 +16,11 @@ const ResourceSection = React.forwardRef((props, ref) => (
       </p>
     </div>
     <div className="resource-section__items">
-      {resourceContent.map((item, index) => (
-        <ResourceItem key={index} data={item} />
-      ))}
+      <div className="resource-section__items--wrapper">
+        {resourceContent.map((item, index) => (
+          <ResourceItem key={index} data={item} />
+        ))}
+      </div>
     </div>
   </div>
 ));

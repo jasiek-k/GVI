@@ -91,7 +91,7 @@
   }
 
   
-  @media (max-width: 425px) {
+  @media (max-width: 600px) {
     padding: 5.3333vw;
 
     &__navbar {
@@ -135,12 +135,72 @@
   
         &--title {
           font-size: 9.3333vw;
-          //letter-spacing: 5px;
         }
   
         &--subtitle {
           display: block;
           font-size: 4.8vw;
+        }
+      }
+    }
+  }
+
+  @media (min-width: 601px) and (max-width: 1023px) {
+    padding: 5.2083vw;
+
+    &__navbar {
+      &--nav {
+        width: 14.667vw;
+        height: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+      }
+    }
+
+    &__navbar {
+      &__logos {
+        height: 10.416vw;
+
+        &--ms {
+          width: 10.416vw;
+          height: 10.416vw;
+
+          &-wrapper {
+            width: 6.8359375vw;
+            height: 3.5319vw;
+          }
+
+        }
+
+        &--generative {
+          width: 10.416vw;
+          height: 10.416vw;
+        }
+      }
+
+      &--nav {
+        width: 10.416vw;     
+      }
+    }
+
+    &__content {
+      &--image {
+        height: 47.226vh;
+      }
+
+      &--header {
+        margin-bottom: 5.2083vw;
+
+        &--title {
+          font-size: 9.11458vw;
+          line-height: 1.15;
+          letter-spacing: 0.6vw;
+        }
+  
+        &--subtitle {
+          display: block;
+          font-size: 3.255vw;
         }
       }
     }

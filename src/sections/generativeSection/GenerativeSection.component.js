@@ -5,13 +5,14 @@ import GenerativeLogo from "../../components/generativeLogo/GenerativeLogo.compo
 import Text from '../../components/common/text/Text.component';
 import Button from '../../components/common/button/Button.component';
 import ArtworksData from "../../components/common/artworksData/ArtworksData.component";
+import { BREAKPOINTS } from '../../config';
 
 import "./GenerativeSection.styles.scss";
 
 // TO DO: tablet size
 const logoConfig = {
   mobile: 285,
-  tablet: 366,
+  tablet: 223,
   desktop: 366
 }
 
@@ -23,7 +24,7 @@ const GenerativeSection = React.forwardRef(({ getLogo, data: { roadsData, artwor
     if (logoRef.current) {
       logoRef.current.classList.add('hidden')
       setDisabled(true)
-      if (window.innerWidth < 1024) logoRef.current.scrollIntoView({ behavior: "smooth" });
+      if (window.innerWidth < BREAKPOINTS.mobile) logoRef.current.scrollIntoView({ behavior: "smooth" });
       await new Promise(resolve => setTimeout(resolve, 500))
       logoRef.current.classList.remove('hidden')
       setDisabled(false)

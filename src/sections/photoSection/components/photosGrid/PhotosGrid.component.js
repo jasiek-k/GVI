@@ -1,4 +1,3 @@
-/* eslint-disable no-unused-vars */
 import React, { useState, useCallback } from "react";
 import { FormattedMessage } from "react-intl";
 
@@ -29,9 +28,8 @@ const PhotosGrid = () => {
       <div className="grid-section__content">
         {galleryContentArray.map((item) => (
           <img
-            className={`grid-section__content--item ${
-              item.id > 2 ? "margin" : ""
-            }`}
+            className={`grid-section__content--item ${item.id > 2 ? "margin" : ""
+              }`}
             src={item.cropped}
             alt=""
             id={item.id}

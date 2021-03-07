@@ -1,6 +1,6 @@
 import artworksData from "../data/artworksData.json";
 import { techniquesArray, modernityAreas, materialsTranslationsArray } from "../data/data";
-import { defaultScreenWidths, DEFAULT_LANG, AVAILABLE_LANGS } from '../config';
+import { defaultScreenWidths, DEFAULT_LANG, AVAILABLE_LANGS, BREAKPOINTS } from '../config';
 
 const MAX_VERT_ROADS = 17;
 const MIN_VERT_ROADS = 9;
@@ -272,8 +272,8 @@ const getLineOffset = (lineId, offsetArray) => {
 const getDivider = (windowSize, config) => {
   const { mobile, tablet, desktop } = config;
 
-  if (windowSize >= 1024) return desktop * 100 / defaultScreenWidths.desktop;
-  else if (windowSize < 1024 && windowSize >= 600) return tablet * 100 / defaultScreenWidths.tablet;
+  if (windowSize >= BREAKPOINTS.desktop) return desktop * 100 / defaultScreenWidths.desktop;
+  else if (windowSize < BREAKPOINTS.desktop && windowSize >= BREAKPOINTS.mobile) return tablet * 100 / defaultScreenWidths.tablet;
   else return mobile * 100 / defaultScreenWidths.mobile;
 };
 

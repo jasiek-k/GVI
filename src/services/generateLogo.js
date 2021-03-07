@@ -1,4 +1,3 @@
-/* eslint-disable no-unused-vars */
 import {
   getLineLength,
   matchIndexes,
@@ -46,7 +45,7 @@ const generateLogo = () => {
   );
   obliqueRoads.map((item) => (item.start = getObliqueStart(phrase)));
 
-  return { 
+  return {
     roadsData: singleOutSquare(phrase, {
       horizontalRoads,
       verticalRoads,

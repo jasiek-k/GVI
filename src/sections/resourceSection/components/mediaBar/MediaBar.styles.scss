@@ -35,7 +35,7 @@
     padding-right: 2.96875vw;
   }
 
-  @media (max-width: 425px) {
+  @media (max-width: 600px) {
     &__content {
       padding: 6.667vw 5.3333vw 6.667vw 5.3333vw;
       width: 100%;
@@ -52,6 +52,22 @@
 
     &__medias {
       display: none;
+    }
+  }
+
+  @media (min-width: 601px) and (max-width: 1023px) {
+    &__content {
+      padding: 5.2083vw;
+      width: 100%;
+      box-sizing: border-box;
+
+      .media-icons {
+        display: none;
+      }
+    }
+
+    &__caption {
+      font-size: 5.2083vw;
     }
   }
 }

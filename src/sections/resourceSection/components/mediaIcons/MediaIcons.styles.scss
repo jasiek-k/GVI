@@ -10,7 +10,7 @@
     padding-right: 2.96875vw;
   }
 
-  @media (max-width: 425px) {
+  @media (max-width: 600px) {
     width: 100%;
     align-items: center;
     justify-content: center;
@@ -24,6 +24,27 @@
       max-height: 8vw;
       padding-left: 5.5vw;
       padding-right: 5.5vw;
+    }
+
+    &__medias {
+      display: none;
+    }
+  }
+
+  @media (min-width: 601px) and (max-width: 1023px) {
+    width: 100%;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: 24vw;
+      
+    &__icon {
+      max-width: 5.5vw;
+      max-height: 5.5vw;
+      padding-left: 4vw;
+      padding-right: 4vw;
     }
 
     &__medias {

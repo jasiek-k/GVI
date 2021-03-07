@@ -56,7 +56,7 @@
     }
   }
 
-  @media (max-width: 425px) {
+  @media (max-width: 600px) {
     padding-top: 21.3333vw;
     padding-bottom: 21.3333vw;
 
@@ -95,6 +95,42 @@
       &:last-of-type {
         margin-bottom: 5.333vw !important;
       }
+    }
+  }
+
+  @media (min-width: 601px) and (max-width: 1023px) {
+    padding-top: 10.4166vw;
+    padding-bottom: 10.4166vw;
+
+    &__header {
+      width: 94.66667vw;
+      padding-bottom: 2.6667vw;
+      padding-top: 5.3333vw;
+
+      &--caption {
+        font-size: 5.3333vw;
+        padding-left: 2.6667vw;
+      }
+    }
+
+    &__wrapper {
+        width: 100%;
+        box-sizing: border-box;
+        padding-left: 5.2083vw;
+        padding-right: 5.2083vw;
+
+        .information-section__columns {
+          margin-top: 2.604167vw;
+
+          &--item {
+            width: 40.15625vw;
+            flex: 48.5%;
+    
+            &:first-of-type {
+              margin-right: 2.604167vw;
+            }
+          }
+        }
     }
   }
 }

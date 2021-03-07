@@ -1,5 +1,3 @@
-@import "../../../../utils/variables";
-
 .navbar {
   text-align: right;
   display: inline-block;
@@ -24,7 +22,16 @@
     }
   }
 
-  @media (min-width: $tablet-max) {
+  button {
+    border: none;
+    background-color: transparent;
+    font-family: inherit;
+    text-transform: uppercase;
+    margin: 0;
+    padding: 0;
+  }
+
+  @media (min-width: 1024px) {
     &__scroll {
       padding-right: 80px;
 
@@ -52,16 +59,14 @@
     }
   }
 
-  button {
-    border: none;
-    background-color: transparent;
-    font-family: inherit;
-    text-transform: uppercase;
-    margin: 0;
-    padding: 0;
-  }
-
-  @media (max-width: $tablet-max) {
+  @media (max-width: 600px) {
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
     position: fixed;
     top: -100vh;
     background-color: #fff;
@@ -76,35 +81,12 @@
         color: #000 !important;
       }
     }
-  }
-
-  @media (max-width: $tablet-max) {
-    left: 0;
-    width: 100vw;
-    height: 100vh;
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    justify-content: center;
 
     &__scroll {
       display: flex;
       align-items: center;
       flex-direction: column;
-      //width: 100vw;
-    }
 
-    &__lang {
-      display: flex;
-      flex-direction: row;
-      align-items: center;
-      justify-content: center;
-      //width: 100vw;
-    }
-  }
-
-  @media (max-width: $mobile-max) {
-    &__scroll {
       &--item {
         font-size: 8vw;
         line-height: 2;
@@ -112,6 +94,10 @@
     }
 
     &__lang {
+      display: flex;
+      flex-direction: row;
+      align-items: center;
+      justify-content: center;
       font-size: 8vw;
 
       &--item {
@@ -125,6 +111,62 @@
 
       &--item:first-child {
         margin-right: 5px !important;
+      }
+    }
+  }
+
+  @media (min-width: 601px) and (max-width: 1023px) {
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    position: fixed;
+    top: -100vh;
+    background-color: #fff;
+    z-index: 100;
+    transition: top 0.25s ease-in-out;
+
+    &.visible {
+      top: 0;
+      color: #000 !important;
+
+      &__scroll--item {
+        color: #000 !important;
+      }
+    }
+
+    &__scroll {
+      display: flex;
+      align-items: center;
+      flex-direction: column;
+
+      &--item {
+        font-size: 3.90625vw;
+        line-height: 2.25;
+      }
+    }
+
+    &__lang {
+      display: flex;
+      flex-direction: row;
+      align-items: center;
+      justify-content: center;
+      font-size: 3.90625vw;
+
+      &--item {
+        font-size: 3.90625vw;
+        line-height: 2.25;
+      }
+
+      &--item:last-child {
+        margin-left: 8px !important;
+      }
+
+      &--item:first-child {
+        margin-right: 8px !important;
       }
     }
   }
@@ -146,13 +188,16 @@
     position: fixed;
   }
 
-  @media (max-width: $tablet-max) {
+  @media (max-width: 1023px) {
     display: block;
     z-index: 110;
-    
-    // top: 0;
-    // right: 0;
+  }
 
+  @media (min-width: 601px) and (max-width: 1023px) {
+    width: 7.44vw;
+  }
+
+  @media (max-width: 600px) {
     width: 10.66667vw;
   }
 }

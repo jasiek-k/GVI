@@ -7,6 +7,11 @@ const DEFAULT_LANG = "pl";
 
 const MENU_TOGGLE_TIMEOUT = 250;
 
+const BREAKPOINTS = {
+  desktop: 1024,
+  mobile: 600
+}
+
 const defaultScreenWidths = {
   mobile: 375,
   tablet: 768,
@@ -15,11 +20,12 @@ const defaultScreenWidths = {
 
 const defaultLogoConfig = {
   mobile: 295,
-  tablet: 366,
-  dekstop: 366 
+  tablet: 223,
+  dekstop: 366
 }
 
 export {
+  BREAKPOINTS,
   AVAILABLE_LANGS,
   DEFAULT_LANG,
   MENU_TOGGLE_TIMEOUT,

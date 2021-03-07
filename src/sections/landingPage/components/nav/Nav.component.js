@@ -2,7 +2,7 @@ import React, { useCallback, useState, memo } from "react";
 import { FormattedMessage } from "react-intl";
 
 import MediaIcons from '../../../resourceSection/components/mediaIcons/MediaIcons.component';
-import { AVAILABLE_LANGS, MENU_TOGGLE_TIMEOUT } from "../../../../config";
+import { AVAILABLE_LANGS, MENU_TOGGLE_TIMEOUT, BREAKPOINTS } from "../../../../config";
 import { CloseIcon, HamburgerIcon } from "../../../../assets/Icons";
 
 import "./Nav.styles.scss";
@@ -19,7 +19,7 @@ const Nav = ({ setLangCallback, currentLang, refs }) => {
 
   const handleScroll = useCallback(
     (ref) => {
-      let timeOut = window.innerWidth < 1024 ? MENU_TOGGLE_TIMEOUT : 0;
+      let timeOut = window.innerWidth < BREAKPOINTS.desktop ? MENU_TOGGLE_TIMEOUT : 0;
 
       setMenuState(!menuState);
       setTimeout(() => {
@@ -29,21 +29,20 @@ const Nav = ({ setLangCallback, currentLang, refs }) => {
     [menuState]
   );
 
-    const LangButton = ({ item, index }) => (
-      <>
-                  <button
-                    className={`navbar__lang--item ${
-                      item.toLowerCase() === currentLang ? "current" : ""
-                    }`}
-                    onClick={() => setLangCallback(item)}
-                  >
-                    {item}
-                  </button>
-                  {index === 0 && (
-                    <span className="navbar__lang--item--divider">/</span>
-                  )}
-                </>
-    )
+  const LangButton = ({ item, index }) => (
+    <>
+      <button
+        className={`navbar__lang--item ${item.toLowerCase() === currentLang ? "current" : ""
+          }`}
+        onClick={() => setLangCallback(item)}
+      >
+        {item}
+      </button>
+      {index === 0 && (
+        <span className="navbar__lang--item--divider">/</span>
+      )}
+    </>
+  )
 
   return (
     <>
@@ -68,7 +67,7 @@ const Nav = ({ setLangCallback, currentLang, refs }) => {
           </div>
           <div className="navbar__lang">
             {Object.keys(AVAILABLE_LANGS).map((item, index) => {
-              return <LangButton key={index} index={index} item={item}/>;
+              return <LangButton key={index} index={index} item={item} />;
             })}
           </div>
           <div>

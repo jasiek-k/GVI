@@ -46,7 +46,7 @@
     }
   }
 
-  @media (max-width: 425px) {
+  @media (max-width: 600px) {
     width: 100%;
     box-sizing: border-box;
     padding-left: 5.333vw;
@@ -70,6 +70,40 @@
           &--right {
             &__item {
               font-size: 3.2vw;
+              margin-bottom: 4px;
+            }
+          }
+        }
+      }
+    }
+  }
+
+  @media (min-width: 601px) and (max-width: 1023px) {
+    padding-left: 5.2083vw;
+    padding-right: 5.2083vw;
+    width: 100%;
+    box-sizing: border-box;
+
+    .footer-caption {
+      color: #000;
+      font-size: 2.60416vw;
+      font-weight: bold;
+  
+      &__wrapper {
+        width: 100%;
+        padding-top: 5.2083vw;
+        padding-bottom: 10.4167vw;
+
+        &__content {
+          margin-top: 1.302vw;
+          
+          &--item {
+            font-size: 2.34375vw;
+          }
+
+          &--right {
+            &__item {
+              font-size: 2.34375vw;
               margin-bottom: 4px;
             }
           }
