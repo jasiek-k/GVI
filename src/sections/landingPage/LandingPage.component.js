@@ -1,14 +1,13 @@
 import React from "react";
 import { FormattedMessage } from 'react-intl';
 
-import GenerativeLogo from "../../components/generativeLogo/GenerativeLogo.component";
-import Nav from "./components/nav/Nav.component";
+import GenerativeLogo from "../../components/common/generativeLogo/GenerativeLogo.component";
+import Nav from "../../components/common/nav/Nav.component";
 import { landingPhoto } from '../../assets/images';
 import { MSLogo } from '../../assets/Icons';
 
 import "./LandingPage.styles.scss";
 
-// TO DO: tablet size
 const logoConfig = {
   mobile: 70,
   tablet: 80,

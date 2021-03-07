@@ -3,7 +3,7 @@ import { FormattedMessage } from "react-intl";
 
 import Button from "../../components/common/button/Button.component";
 import Text from "../../components/common/text/Text.component";
-import Table from "./components/table/Table.component";
+import Table from "../../components/common/table/Table.component";
 
 import "./InformationSection.styles.scss";
 

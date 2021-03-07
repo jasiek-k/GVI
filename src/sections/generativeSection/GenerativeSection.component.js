@@ -1,7 +1,7 @@
 import React, { useRef, useState } from "react";
 import { FormattedMessage } from "react-intl";
 
-import GenerativeLogo from "../../components/generativeLogo/GenerativeLogo.component";
+import GenerativeLogo from "../../components/common/generativeLogo/GenerativeLogo.component";
 import Text from '../../components/common/text/Text.component';
 import Button from '../../components/common/button/Button.component';
 import ArtworksData from "../../components/common/artworksData/ArtworksData.component";
@@ -9,7 +9,6 @@ import { BREAKPOINTS } from '../../config';
 
 import "./GenerativeSection.styles.scss";
 
-// TO DO: tablet size
 const logoConfig = {
   mobile: 285,
   tablet: 223,

@@ -1,6 +1,6 @@
 import React from "react";
 
-import { CloseIcon, ArrowRight } from "../../../../assets/Icons";
+import { CloseIcon, ArrowRight } from "../../../assets/Icons";
 
 import "./PhotoModal.styles.scss";
 

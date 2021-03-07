@@ -2,7 +2,7 @@ import React, { useState, useCallback } from "react";
 import { FormattedMessage } from "react-intl";
 
 import PhotoModal from "../photoModal/PhotoModal.component";
-import { galleryContentArray } from "../../../../data/data";
+import { galleryContentArray } from "../../../data/data";
 
 import "./PhotosGrid.styles.scss";
 

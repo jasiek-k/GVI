@@ -2,7 +2,7 @@ import React, { memo } from "react";
 import { FormattedMessage } from "react-intl";
 
 import ResourceItem from "../../components/common/resourceItem/ResourceItem.component";
-import MediaBar from "./components/mediaBar/MediaBar.component";
+import MediaBar from "../../components/common/mediaBar/MediaBar.component";
 import { resourceContent } from "../../data/data";
 
 import "./ResourceSection.styles.scss";

@@ -1,7 +1,7 @@
 import React from "react";
 import { useIntl } from "react-intl";
 
-import { tableData } from "../../../../data/data";
+import { tableData } from "../../../data/data";
 
 import "./Table.styles.scss";
 

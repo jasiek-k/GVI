@@ -1,8 +1,8 @@
 import React from 'react';
 
-import { socialMediaArray } from "../../../../data/data";
+import { socialMediaArray } from "../../../data/data";
 
-import "../mediaIcons/MediaIcons.styles.scss";
+import "./MediaIcons.styles.scss";
 
 const MediaIcons = ({ className = '' }) => (
   <div className={`${className} social-media`}>

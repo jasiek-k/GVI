@@ -1,9 +1,9 @@
 import React, { useCallback, useState, memo } from "react";
 import { FormattedMessage } from "react-intl";
 
-import MediaIcons from '../../../resourceSection/components/mediaIcons/MediaIcons.component';
-import { AVAILABLE_LANGS, MENU_TOGGLE_TIMEOUT, BREAKPOINTS } from "../../../../config";
-import { CloseIcon, HamburgerIcon } from "../../../../assets/Icons";
+import MediaIcons from '../mediaIcons/MediaIcons.component';
+import { AVAILABLE_LANGS, MENU_TOGGLE_TIMEOUT, BREAKPOINTS } from "../../../config";
+import { CloseIcon, HamburgerIcon } from "../../../assets/Icons";
 
 import "./Nav.styles.scss";
 

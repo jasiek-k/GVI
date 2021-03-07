@@ -2,9 +2,9 @@
 import React, { useEffect, useState } from "react";
 import Sketch from "react-p5";
 
-import { getLineOffset, getDivider } from "../../services/helpers";
-import { verticalOffset, horizontalOffset } from "../../data/data";
-import { defaultLogoConfig } from '../../config';
+import { getLineOffset, getDivider } from "../../../services/helpers";
+import { verticalOffset, horizontalOffset } from "../../../data/data";
+import { defaultLogoConfig } from '../../../config';
 
 const GenerativeLogo = ({ roadsData, config, reverseColors = false }) => {
   const [windowWidth, setWindowWidth] = useState(window.innerWidth);
