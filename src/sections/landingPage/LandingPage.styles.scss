@@ -1,3 +1,7 @@
+.animated {
+  opacity: 0 !important;
+}
+
 .landing-section {
   width: 100%;
   height: 100vh;
@@ -84,9 +88,15 @@
     }
 
     &--image {
+      opacity: 0.75;
       width: 100%;
       height: 46.2962vh;
       object-fit: cover;
+      transition: opacity 0.5s ease-out;
+    }
+
+    &--image .hidden {
+      opacity: 0;
     }
   }
 

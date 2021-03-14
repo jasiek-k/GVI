@@ -3,55 +3,102 @@
     {
       "author": "Adler Jankiel",
       "title": "Moi rodzice",
-      "date": [1921],
-      "materials": ["olej", "deska"],
-      "size": [136, 54],
+      "date": [
+        1921
+      ],
+      "materials": [
+        "olej",
+        "deska"
+      ],
+      "size": [
+        136,
+        54
+      ],
       "phrase": "tradycja"
     },
     {
       "author": "Adler Jankiel",
       "title": "Młody robotnik",
-      "date": [1929],
-      "materials": ["olej", "płótno"],
-      "size": [129.5, 78],
+      "date": [
+        1929
+      ],
+      "materials": [
+        "olej",
+        "płótno"
+      ],
+      "size": [
+        129.5,
+        78
+      ],
       "phrase": "emancypacja"
     },
     {
       "author": "Adler Jankiel",
       "title": "Kompozycja nadrealistyczna",
-      "date": [1933],
-      "materials": ["olej", "płótno"],
-      "size": [45, 63],
+      "date": [
+        1933
+      ],
+      "materials": [
+        "olej",
+        "płótno"
+      ],
+      "size": [
+        45,
+        63
+      ],
       "phrase": "eksperyment"
     },
     {
       "author": "Agence Rol",
       "title": "Garaż",
-      "date": [1925],
-      "materials": ["fotografia"],
-      "size": [18, 13],
+      "date": [
+        1925
+      ],
+      "materials": [
+        "fotografia"
+      ],
+      "size": [
+        18,
+        13
+      ],
       "phrase": "kapitał"
     },
     {
       "author": "Arczyński Stefan",
       "title": "Festiwal warszawski",
-      "date": [1955],
-      "materials": ["fotografia"],
-      "size": [29.8, 38],
+      "date": [
+        1955
+      ],
+      "materials": [
+        "fotografia"
+      ],
+      "size": [
+        29.8,
+        38
+      ],
       "phrase": "propaganda"
     },
     {
       "author": "Arczyński Stefan",
       "title": "Odbudowa Warszawy",
-      "date": [1954],
-      "materials": ["fotografia"],
-      "size": [29.8, 23.9],
+      "date": [
+        1954
+      ],
+      "materials": [
+        "fotografia"
+      ],
+      "size": [
+        29.8,
+        23.9
+      ],
       "phrase": "postęp"
     },
     {
       "author": "Bałka Mirosław",
       "title": "Pamiątka I Komunii Świętej",
-      "date": [1985],
+      "date": [
+        1985
+      ],
       "materials": [
         "sztuczny kamień",
         "drewno",
@@ -60,191 +107,635 @@
         "metal",
         "fotografia"
       ],
-      "size": [170, 105, 80],
+      "size": [
+        170,
+        105,
+        80
+      ],
       "phrase": "tradycja"
     },
     {
       "author": "Bałka Mirosław",
       "title": "190 x 60 x 70.7 (12 x 9 x 9)",
-      "date": [1996],
-      "materials": ["instalacja"],
-      "size": [190, 60, 70.7, 12, 9, 9],
+      "date": [
+        1996
+      ],
+      "materials": [
+        "instalacja"
+      ],
+      "size": [
+        190,
+        60,
+        70.7,
+        12,
+        9,
+        9
+      ],
       "phrase": "ja"
     },
     {
       "author": "Barczyński Henoch",
       "title": "Kostiumowe święto Purim",
-      "date": [1919],
-      "materials": ["drzeworyt", "papier"],
-      "size": [42, 30],
+      "date": [
+        1919
+      ],
+      "materials": [
+        "drzeworyt",
+        "papier"
+      ],
+      "size": [
+        42,
+        30
+      ],
       "phrase": "tradycja"
     },
     {
       "author": "Berman Mieczysław",
       "title": "Chaplin",
-      "date": [1927],
-      "materials": ["fotokolaż", "papier"],
-      "size": [49, 40],
+      "date": [
+        1927
+      ],
+      "materials": [
+        "fotokolaż",
+        "papier"
+      ],
+      "size": [
+        49,
+        40
+      ],
       "phrase": "kapitał"
     },
     {
       "author": "Berman Mieczysław",
       "title": "Konstrukcja",
-      "date": [1927],
-      "materials": ["fotokolaż", "papier"],
-      "size": [54.5, 39.5],
+      "date": [
+        1927
+      ],
+      "materials": [
+        "fotokolaż",
+        "papier"
+      ],
+      "size": [
+        54.5,
+        39.5
+      ],
       "phrase": "postęp"
     },
     {
       "author": "Berman Mieczysław",
       "title": "Odwiedzajcie ZSRR",
-      "date": [1928],
-      "materials": ["fotokolaż", "papier"],
-      "size": [32.5, 49.5],
+      "date": [
+        1928
+      ],
+      "materials": [
+        "fotokolaż",
+        "papier"
+      ],
+      "size": [
+        32.5,
+        49.5
+      ],
       "phrase": "propaganda"
     },
     {
       "author": "Beuys Joseph",
       "title": "My jesteśmy rewolucją",
-      "date": [1971],
-      "materials": ["offset", "papier", "płótno"],
-      "size": [190, 100],
+      "date": [
+        1971
+      ],
+      "materials": [
+        "offset",
+        "papier",
+        "płótno"
+      ],
+      "size": [
+        190,
+        100
+      ],
       "phrase": "rewolucja"
     },
     {
       "author": "Beuys Joseph",
       "title": "Tak można przezwyciężyć dyktaturę partii",
-      "date": [1971],
-      "materials": ["druk barwny", "torba polietylenowa"],
-      "size": [72, 51.3],
+      "date": [
+        1971
+      ],
+      "materials": [
+        "druk barwny",
+        "torba polietylenowa"
+      ],
+      "size": [
+        72,
+        51.3
+      ],
       "phrase": "propaganda"
     },
     {
       "author": "Beuys Joseph",
       "title": "Kapitał",
-      "date": [1980],
-      "materials": ["akwaforta", "papier"],
-      "size": [78.5, 56],
+      "date": [
+        1980
+      ],
+      "materials": [
+        "akwaforta",
+        "papier"
+      ],
+      "size": [
+        78.5,
+        56
+      ],
       "phrase": "kapitał"
     },
     {
       "author": "Beuys Joseph",
       "title": "Sztuka = Kapitał",
-      "date": [1980],
-      "materials": ["serigrafia", "kamień", "drewno"],
-      "size": [14, 31],
+      "date": [
+        1980
+      ],
+      "materials": [
+        "serigrafia",
+        "kamień",
+        "drewno"
+      ],
+      "size": [
+        14,
+        31
+      ],
       "phrase": "kapitał"
     },
     {
       "author": "Beuys Joseph",
       "title": "W tych wyborach: Zieloni",
-      "date": [1980],
-      "materials": ["serigrafia", "papier"],
-      "size": [88, 63.5],
+      "date": [
+        1980
+      ],
+      "materials": [
+        "serigrafia",
+        "papier"
+      ],
+      "size": [
+        88,
+        63.5
+      ],
       "phrase": "propaganda"
     },
     {
       "author": "Beuys Joseph",
       "title": "Transport do Polski 1981",
-      "date": [1981],
-      "materials": ["drewno", "papier", "ołówek"],
-      "size": [48.4, 157.4, 108.4],
+      "date": [
+        1981
+      ],
+      "materials": [
+        "drewno",
+        "papier",
+        "ołówek"
+      ],
+      "size": [
+        48.4,
+        157.4,
+        108.4
+      ],
       "phrase": "rewolucja"
     },
     {
       "author": "Bill Max",
       "title": "Multipla: Podwojenie",
-      "date": [1969],
-      "materials": ["stal"],
-      "size": [29, 29, 29],
+      "date": [
+        1969
+      ],
+      "materials": [
+        "stal"
+      ],
+      "size": [
+        29,
+        29,
+        29
+      ],
       "phrase": "postęp"
     },
     {
       "author": "Bizański Stanisław",
       "title": "Portret mężczyzny",
-      "date": [1870],
-      "materials": ["fotografia"],
-      "size": [10.7, 6.4],
+      "date": [
+        1870
+      ],
+      "materials": [
+        "fotografia"
+      ],
+      "size": [
+        10.7,
+        6.4
+      ],
       "phrase": "ja"
     },
     {
       "author": "Bizański Stanisław",
       "title": "Portret dzieci",
-      "date": [1875],
-      "materials": ["fotografia"],
-      "size": [11, 6.8],
+      "date": [
+        1875
+      ],
+      "materials": [
+        "fotografia"
+      ],
+      "size": [
+        11,
+        6.8
+      ],
       "phrase": "ja"
     },
     {
       "author": "Bizański Stanisław",
       "title": "Portret dwóch mężczyzn",
-      "date": [1875],
-      "materials": ["fotografia"],
-      "size": [11, 7.7],
+      "date": [
+        1875
+      ],
+      "materials": [
+        "fotografia"
+      ],
+      "size": [
+        11,
+        7.7
+      ],
       "phrase": "ja"
     },
     {
       "author": "Bodzianowski Cezary",
       "title": "Sfery de la lux, potocznie zwane LUNA",
-      "date": [2007],
-      "materials": ["film", "zapis cyfrowy"],
-      "size": [264.16],
+      "date": [
+        2007
+      ],
+      "materials": [
+        "film",
+        "zapis cyfrowy"
+      ],
+      "size": [
+        264.16
+      ],
       "phrase": "autonomia"
     },
     {
       "author": "Bodzianowski Cezary",
       "title": "Kaskader",
-      "date": [2007],
-      "materials": ["film", "zapis cyfrowy"],
-      "size": [264.16],
+      "date": [
+        2007
+      ],
+      "materials": [
+        "film",
+        "zapis cyfrowy"
+      ],
+      "size": [
+        264.16
+      ],
       "phrase": "miasto"
     },
     {
       "author": "Bonvinci Monica",
       "title": "Nie dla was",
-      "date": [2006],
-      "materials": ["instalacja"],
-      "size": [99, 400, 8],
+      "date": [
+        2006
+      ],
+      "materials": [
+        "instalacja"
+      ],
+      "size": [
+        99,
+        400,
+        8
+      ],
       "phrase": "kapitał"
     },
     {
       "author": "Borowski Włodzimierz",
       "title": "Arton B",
-      "date": [1958],
-      "materials": ["asamblaż"],
-      "size": [58],
+      "date": [
+        1958
+      ],
+      "materials": [
+        "asamblaż"
+      ],
+      "size": [
+        58
+      ],
       "phrase": "autonomia"
     },
     {
       "author": "Borowski Włodzimierz",
       "title": "Arton I",
-      "date": [1961],
-      "materials": ["polistyren"],
-      "size": [25],
+      "date": [
+        1961
+      ],
+      "materials": [
+        "polistyren"
+      ],
+      "size": [
+        25
+      ],
       "phrase": "autonomia"
     },
     {
       "author": "Borowski Włodzimierz",
       "title": "Arton XI",
-      "date": [1962],
-      "materials": ["polistyren"],
-      "size": [25],
+      "date": [
+        1962
+      ],
+      "materials": [
+        "polistyren"
+      ],
+      "size": [
+        25
+      ],
       "phrase": "autonomia"
     },
     {
       "author": "Boshier Derek",
       "title": "Chwała Anglii",
-      "date": [1962],
-      "materials": ["olej", "płótno"],
-      "size": [126, 101],
+      "date": [
+        1962
+      ],
+      "materials": [
+        "olej",
+        "płótno"
+      ],
+      "size": [
+        126,
+        101
+      ],
       "phrase": "kapitał"
     },
     {
       "author": "Boshier Derek",
       "title": "Kosmonauta (Najprzystojniejszy bohater kosmosu i Mr. Shepard)",
-      "date": [1962],
-      "materials": ["olej", "płótno"],
-      "size": [127, 219],
+      "date": [
+        1962
+      ],
+      "materials": [
+        "olej",
+        "płótno"
+      ],
+      "size": [
+        127,
+        219
+      ],
+      "phrase": "propaganda"
+    },
+    {
+      "author": "Boto Martha",
+      "title": "Multipla: Bardziej skrętny świetlisty nr 4",
+      "date": [
+        1969
+      ],
+      "materials": [
+        "metal",
+        "plexi",
+        "silnik"
+      ],
+      "size": [
+        41.5,
+        44,
+        22.5
+      ],
+      "phrase": "postęp"
+    },
+    {
+      "author": "Brzeski Janusz Maria",
+      "title": "Kompozycja 129",
+      "date": [
+        1931
+      ],
+      "materials": [
+        "fotomontaż",
+        "papier fotograficzny"
+      ],
+      "size": [
+        40,
+        30
+      ],
+      "phrase": "maszyna"
+    },
+    {
+      "author": "Brzeski Janusz Maria",
+      "title": "Metal",
+      "date": [
+        1931
+      ],
+      "materials": [
+        "fotomontaż",
+        "papier fotograficzny"
+      ],
+      "size": [
+        40,
+        30
+      ],
+      "phrase": "maszyna"
+    },
+    {
+      "author": "Brzeski Janusz Maria",
+      "title": "Narodziny robota, z cyklu: Narodziny robota",
+      "date": [
+        1933
+      ],
+      "materials": [
+        "fotokolaż",
+        "papier"
+      ],
+      "size": [
+        21,
+        16.5
+      ],
+      "phrase": "maszyna"
+    },
+    {
+      "author": "Brzeski Janusz Maria",
+      "title": "Dwie cywilizacje, z cyklu: Narodziny robota",
+      "date": [
+        1933
+      ],
+      "materials": [
+        "fotokolaż",
+        "papier"
+      ],
+      "size": [
+        23.2,
+        18.7
+      ],
+      "phrase": "tradycja"
+    },
+    {
+      "author": "Brzeski Janusz Maria",
+      "title": "Jeszcze szybciej, z cyklu: Narodziny robota",
+      "date": [
+        1933
+      ],
+      "materials": [
+        "fotokolaż",
+        "papier"
+      ],
+      "size": [
+        32,
+        24
+      ],
+      "phrase": "postęp"
+    },
+    {
+      "author": "Brzeski Janusz Maria",
+      "title": "Sielanka XX wieku (1), z cyklu: Narodziny robota",
+      "date": [
+        1933
+      ],
+      "materials": [
+        "fotokolaż",
+        "papier"
+      ],
+      "size": [
+        35.4,
+        22.3
+      ],
+      "phrase": "maszyna"
+    },
+    {
+      "author": "Brzeski Janusz Maria",
+      "title": "Sielanka XX wieku (2), z cyklu: Narodziny robota",
+      "date": [
+        1933
+      ],
+      "materials": [
+        "fotokolaż",
+        "papier"
+      ],
+      "size": [
+        32,
+        24
+      ],
+      "phrase": "kapitał"
+    },
+    {
+      "author": "Brzeski Janusz Maria",
+      "title": "Sielanka XX wieku (3), z cyklu: Narodziny robota",
+      "date": [
+        1933
+      ],
+      "materials": [
+        "fotokolaż",
+        "papier"
+      ],
+      "size": [
+        32,
+        24
+      ],
+      "phrase": "postęp"
+    },
+    {
+      "author": "Brzeski Janusz Maria",
+      "title": "Sielanka XX wieku (4), z cyklu: Narodziny robota",
+      "date": [
+        1933
+      ],
+      "materials": [
+        "fotokolaż",
+        "papier"
+      ],
+      "size": [
+        32,
+        24
+      ],
+      "phrase": "kapitał"
+    },
+    {
+      "author": "Brzeski Janusz Maria",
+      "title": "Sielanka XX wieku (7), z cyklu: Narodziny robota",
+      "date": [
+        1933
+      ],
+      "materials": [
+        "fotokolaż",
+        "papier"
+      ],
+      "size": [
+        15,
+        11.5
+      ],
+      "phrase": "katastrofa"
+    },
+    {
+      "author": "Brzeski Janusz Maria",
+      "title": "Zmierzch cywilizacji, z cyklu: Narodziny robota",
+      "date": [
+        1933
+      ],
+      "materials": [
+        "fotokolaż",
+        "papier"
+      ],
+      "size": [
+        17,
+        15
+      ],
+      "phrase": "maszyna"
+    },
+    {
+      "author": "Brzeski Janusz Maria",
+      "title": "Biegacz",
+      "date": [
+        1935
+      ],
+      "materials": [
+        "fotokolaż",
+        "tusz",
+        "papier"
+      ],
+      "size": [
+        10.5,
+        20
+      ],
+      "phrase": "maszyna"
+    },
+    {
+      "author": "Brzeski Janusz Maria",
+      "title": "Port",
+      "date": [
+        1935
+      ],
+      "materials": [
+        "fotokolaż",
+        "tusz",
+        "papier"
+      ],
+      "size": [
+        15,
+        20.2
+      ],
+      "phrase": "postęp"
+    },
+    {
+      "author": "Brzeski Janusz Maria",
+      "title": "Projekt okładki do magazynu AS",
+      "date": [
+        1936
+      ],
+      "materials": [
+        "fotokolaż",
+        "papier"
+      ],
+      "size": [
+        40,
+        30
+      ],
+      "phrase": "tradycja"
+    },
+    {
+      "author": "Bułhak Jan",
+      "title": "Wilno, widok ogólny",
+      "date": [
+        1912,
+        1916
+      ],
+      "materials": [
+        "fotografia"
+      ],
+      "size": [
+        11.5,
+        16.5
+      ],
       "phrase": "propaganda"
     }
   ]

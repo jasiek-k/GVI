@@ -1,7 +1,7 @@
 import { useEffect } from 'react';
 
-const useScrollTop = () => {
-  useEffect(() => {   
+const useScrollTop = () =>
+  useEffect(() => {
     if (window.scrollY !== 0) {
       window.scrollTo({
         top: 0,
@@ -9,6 +9,5 @@ const useScrollTop = () => {
       });
     }
   }, []);
-};
 
 export default useScrollTop;

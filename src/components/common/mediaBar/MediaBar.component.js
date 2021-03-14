@@ -6,7 +6,6 @@ import { msUrl } from '../../../data/data';
 
 import "./MediaBar.styles.scss";
 
-
 const MediaBar = React.forwardRef((_props, ref) => (
   <div ref={ref} className="media-bar">
     <div className="media-bar__content">

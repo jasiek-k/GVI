@@ -7,6 +7,8 @@ const DEFAULT_LANG = "pl";
 
 const MENU_TOGGLE_TIMEOUT = 250;
 
+const LANDING_TRANSITION_TIME = 4000;
+
 const BREAKPOINTS = {
   desktop: 1024,
   mobile: 600
@@ -57,6 +59,7 @@ export {
   AVAILABLE_LANGS,
   DEFAULT_LANG,
   MENU_TOGGLE_TIMEOUT,
+  LANDING_TRANSITION_TIME,
   defaultScreenWidths,
   defaultLogoConfig,
   MAX_VERT_ROADS,
