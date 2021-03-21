@@ -15,7 +15,6 @@ import PhotoSection from "../../sections/photoSection/PhotoSection.component";
 import CustomHead from '../common/customHead/CustomHead.component';
 
 import "./OnePager.styles.scss";
-import baner from '../../assets/images/baner.png';
 
 const OnePager = () => {
   const [currentLang, setLang] = useState(DEFAULT_LANG);
@@ -30,7 +29,7 @@ const OnePager = () => {
   const getNewLogo = useCallback(() => {
     setLogoInfo(generateLogo());
   }, []);
-  console.log(baner)
+
   const changeLang = useCallback((item) => {
     localStorage.setItem("atlasLang", item);
     setLang(item);
