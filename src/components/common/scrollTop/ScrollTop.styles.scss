@@ -1,0 +1,55 @@
+.scroll-top--button {
+  width: 3.645vw;
+  height: 3.645vw;
+  background-color: #fff;
+  border: 5px solid #000;
+  -webkit-box-shadow: 0px 0px 14px 1px rgba(0,0,0,0.5);
+  -moz-box-shadow: 0px 0px 14px 1px rgba(0,0,0,0.5);
+  box-shadow: 0px 0px 14px 1px rgba(0,0,0,0.5);
+  position: fixed;
+  bottom: 4.6875vw;
+  right: 4.6875vw;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  opacity: 0;
+  transition: opacity ease-in 0.25s;
+
+  &:hover {
+    cursor: pointer;
+  }
+  
+  &__icon svg {
+    width: 1.2428125vw;
+    height: 1.6929166vw;
+  }
+
+  &.visible {
+    opacity: 1;
+  }
+
+  @media (min-width: 601px) and (max-width: 1023px) {
+    width: 9.114583vw;
+    height: 9.114583vw;
+    bottom: 5.2083vw;
+    right: 5.2083vw;
+
+    &__icon svg {
+      width: 3.10703125vw;
+      height: 4.2322916vw;
+    }
+  }
+
+  @media (max-width: 600px) {
+    bottom: 5.3333vw;
+    right: 5.3333vw;
+    width: 16vw;
+    height: 16vw;
+
+    &__icon svg {
+      width: 5.45417vw;
+      height:7.4294vw;
+    }
+  }
+}

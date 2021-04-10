@@ -13,6 +13,7 @@ import LandingPage from "../../sections/landingPage/LandingPage.component";
 import ResourceSection from "../../sections/resourceSection/ResourceSection.component";
 import PhotoSection from "../../sections/photoSection/PhotoSection.component";
 import CustomHead from '../common/customHead/CustomHead.component';
+import ScrollTop from '../common/scrollTop/ScrollTop.component';
 
 import "./OnePager.styles.scss";
 
@@ -48,6 +49,7 @@ const OnePager = () => {
   return (
     <LanguageService currentLang={currentLang}>
       <div className="one-pager">
+        <ScrollTop />
         <CustomHead />
         <LandingPage
           sectionsRefs={[infoRef, generativeRef, photoRef, resourceRef]}

@@ -282,6 +282,11 @@ const handleMaterialTranslation = (data) => {
   return data.join(', ');
 }
 
+const handleScroll = () => window.scrollTo({
+  top: 0,
+  behavior: "smooth",
+});
+
 export {
   handleMaterialTranslation,
   checkCurrentLang,
@@ -307,4 +312,5 @@ export {
   MAX_VERT_ROADS,
   MAX_HORI_ROADS,
   MAX_OBLI_ROADS,
+  handleScroll
 };
