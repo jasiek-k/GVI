@@ -14,13 +14,13 @@ const BREAKPOINTS = {
   mobile: 600
 }
 
-const defaultScreenWidths = {
+const DEFAULT_SCREEN_WIDTHS = {
   mobile: 375,
   tablet: 768,
   desktop: 1920
 }
 
-const defaultLogoConfig = {
+const DEFAULT_LOGO_CONFIG = {
   mobile: 295,
   tablet: 223,
   dekstop: 366
@@ -60,8 +60,8 @@ export {
   DEFAULT_LANG,
   MENU_TOGGLE_TIMEOUT,
   LANDING_TRANSITION_TIME,
-  defaultScreenWidths,
-  defaultLogoConfig,
+  DEFAULT_SCREEN_WIDTHS,
+  DEFAULT_LOGO_CONFIG,
   MAX_VERT_ROADS,
   MIN_VERT_ROADS,
   MAX_HORI_ROADS,

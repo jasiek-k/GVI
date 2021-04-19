@@ -4,12 +4,12 @@ import Sketch from "react-p5";
 
 import { getLineOffset, getDivider } from "../../../services/helpers";
 import { verticalOffset, horizontalOffset } from "../../../data/data";
-import { defaultLogoConfig } from '../../../config';
+import { DEFAULT_LOGO_CONFIG } from '../../../config';
 
 const GenerativeLogo = ({ roadsData, config, reverseColors = false }) => {
   const [windowWidth, setWindowWidth] = useState(window.innerWidth);
   const { areaIndex, vertical, horizontal, oblique } = roadsData;
-  const currentConfig = config || defaultLogoConfig;
+  const currentConfig = config || DEFAULT_LOGO_CONFIG;
   let canvasDim = (windowWidth / 100) * getDivider(windowWidth, currentConfig);
   const unit = canvasDim / 10;
   const stroke = canvasDim / 20;

@@ -739,20 +739,374 @@
       "phrase": "propaganda"
     },
     {
-      "author": "Sandle Michael",
-      "title": "Rewolucja. śmierć i barykady",
+      "author": "Bułhak Jan",
+      "title": "Warszawa. Stare Miasto",
       "date": [
-        1985
+        1920
       ],
       "materials": [
-        "akwaforta",
+        "fotografia"
+      ],
+      "size": [
+        11,
+        16.2
+      ],
+      "phrase": "propaganda"
+    },
+    {
+      "author": "Bułhak Jan",
+      "title": "Śląsk",
+      "date": [
+        1937
+      ],
+      "materials": [
+        "fotografia"
+      ],
+      "size": [
+        25,
+        31.5
+      ],
+      "phrase": "propaganda"
+    },
+    {
+      "author": "Bułhak Jan",
+      "title": "Odbudowa Warszawy",
+      "date": [
+        1949
+      ],
+      "materials": [
+        "fotografia"
+      ],
+      "size": [
+        17.5,
+        12.5
+      ],
+      "phrase": "propaganda"
+    },
+    {
+      "author": "Bułhak Jan",
+      "title": "Delux Photo Book",
+      "date": [
+        1971,
+        1973
+      ],
+      "materials": [
+        "kserokopia",
+        "fotografia"
+      ],
+      "size": [
+        29.5,
+        29,
+        5
+      ],
+      "phrase": "eksperyment"
+    },
+    {
+      "author": "Burden Chris",
+      "title": "Delux Photo Book",
+      "date": [
+        1971,
+        1973
+      ],
+      "materials": [
+        "kserokopia",
+        "fotografia"
+      ],
+      "size": [
+        29.5,
+        29,
+        5
+      ],
+      "phrase": "eksperyment"
+    },
+    {
+      "author": "Chlanda Marek",
+      "title": "Oczy naprzeciw ściany",
+      "date": [
+        1988
+      ],
+      "materials": [
+        "instalacja",
+        "materiały różne"
+      ],
+      "size": [
+        180,
+        48,
+        187
+      ],
+      "phrase": "ja"
+    },
+    {
+      "author": "Chwistek Leon",
+      "title": "Dancing",
+      "date": [
+        1930
+      ],
+      "materials": [
+        "akwarela"
+      ],
+      "size": [
+        17,
+        21
+      ],
+      "phrase": "kapitał"
+    },
+    {
+      "author": "Chwistek Leon",
+      "title": "Karuzela",
+      "date": [
+        1936
+      ],
+      "materials": [
+        "olej",
+        "deska"
+      ],
+      "size": [
+        99,
+        120
+      ],
+      "phrase": "miasto"
+    },
+    {
+      "author": "Chwistek Leon",
+      "title": "Defilada",
+      "date": [
+        1937
+      ],
+      "materials": [
+        "olej",
+        "deska"
+      ],
+      "size": [
+        100,
+        120
+      ],
+      "phrase": "miasto"
+    },
+    {
+      "author": "Cieślewicz Roman",
+      "title": "Według Supermana",
+      "date": [
+        1967
+      ],
+      "materials": [
+        "offset",
         "papier"
       ],
       "size": [
-        11.5,
-        16.5
+        82,
+        55
       ],
       "phrase": "propaganda"
+    },
+    {
+      "author": "Cyprian Tadeusz",
+      "title": "Wojna",
+      "date": [
+        1914
+      ],
+      "materials": [
+        "fotografia"
+      ],
+      "size": [
+        20,
+        34
+      ],
+      "phrase": "katastrofa"
+    },
+    {
+      "author": "Czyżewski Tytus",
+      "title": "Krajobraz z architekturą",
+      "date": [
+        1925
+      ],
+      "materials": [
+        "olej",
+        "płótno"
+      ],
+      "size": [
+        49.5,
+        64.5
+      ],
+      "phrase": "muzeum"
+    },
+    {
+      "author": "Czyżewski Tytus",
+      "title": "Madonna",
+      "date": [
+        1922
+      ],
+      "materials": [
+        "olej",
+        "płótno"
+      ],
+      "size": [
+        71,
+        60
+      ],
+      "phrase": "tradycja"
+    },
+    {
+      "author": "Demarco Hugo Rodolfo",
+      "title": "Multipla: Ożywiona kolumna",
+      "date": [
+        1970
+      ],
+      "materials": [
+        "stal",
+        "silnik"
+      ],
+      "size": [
+        84,
+        10.5,
+        8.5
+      ],
+      "phrase": "postęp"
+    },
+    {
+      "author": "Djordjadze Thea",
+      "title": "Szukać bez gestu",
+      "date": [
+        2008
+      ],
+      "materials": [
+        "instalacja",
+        "dywan",
+        "drewno",
+        "farba",
+        "ceramika",
+        "juta"
+      ],
+      "size": [
+        10,
+        83,
+        244
+      ],
+      "phrase": "tradycja"
+    },
+    {
+      "author": "Dłubak Zbigniew",
+      "title": "Mutanty",
+      "date": [
+        1971
+      ],
+      "materials": [
+        "fotografia"
+      ],
+      "size": [
+        39,
+        146
+      ],
+      "phrase": "norma"
+    },
+    {
+      "author": "Dorys Benedykt Jerzy",
+      "title": "Moda",
+      "date": [
+        1971
+      ],
+      "materials": [
+        "fotografia"
+      ],
+      "size": [
+        40,
+        56
+      ],
+      "phrase": "kapitał"
+    },
+    {
+      "author": "Ernst Max",
+      "title": "Słońce i las",
+      "date": [
+        1928
+      ],
+      "materials": [
+        "olej",
+        "płótno"
+      ],
+      "size": [
+        27,
+        22
+      ],
+      "phrase": "eksperyment"
+    },
+    {
+      "author": "Fangor Wojciech",
+      "title": "Postacie",
+      "date": [
+        1950
+      ],
+      "materials": [
+        "olej",
+        "płótno"
+      ],
+      "size": [
+        100,
+        125
+      ],
+      "phrase": "propaganda"
+    },
+    {
+      "author": "Francis Sam",
+      "title": "Bez tytułu",
+      "date": [
+        1966
+      ],
+      "materials": [
+        "olej",
+        "płótno"
+      ],
+      "size": [
+        194,
+        130
+      ],
+      "phrase": "autonomia"
+    },
+    {
+      "author": "Gluber Hans",
+      "title": "Hiszpańskie ogrodyty",
+      "date": [
+        1967
+      ],
+      "materials": [
+        "fotografia",
+        "płyta plastikowa"
+      ],
+      "size": [
+        120,
+        165
+      ],
+      "phrase": "maszyna"
+    },
+    {
+      "author": "Grabowski Władysław",
+      "title": "Łódź, Fabryka Poznańskiego",
+      "date": [
+        1933
+      ],
+      "materials": [
+        "fotografia"
+      ],
+      "size": [
+        12.7,
+        17.8
+      ],
+      "phrase": "kapitał"
+    },
+    {
+      "author": "Grabski Władysław Jan",
+      "title": "Stanisław Ignacy Witkiewicz w futrzanym kapeluszu",
+      "date": [
+        1931
+      ],
+      "materials": [
+        "fotografia"
+      ],
+      "size": [
+        8.8,
+        13.6
+      ],
+      "phrase": "ja"
     }
   ]
 }

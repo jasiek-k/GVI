@@ -1,7 +1,7 @@
 import artworksData from "../data/artworksData.json";
 import { techniquesArray, modernityAreas, materialsTranslationsArray } from "../data/data";
 import {
-  defaultScreenWidths,
+  DEFAULT_SCREEN_WIDTHS,
   DEFAULT_LANG,
   AVAILABLE_LANGS,
   BREAKPOINTS,
@@ -255,9 +255,9 @@ const getLineOffset = (lineId, offsetArray) => {
 const getDivider = (windowSize, config) => {
   const { mobile, tablet, desktop } = config;
 
-  if (windowSize >= BREAKPOINTS.desktop) return desktop * 100 / defaultScreenWidths.desktop;
-  else if (windowSize < BREAKPOINTS.desktop && windowSize >= BREAKPOINTS.mobile) return tablet * 100 / defaultScreenWidths.tablet;
-  else return mobile * 100 / defaultScreenWidths.mobile;
+  if (windowSize >= BREAKPOINTS.desktop) return desktop * 100 / DEFAULT_SCREEN_WIDTHS.desktop;
+  else if (windowSize < BREAKPOINTS.desktop && windowSize >= BREAKPOINTS.mobile) return tablet * 100 / DEFAULT_SCREEN_WIDTHS.tablet;
+  else return mobile * 100 / DEFAULT_SCREEN_WIDTHS.mobile;
 };
 
 const checkCurrentLang = () => {

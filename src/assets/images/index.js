@@ -10,8 +10,6 @@ import resource2 from "./resource_folder.jpg";
 import resource3 from "./resource_movie.jpg";
 import resource4 from "./resource_ticket.jpg";
 
-import landingPhoto from "./landingPhoto.jpg";
-
 export {
   photo1,
   photo2,
@@ -23,5 +21,4 @@ export {
   resource2,
   resource3,
   resource4,
-  landingPhoto
 };
