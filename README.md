@@ -1,12 +1,10 @@
-# COVID19
-
 English version below.
 [PL] ---------------------------------------------------------------------------
 Wersja live na Netlify:
 https://gvi.netlify.app/
 
 Aby uruchomić aplikację na świeżym komputerze:
-1. Pobierz oraz zainstaluj Node.js, npm >>> https://nodejs.org/en/
+1. Pobierz oraz zainstaluj środowisko Node.js oraz manager pakietów npm >>> https://nodejs.org/en/
 2. Sprawdź, czy instalacja przebiegła pomyślnie poleceniami:
     node -v
     npm -v
@@ -20,7 +18,7 @@ Live version on Netlify:
 https://gvi.netlify.app/
 
 To run this app on clean computer:
-1. Download and install Node.js, npm >>> https://nodejs.org/en/
+1. Download and install Node.js environment and package manager npm >>> https://nodejs.org/en/
 2. Check if the installation was finished successfully:
     node -v
     npm -v

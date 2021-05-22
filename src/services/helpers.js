@@ -17,11 +17,7 @@ const getMin = (array) => Math.min.apply(Math, array);
 
 const getMax = (array) => Math.max.apply(Math, array);
 
-const getRandomArtwork = () => {
-  const { artworks } = artworksData;
-
-  return artworks[getRandomInteger(0, artworksData.artworks.length - 1)];
-};
+const getRandomArtwork = () => artworksData.artworks[getRandomInteger(0, artworksData.artworks.length - 1)];
 
 const prepareNames = (name) => {
   if (typeof name === "string") {

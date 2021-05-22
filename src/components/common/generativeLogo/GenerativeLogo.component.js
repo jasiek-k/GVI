@@ -26,6 +26,7 @@ const GenerativeLogo = ({ roadsData, config, reverseColors = false }) => {
 
   const setup = (p5, canvasParentRef) =>
     p5.createCanvas(canvasDim, canvasDim).parent(canvasParentRef);
+  // p5.createCanvas(undefined, undefined).parent(canvasParentRef);
 
   // NOTE: Do not use setState in the draw function or in functions that are executed in the draw function
   const draw = (p5) => {
@@ -76,7 +77,6 @@ const GenerativeLogo = ({ roadsData, config, reverseColors = false }) => {
 
   return (
     <Sketch
-      style={{ width: '100%', height: '100%' }}
       setup={setup}
       draw={draw}
       windowResized={(p5) => p5.resizeCanvas(canvasDim, canvasDim)}

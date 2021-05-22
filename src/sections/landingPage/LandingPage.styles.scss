@@ -7,6 +7,7 @@
   height: 100vh;
   padding: 2.08333vw;
   box-sizing: border-box;
+  min-height: 750px;
 
   &--wrapper {
     width: 100%;
@@ -103,6 +104,7 @@
   
   @media (max-width: 600px) {
     padding: 5.3333vw;
+    min-height: 500px;
 
     &__navbar {
       &__logos {
@@ -157,6 +159,7 @@
 
   @media (min-width: 601px) and (max-width: 1023px) {
     padding: 5.2083vw;
+    min-height: 900px;
 
     &__navbar {
       &--nav {
