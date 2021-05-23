@@ -1,4 +1,5 @@
 English version below.
+
 [PL] ---------------------------------------------------------------------------
 Wersja live na Netlify:
 https://gvi.netlify.app/
@@ -12,6 +13,7 @@ Aby uruchomić aplikację na świeżym komputerze:
     npm install
 4. Po zainstalowaniu wszystkich wymaganych zależności wprowadź polecenie:
     npm start
+
 
 [EN] ---------------------------------------------------------------------------
 Live version on Netlify:
