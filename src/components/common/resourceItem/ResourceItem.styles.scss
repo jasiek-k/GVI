@@ -36,7 +36,7 @@
     margin-top: 1.0416667vw;
     margin-bottom: 1.0416667vw;
     height: 4.94791667vw;
-    font-size: 0.83333vw;
+    font-size: 16px;
   }
 
   &__divider {
@@ -48,7 +48,7 @@
 
   &__caption {
     color: #fff;
-    font-size: 0.83333vw;
+    font-size: 16px;
   }
 
   @media (max-width: 600px) {
@@ -64,14 +64,14 @@
     }
 
     &__title {
-      font-size: 3.7333vw;
+      font-size: 14px;
       height: 21.333vw;
       margin-top: 2.6667vw;
       margin-bottom: 2.6667vw;
     }
 
     &__caption {
-      font-size: 3.7333vw;
+      font-size: 14px;
     }
   }
 
@@ -83,12 +83,12 @@
     &__photo {
       min-width: 37.890625vw;
       max-width: 37.890625vw;
-      min-height : 37.890625vw;
+      min-height: 37.890625vw;
       max-height: 37.890625vw;
     }
 
     &__title {
-      font-size: 2.083vw;
+      font-size: 16px;
       margin-bottom: 2.604vw;
       margin-top: 2.604vw;
       height: 12.3697vw;
@@ -99,7 +99,7 @@
     }
 
     &__caption {
-      font-size: 2.083vw;
+      font-size: 16px;
     }
   }
 }

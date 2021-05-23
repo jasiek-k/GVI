@@ -1,6 +1,6 @@
-import { useEffect } from 'react';
+import { useEffect } from "react";
 
-import { handleScroll } from '../services/helpers';
+import { handleScroll } from "../services/helpers";
 
 const useScrollTop = () =>
   useEffect(() => {

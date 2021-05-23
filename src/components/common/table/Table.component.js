@@ -1,29 +1,25 @@
-import React from "react";
-import { useIntl } from "react-intl";
+import React, { memo } from "react";
+import { FormattedMessage } from "react-intl";
 
 import { tableData } from "../../../data/data";
 
 import "./Table.styles.scss";
 
-const Table = () => {
-  const { formatMessage } = useIntl();
+const Table = () => (
+  <table className="table">
+    <tbody>
+      {tableData.map((item, index) => (
+        <tr className="table__row" key={index}>
+          <td className="table__row-title">
+            <FormattedMessage id={item.title} />
+          </td>
+          <td className="table__row-content">
+            <FormattedMessage id={item.content} />
+          </td>
+        </tr>
+      ))}
+    </tbody>
+  </table>
+);
 
-  return (
-    <table className="table">
-      <tbody>
-        {tableData.map((item, index) => (
-          <tr className="table__row" key={index}>
-            <td className="table__row-title">
-              {formatMessage({ id: item.title })}
-            </td>
-            <td className="table__row-content">
-              {formatMessage({ id: item.content })}
-            </td>
-          </tr>
-        ))}
-      </tbody>
-    </table>
-  );
-};
-
-export default Table;
+export default memo(Table);

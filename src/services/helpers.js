@@ -1,5 +1,9 @@
 import artworksData from "../data/artworksData.json";
-import { techniquesArray, modernityAreas, materialsTranslationsArray } from "../data/data";
+import {
+  techniquesArray,
+  modernityAreas,
+  materialsTranslationsArray,
+} from "../data/data";
 import {
   DEFAULT_SCREEN_WIDTHS,
   DEFAULT_LANG,
@@ -10,14 +14,15 @@ import {
   MAX_HORI_ROADS,
   MIN_HORI_ROADS,
   MAX_OBLI_ROADS,
-  ROADS_GRID
-} from '../config';
+  ROADS_GRID,
+} from "../config";
 
 const getMin = (array) => Math.min.apply(Math, array);
 
 const getMax = (array) => Math.max.apply(Math, array);
 
-const getRandomArtwork = () => artworksData.artworks[getRandomInteger(0, artworksData.artworks.length - 1)];
+const getRandomArtwork = () =>
+  artworksData.artworks[getRandomInteger(0, artworksData.artworks.length - 1)];
 
 const prepareNames = (name) => {
   if (typeof name === "string") {
@@ -251,9 +256,20 @@ const getLineOffset = (lineId, offsetArray) => {
 const getDivider = (windowSize, config) => {
   const { mobile, tablet, desktop } = config;
 
-  if (windowSize >= BREAKPOINTS.desktop) return desktop * 100 / DEFAULT_SCREEN_WIDTHS.desktop;
-  else if (windowSize < BREAKPOINTS.desktop && windowSize >= BREAKPOINTS.mobile) return tablet * 100 / DEFAULT_SCREEN_WIDTHS.tablet;
-  else return mobile * 100 / DEFAULT_SCREEN_WIDTHS.mobile;
+  if (windowSize >= BREAKPOINTS.desktop)
+    return (desktop * 100) / DEFAULT_SCREEN_WIDTHS.desktop;
+  else if (windowSize < BREAKPOINTS.desktop && windowSize >= BREAKPOINTS.mobile)
+    return (tablet * 100) / DEFAULT_SCREEN_WIDTHS.tablet;
+  else return (mobile * 100) / DEFAULT_SCREEN_WIDTHS.mobile;
+};
+
+const getCurrentDim = (windowSize, config) => {
+  const { mobile, tablet, desktop } = config;
+
+  if (windowSize >= BREAKPOINTS.desktop) return desktop;
+  else if (windowSize < BREAKPOINTS.desktop && windowSize >= BREAKPOINTS.mobile)
+    return tablet;
+  else return mobile;
 };
 
 const checkCurrentLang = () => {
@@ -261,27 +277,30 @@ const checkCurrentLang = () => {
 
   if (!lang) return DEFAULT_LANG;
   else return lang;
-}
+};
 
 const handleMaterialTranslation = (data) => {
-  if (checkCurrentLang() !== AVAILABLE_LANGS['pl']) {
+  if (checkCurrentLang() !== AVAILABLE_LANGS["pl"]) {
     const translated = [];
 
-    data.forEach(item => {
-      const result = materialsTranslationsArray.find(material => item === material.item);
-      if (result) translated.push(result.lang)
-    })
+    data.forEach((item) => {
+      const result = materialsTranslationsArray.find(
+        (material) => item === material.item
+      );
+      if (result) translated.push(result.lang);
+    });
 
-    return translated.join(', ');
+    return translated.join(", ");
   }
 
-  return data.join(', ');
-}
+  return data.join(", ");
+};
 
-const handleScroll = () => window.scrollTo({
-  top: 0,
-  behavior: "smooth",
-});
+const handleScroll = () =>
+  window.scrollTo({
+    top: 0,
+    behavior: "smooth",
+  });
 
 export {
   handleMaterialTranslation,
@@ -308,5 +327,6 @@ export {
   MAX_VERT_ROADS,
   MAX_HORI_ROADS,
   MAX_OBLI_ROADS,
-  handleScroll
+  handleScroll,
+  getCurrentDim,
 };

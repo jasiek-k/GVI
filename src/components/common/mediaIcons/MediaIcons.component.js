@@ -1,10 +1,10 @@
-import React from 'react';
+import React from "react";
 
 import { socialMediaArray } from "../../../data/data";
 
 import "./MediaIcons.styles.scss";
 
-const MediaIcons = ({ className = '' }) => (
+const MediaIcons = ({ className = "" }) => (
   <div className={`${className} social-media`}>
     {socialMediaArray.map((item, index) => (
       <div key={index} className={`${className} social-media__icon`}>

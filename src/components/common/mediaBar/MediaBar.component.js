@@ -1,8 +1,8 @@
 import React, { memo } from "react";
 import { FormattedMessage } from "react-intl";
 
-import MediaIcons from '../mediaIcons/MediaIcons.component';
-import { msUrl } from '../../../data/data';
+import MediaIcons from "../mediaIcons/MediaIcons.component";
+import { msUrl } from "../../../data/data";
 
 import "./MediaBar.styles.scss";
 

@@ -28,8 +28,9 @@ const PhotosGrid = () => {
       <div className="grid-section__content">
         {galleryContentArray.map((item) => (
           <img
-            className={`grid-section__content--item ${item.id > 2 ? "margin" : ""
-              }`}
+            className={`grid-section__content--item ${
+              item.id > 2 ? "margin" : ""
+            }`}
             src={item.cropped}
             alt=""
             id={item.id}
@@ -38,7 +39,7 @@ const PhotosGrid = () => {
           />
         ))}
       </div>
-      {photoId !== null && (
+      {photoId && (
         <>
           <PhotoModal
             currentPhoto={photoId}

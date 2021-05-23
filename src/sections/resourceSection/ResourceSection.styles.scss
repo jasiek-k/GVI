@@ -20,7 +20,7 @@
       padding-right: 1.0416667vw;
       text-align: right;
       font-weight: bold;
-      font-size: 2.0833vw;
+      font-size: 40px;
       margin-left: auto;
       margin-right: 0;
       margin-top: 0;
@@ -41,7 +41,7 @@
       &::-webkit-scrollbar {
         height: 0.6em;
       }
-      
+
       &::-webkit-scrollbar-thumb {
         background-color: #fff;
       }
@@ -62,7 +62,7 @@
       padding-top: 5.3333vw;
 
       &--caption {
-        font-size: 5.3333vw;
+        font-size: 25px;
         padding-right: 2.6667vw;
       }
     }
@@ -82,7 +82,7 @@
       padding-top: 5.3333vw;
 
       &--caption {
-        font-size: 5.3333vw;
+        font-size: 40px;
         padding-right: 2.604167vw;
       }
     }

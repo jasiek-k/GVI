@@ -51,7 +51,7 @@ const generateLogo = () => {
       verticalRoads,
       obliqueRoads,
     }),
-    artwork: drawnArtwork
+    artwork: drawnArtwork,
   };
 };
 

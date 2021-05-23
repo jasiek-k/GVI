@@ -1,20 +1,25 @@
 import React from "react";
-import { FormattedMessage } from 'react-intl';
+import { FormattedMessage } from "react-intl";
 
 import GenerativeLogo from "../../components/common/generativeLogo/GenerativeLogo.component";
-import LandingSlider from '../../components/common/landingSlider/LandingSlider.component';
+import LandingSlider from "../../components/common/landingSlider/LandingSlider.component";
 import Nav from "../../components/common/nav/Nav.component";
-import { MSLogo } from '../../assets/Icons';
+import { MSLogo } from "../../assets/Icons";
 
 import "./LandingPage.styles.scss";
 
 const logoConfig = {
   mobile: 70,
   tablet: 80,
-  desktop: 90
-}
+  desktop: 90,
+};
 
-const LandingPage = ({ changeLang, currentLang, sectionsRefs, data: { roadsData } }) => (
+const LandingPage = ({
+  changeLang,
+  currentLang,
+  sectionsRefs,
+  data: { roadsData },
+}) => (
   <div className="landing-section">
     <div className="landing-section--wrapper">
       <div className="landing-section__navbar">
@@ -25,7 +30,11 @@ const LandingPage = ({ changeLang, currentLang, sectionsRefs, data: { roadsData 
             </div>
           </div>
           <div className="landing-section__navbar__logos--generative">
-            <GenerativeLogo roadsData={roadsData} config={logoConfig} reverseColors={false} />
+            <GenerativeLogo
+              roadsData={roadsData}
+              config={logoConfig}
+              reverseColors={false}
+            />
           </div>
         </div>
         <div className="landing-section__navbar--nav">

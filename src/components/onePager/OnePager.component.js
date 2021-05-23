@@ -3,7 +3,6 @@ import React, { useState, useEffect, useCallback, useRef } from "react";
 import LanguageService from "../../services/Language.service";
 import generateLogo from "../../services/generateLogo";
 import useScrollTop from "../../services/useScrollTop";
-// import generativeMechanism from "../../services/generativeMechanism";
 import { DEFAULT_LANG } from "../../config";
 
 import Footer from "../../sections/footer/Footer.component";
@@ -12,8 +11,8 @@ import InformationSection from "../../sections/informationSection/InformationSec
 import LandingPage from "../../sections/landingPage/LandingPage.component";
 import ResourceSection from "../../sections/resourceSection/ResourceSection.component";
 import PhotoSection from "../../sections/photoSection/PhotoSection.component";
-import CustomHead from '../common/customHead/CustomHead.component';
-import ScrollTop from '../common/scrollTop/ScrollTop.component';
+import CustomHead from "../common/customHead/CustomHead.component";
+import ScrollTop from "../common/scrollTop/ScrollTop.component";
 
 import "./OnePager.styles.scss";
 
@@ -25,7 +24,6 @@ const OnePager = () => {
   const photoRef = useRef();
   const resourceRef = useRef();
   useScrollTop();
-  // const generated = generativeMechanism();
 
   const getNewLogo = useCallback(() => {
     setLogoInfo(generateLogo());
@@ -58,7 +56,11 @@ const OnePager = () => {
           data={logoInfo}
         />
         <InformationSection ref={infoRef} />
-        <GenerativeSection data={logoInfo} getLogo={getNewLogo} ref={generativeRef} />
+        <GenerativeSection
+          data={logoInfo}
+          getLogo={getNewLogo}
+          ref={generativeRef}
+        />
         <PhotoSection ref={photoRef} />
         <ResourceSection ref={resourceRef} />
         <Footer />

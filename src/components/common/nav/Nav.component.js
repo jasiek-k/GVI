@@ -1,8 +1,12 @@
 import React, { useCallback, useState, memo } from "react";
 import { FormattedMessage } from "react-intl";
 
-import MediaIcons from '../mediaIcons/MediaIcons.component';
-import { AVAILABLE_LANGS, MENU_TOGGLE_TIMEOUT, BREAKPOINTS } from "../../../config";
+import MediaIcons from "../mediaIcons/MediaIcons.component";
+import {
+  AVAILABLE_LANGS,
+  MENU_TOGGLE_TIMEOUT,
+  BREAKPOINTS,
+} from "../../../config";
 import { CloseIcon, HamburgerIcon } from "../../../assets/Icons";
 
 import "./Nav.styles.scss";
@@ -19,7 +23,8 @@ const Nav = ({ setLangCallback, currentLang, refs }) => {
 
   const handleScroll = useCallback(
     (ref) => {
-      let timeOut = window.innerWidth < BREAKPOINTS.desktop ? MENU_TOGGLE_TIMEOUT : 0;
+      let timeOut =
+        window.innerWidth < BREAKPOINTS.desktop ? MENU_TOGGLE_TIMEOUT : 0;
 
       setMenuState(!menuState);
       setTimeout(() => {
@@ -32,17 +37,16 @@ const Nav = ({ setLangCallback, currentLang, refs }) => {
   const LangButton = ({ item, index }) => (
     <>
       <button
-        className={`navbar__lang--item ${item.toLowerCase() === currentLang ? "current" : ""
-          }`}
+        className={`navbar__lang--item ${
+          item.toLowerCase() === currentLang ? "current" : ""
+        }`}
         onClick={() => setLangCallback(item)}
       >
         {item}
       </button>
-      {index === 0 && (
-        <span className="navbar__lang--item--divider">/</span>
-      )}
+      {index === 0 && <span className="navbar__lang--item--divider">/</span>}
     </>
-  )
+  );
 
   return (
     <>
@@ -59,6 +63,7 @@ const Nav = ({ setLangCallback, currentLang, refs }) => {
               <button
                 className="navbar__scroll--item"
                 key={index}
+                type="button"
                 onClick={() => handleScroll(item.ref)}
               >
                 <FormattedMessage id={item.caption} />

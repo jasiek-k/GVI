@@ -7,7 +7,7 @@
 
   .footer-caption {
     color: #000;
-    font-size: 1.0416667vw;
+    font-size: 20px;
     font-weight: bold;
 
     &__wrapper {
@@ -21,10 +21,10 @@
         display: flex;
         flex-direction: row;
         margin-top: 0.52083vw;
-        
+
         &--item {
           color: #000;
-          font-size: 0.9375vw;
+          font-size: 18px;
           text-decoration: none;
         }
 
@@ -34,10 +34,10 @@
           flex-direction: column;
           display: flex;
           text-align: right;
-          
+
           &__item {
             color: #000;
-            font-size: 0.9375vw;
+            font-size: 18px;
             margin-bottom: 2px;
             text-decoration: none;
           }
@@ -51,10 +51,8 @@
     box-sizing: border-box;
     padding-left: 5.333vw;
     padding-right: 5.333vw;
-    
-    .footer-caption {
-      font-size: 3.733vw;
 
+    .footer-caption {
       &__wrapper {
         width: 100%;
         padding-top: 5.333vw;
@@ -62,14 +60,9 @@
 
         &__content {
           margin-top: 2.667vw;
-          
-          &--item {
-            font-size: 3.2vw;
-          }
 
           &--right {
             &__item {
-              font-size: 3.2vw;
               margin-bottom: 4px;
             }
           }
@@ -86,9 +79,9 @@
 
     .footer-caption {
       color: #000;
-      font-size: 2.60416vw;
+      font-size: 18px;
       font-weight: bold;
-  
+
       &__wrapper {
         width: 100%;
         padding-top: 5.2083vw;
@@ -96,14 +89,14 @@
 
         &__content {
           margin-top: 1.302vw;
-          
+
           &--item {
-            font-size: 2.34375vw;
+            font-size: 16px;
           }
 
           &--right {
             &__item {
-              font-size: 2.34375vw;
+              font-size: 16px;
               margin-bottom: 4px;
             }
           }

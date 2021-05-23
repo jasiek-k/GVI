@@ -54,8 +54,12 @@
     &__scroll--item,
     &__lang--item,
     &__lang--item--divider {
-      font-size: 0.9375vw;
+      font-size: 18px;
       color: #fff;
+    }
+
+    &__social-media {
+      display: none;
     }
   }
 
@@ -88,7 +92,7 @@
       flex-direction: column;
 
       &--item {
-        font-size: 8vw;
+        font-size: 30px;
         line-height: 2;
       }
     }
@@ -98,10 +102,10 @@
       flex-direction: row;
       align-items: center;
       justify-content: center;
-      font-size: 8vw;
+      font-size: 30px;
 
       &--item {
-        font-size: 8vw;
+        font-size: 30px;
         line-height: 2;
       }
 
@@ -144,7 +148,7 @@
       flex-direction: column;
 
       &--item {
-        font-size: 3.90625vw;
+        font-size: 30px;
         line-height: 2.25;
       }
     }
@@ -154,10 +158,10 @@
       flex-direction: row;
       align-items: center;
       justify-content: center;
-      font-size: 3.90625vw;
+      font-size: 30px;
 
       &--item {
-        font-size: 3.90625vw;
+        font-size: 30px;
         line-height: 2.25;
       }
 
