@@ -1,4 +1,5 @@
 import React, { useState, useCallback } from "react";
+import clsx from "clsx";
 
 import PhotoModal from "../photoModal/PhotoModal.component";
 import SectionHeader from "../sectionHeader/SectionHeader.component";
@@ -28,9 +29,9 @@ const PhotosGrid = () => {
       <div className="grid-section__content">
         {galleryContentArray.map((item) => (
           <img
-            className={`grid-section__content--item ${
-              item.id > 2 ? "margin" : ""
-            }`}
+            className={clsx("grid-section__content--item", {
+              margin: item.id > 2,
+            })}
             src={item.cropped}
             alt=""
             id={item.id}
@@ -39,15 +40,13 @@ const PhotosGrid = () => {
           />
         ))}
       </div>
-      {photoId && (
-        <>
-          <PhotoModal
-            currentPhoto={photoId}
-            modalPhotos={galleryContentArray}
-            toggleModal={toggleModal}
-            switchPhoto={switchPhoto}
-          />
-        </>
+      {photoId !== null && (
+        <PhotoModal
+          currentPhoto={photoId}
+          modalPhotos={galleryContentArray}
+          toggleModal={toggleModal}
+          switchPhoto={switchPhoto}
+        />
       )}
     </div>
   );
