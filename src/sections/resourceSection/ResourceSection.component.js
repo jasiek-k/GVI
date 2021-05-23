@@ -1,8 +1,8 @@
 import React, { memo } from "react";
-import { FormattedMessage } from "react-intl";
 
-import ResourceItem from "../../components/common/resourceItem/ResourceItem.component";
 import MediaBar from "../../components/common/mediaBar/MediaBar.component";
+import ResourceItem from "../../components/common/resourceItem/ResourceItem.component";
+import SectionHeader from "../../components/common/sectionHeader/SectionHeader.component";
 import { resourceContent } from "../../data/data";
 
 import "./ResourceSection.styles.scss";
@@ -10,11 +10,12 @@ import "./ResourceSection.styles.scss";
 const ResourceSection = React.forwardRef((_props, ref) => (
   <div ref={ref} className="resource-section">
     <MediaBar />
-    <div className="resource-section__header">
-      <p className="resource-section__header--caption">
-        <FormattedMessage id="navbar:resources" />
-      </p>
-    </div>
+    <SectionHeader
+      captionId="navbar:resources"
+      color="white"
+      variant="fromLeft"
+      className="resource-divider"
+    />
     <div className="resource-section__items">
       <div className="resource-section__items--wrapper">
         {resourceContent.map((item, index) => (

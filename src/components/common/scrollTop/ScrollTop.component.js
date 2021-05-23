@@ -22,7 +22,7 @@ const ScrollTop = () => {
     return () => {
       window.removeEventListener("scroll", handleButtonVisibility);
     };
-  }, []);
+  }, [handleButtonVisibility]);
 
   return (
     <button

@@ -1,7 +1,7 @@
 import React, { useState, useCallback } from "react";
-import { FormattedMessage } from "react-intl";
 
 import PhotoModal from "../photoModal/PhotoModal.component";
+import SectionHeader from "../sectionHeader/SectionHeader.component";
 import { galleryContentArray } from "../../../data/data";
 
 import "./PhotosGrid.styles.scss";
@@ -20,11 +20,11 @@ const PhotosGrid = () => {
 
   return (
     <div className="grid-section">
-      <div className="grid-section__header">
-        <p className="grid-section__header--caption">
-          <FormattedMessage id="navbar:photos" />
-        </p>
-      </div>
+      <SectionHeader
+        variant="fromRight"
+        color="white"
+        captionId="navbar:photos"
+      />
       <div className="grid-section__content">
         {galleryContentArray.map((item) => (
           <img

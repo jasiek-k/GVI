@@ -2,6 +2,7 @@ import React, { useState, useCallback, useMemo, useRef } from "react";
 import { FormattedMessage } from "react-intl";
 
 import Button from "../../components/common/button/Button.component";
+import SectionHeader from "../../components/common/sectionHeader/SectionHeader.component";
 import Text from "../../components/common/text/Text.component";
 import Table from "../../components/common/table/Table.component";
 
@@ -50,11 +51,11 @@ const InformationSection = React.forwardRef((props, ref) => {
 
   return (
     <div ref={ref} className="information-section">
-      <div className="information-section__header">
-        <span className="information-section__header--caption">
-          <FormattedMessage id="navbar:about" />
-        </span>
-      </div>
+      <SectionHeader
+        captionId="navbar:about"
+        color="white"
+        variant="fromRight"
+      />
       <div className="information-section__wrapper">
         <div className="information-section__columns">
           <div ref={textRef} className="information-section__columns--item">

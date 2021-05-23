@@ -5,25 +5,6 @@
   margin-left: 0;
   margin-right: 0;
 
-  &__header {
-    margin-right: 0;
-    margin-left: auto;
-    background-color: #fff;
-    color: #000;
-    width: 86.928vw;
-    height: auto;
-    padding-bottom: 1.0416667vw;
-    padding-top: 2.6041667vw;
-    text-transform: uppercase;
-
-    &--caption {
-      padding-left: 1.0416667vw;
-      text-align: left;
-      font-weight: bold;
-      font-size: 2.0833vw;
-    }
-  }
-
   &__wrapper {
     width: 73.856vw;
     margin-left: auto;
@@ -60,17 +41,6 @@
     padding-top: 21.3333vw;
     padding-bottom: 21.3333vw;
 
-    &__header {
-      width: 94.66667vw;
-      padding-bottom: 2.6667vw;
-      padding-top: 5.3333vw;
-
-      &--caption {
-        font-size: 5.3333vw;
-        padding-left: 2.6667vw;
-      }
-    }
-
     &__wrapper {
       width: 100%;
       box-sizing: border-box;
@@ -101,17 +71,6 @@
   @media (min-width: 601px) and (max-width: 1023px) {
     padding-top: 10.4166vw;
     padding-bottom: 10.4166vw;
-
-    &__header {
-      width: 94.66667vw;
-      padding-bottom: 2.6667vw;
-      padding-top: 5.3333vw;
-
-      &--caption {
-        font-size: 5.3333vw;
-        padding-left: 2.6667vw;
-      }
-    }
 
     &__wrapper {
       width: 100%;

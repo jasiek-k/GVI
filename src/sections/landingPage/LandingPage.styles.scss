@@ -33,7 +33,6 @@
     &__logos {
       left: 0;
       margin-right: auto;
-      // height: 4.6875vw;
       height: 90px;
       flex-direction: row;
       display: flex;
@@ -48,8 +47,8 @@
         border: 2px solid #fff;
 
         &-wrapper {
-          width: 3.125vw;
-          height: 1.61458333vw;
+          width: 60px;
+          height: 31px;
         }
       }
 
@@ -78,14 +77,14 @@
 
       &--title {
         display: block;
-        font-size: 5.72916667vw;
+        font-size: 90px;
         font-weight: bold;
         letter-spacing: 0.7vw;
       }
 
       &--subtitle {
         display: block;
-        font-size: 1.5625vw;
+        font-size: 30px;
       }
     }
 
@@ -115,8 +114,8 @@
           height: 70px;
 
           &-wrapper {
-            width: 12.2666vw;
-            height: 6.3253vw;
+            width: 46px;
+            height: 24px;
           }
         }
 
@@ -146,12 +145,12 @@
         margin-bottom: 5.3333vw;
 
         &--title {
-          font-size: 9.3333vw;
+          font-size: 35px;
         }
 
         &--subtitle {
           display: block;
-          font-size: 4.8vw;
+          font-size: 18px;
         }
       }
     }
@@ -180,8 +179,8 @@
           height: 80px;
 
           &-wrapper {
-            width: 6.8359375vw;
-            height: 3.5319vw;
+            width: 53px;
+            height: 27px;
           }
         }
 
@@ -205,14 +204,14 @@
         margin-bottom: 5.2083vw;
 
         &--title {
-          font-size: 9.11458vw;
+          font-size: 70px;
           line-height: 1.15;
           letter-spacing: 0.6vw;
         }
 
         &--subtitle {
           display: block;
-          font-size: 3.255vw;
+          font-size: 25px;
         }
       }
     }
