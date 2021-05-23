@@ -39,8 +39,10 @@ const GenerativeSectionText = () => (
         </li>
       </ul>
     </div>
-    <Text className="generative-section__container__content--text--paragraph paragraph-divider-s">
-      <FormattedMessage id="generativeText:roadsFeatures" />
+    <div className="paragraph-divider-s">
+      <Text className="generative-section__container__content--text--paragraph">
+        <FormattedMessage id="generativeText:roadsFeatures" />
+      </Text>
       <ul className="paragraph-list">
         <li>
           <FormattedMessage id="generativeText:firstRoadFeature" />
@@ -52,8 +54,10 @@ const GenerativeSectionText = () => (
           <FormattedMessage id="generativeText:thirdRoadFeature" />
         </li>
       </ul>
-      <FormattedMessage id="generativeText:obliqueRoadFeature" />
-    </Text>
+      <Text className="generative-section__container__content--text--paragraph">
+        <FormattedMessage id="generativeText:obliqueRoadFeature" />
+      </Text>
+    </div>
     <Text className="generative-section__container__content--text--paragraph paragraph-divider-s">
       <FormattedMessage id="generativeText:algorithmWork" />
     </Text>
@@ -68,9 +72,7 @@ const GenerativeSectionText = () => (
         <FormattedMessage id="generativeText:firstFeatureText1" />
       </Text>
       <Text className="generative-section__container__content--text--quote paragraph-divider-s">
-        <i>
-          <FormattedMessage id="generativeText:firstFeatureQuote" />
-        </i>
+        <FormattedMessage id="generativeText:firstFeatureQuote" />
       </Text>
       <Text className="generative-section__container__content--text--paragraph paragraph-divider-s">
         <FormattedMessage id="generativeText:firstFeatureText2" />

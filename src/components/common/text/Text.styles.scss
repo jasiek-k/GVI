@@ -6,7 +6,6 @@
   text-justify: inter-word;
 
   &.intro {
-    // line-height: 1.6em;
     font-size: 18px;
     font-weight: bold;
     margin-bottom: 2.0833vw !important;
@@ -16,6 +15,13 @@
     line-height: 1.42857143;
     font-size: 14px;
     font-weight: 500;
+  }
+
+  &.quote {
+    line-height: 1.42857143;
+    font-size: 14px;
+    font-weight: 500;
+    font-style: italic;
   }
 
   @media (max-width: 600px) {
