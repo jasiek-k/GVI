@@ -3,8 +3,8 @@ import { FormattedMessage } from "react-intl";
 
 import Text from "../text/Text.component";
 
-const ParagraphHeader = ({ children, className }) => (
-  <Text className={!!className ? className : ""}>
+const ParagraphHeader = ({ children, ...props }) => (
+  <Text {...props}>
     <b className="black-header">{children}</b>
   </Text>
 );
@@ -28,15 +28,17 @@ const GenerativeSectionText = () => (
         <FormattedMessage id="generativeText:stepsIntro" />
       </Text>
       <ul className="paragraph-list">
-        <li>
-          <FormattedMessage id="generativeText:algorithmFirstStep" />
-        </li>
-        <li>
-          <FormattedMessage id="generativeText:algorithmSecondStep" />
-        </li>
-        <li>
-          <FormattedMessage id="generativeText:algorithmThirdStep" />
-        </li>
+      {
+        [
+          "generativeText:algorithmFirstStep", 
+          "generativeText:algorithmSecondStep", 
+          "generativeText:algorithmThirdStep"
+        ].map((item, index) => (
+          <li className="generative-section__container__content--text--paragraph" key={index}>
+            <FormattedMessage id={item} />
+          </li>
+        ))
+      }
       </ul>
     </div>
     <div className="paragraph-divider-s">
@@ -44,15 +46,17 @@ const GenerativeSectionText = () => (
         <FormattedMessage id="generativeText:roadsFeatures" />
       </Text>
       <ul className="paragraph-list">
-        <li>
-          <FormattedMessage id="generativeText:firstRoadFeature" />
-        </li>
-        <li>
-          <FormattedMessage id="generativeText:secondRoadFeature" />
-        </li>
-        <li>
-          <FormattedMessage id="generativeText:thirdRoadFeature" />
-        </li>
+      {
+        [
+          "generativeText:firstRoadFeature", 
+          "generativeText:secondRoadFeature", 
+          "generativeText:thirdRoadFeature"
+        ].map((item, index) => (
+          <li className="generative-section__container__content--text--paragraph" key={index}>
+            <FormattedMessage id={item} />
+          </li>
+        ))
+      }
       </ul>
       <Text className="generative-section__container__content--text--paragraph">
         <FormattedMessage id="generativeText:obliqueRoadFeature" />
