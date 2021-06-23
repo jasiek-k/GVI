@@ -8,6 +8,7 @@ import {
   BREAKPOINTS,
 } from "../../../config";
 import { CloseIcon, HamburgerIcon } from "../../../assets/Icons";
+import { toggleBodyOverflow } from '../../../services/helpers'
 
 import "./Nav.styles.scss";
 
@@ -21,22 +22,27 @@ const Nav = ({ setLangCallback, currentLang, refs }) => {
     { caption: "navbar:resources", ref: refs[3] },
   ];
 
+  const toggleMenu = useCallback(() => {
+    setMenuState(is => !is);
+    toggleBodyOverflow();
+  }, []);
+
   const handleScroll = useCallback(
     (ref) => {
-      let timeOut =
-        window.innerWidth < BREAKPOINTS.desktop ? MENU_TOGGLE_TIMEOUT : 0;
+      let timeOut = window.innerWidth < BREAKPOINTS.desktop ? MENU_TOGGLE_TIMEOUT : 0;
 
-      setMenuState(!menuState);
+      toggleMenu();
       setTimeout(() => {
         ref.current.scrollIntoView({ behavior: "smooth" });
       }, timeOut);
     },
-    [menuState]
+    [toggleMenu]
   );
 
   const LangButton = ({ item, index }) => (
     <>
       <button
+        type="button"
         className={`navbar__lang--item ${
           item.toLowerCase() === currentLang ? "current" : ""
         }`}
@@ -51,8 +57,9 @@ const Nav = ({ setLangCallback, currentLang, refs }) => {
   return (
     <>
       <button
+        type="button"
         className={`toggle-button ${menuState ? "dropped" : ""}`}
-        onClick={() => setMenuState(!menuState)}
+        onClick={toggleMenu}
       >
         {menuState ? <CloseIcon /> : <HamburgerIcon />}
       </button>

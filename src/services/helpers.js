@@ -302,7 +302,10 @@ const handleScroll = () =>
     behavior: "smooth",
   });
 
+const toggleBodyOverflow = () => document.body.classList.toggle("overflow-hidden");
+
 export {
+  toggleBodyOverflow,
   handleMaterialTranslation,
   checkCurrentLang,
   getDivider,

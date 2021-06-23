@@ -16,17 +16,23 @@ const PhotoModal = ({
 
   return (
     <div className="modal-container">
-      <button className="close-button" onClick={() => toggleModal(null)}>
+      <button 
+        className="close-button" 
+        type="button"
+        onClick={() => toggleModal(null)}
+      >
         <CloseIcon />
       </button>
       <div className="modal-content">
         <button
+          type="button"
           className="modal-content__arrow-left"
           onClick={() => switchPhoto(currentPhoto - 1)}
         >
           <ArrowRight />
         </button>
         <button
+          type="button"
           className="modal-content__arrow-right"
           onClick={() => switchPhoto(currentPhoto + 1)}
         >

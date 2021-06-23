@@ -4,6 +4,7 @@ import clsx from "clsx";
 import PhotoModal from "../photoModal/PhotoModal.component";
 import SectionHeader from "../sectionHeader/SectionHeader.component";
 import { galleryContentArray } from "../../../data/data";
+import { toggleBodyOverflow } from '../../../services/helpers'
 
 import "./PhotosGrid.styles.scss";
 
@@ -17,7 +18,13 @@ const PhotosGrid = () => {
     setPhoto(galleryContentArray[currentId].id);
   };
 
-  const toggleModal = useCallback((item) => setPhoto(item), []);
+  const toggleModal = useCallback((item) => { 
+    if (photoId === null|| item === null) { 
+      toggleBodyOverflow(); 
+    }
+    
+    setPhoto(item)
+  }, [photoId]);
 
   return (
     <div className="grid-section">
@@ -33,7 +40,7 @@ const PhotosGrid = () => {
               margin: item.id > 2,
             })}
             src={item.cropped}
-            alt=""
+            alt="Atlas of Modernity"
             id={item.id}
             key={item.id}
             onClick={() => toggleModal(galleryContentArray[item.id].id)}
